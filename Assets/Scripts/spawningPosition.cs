@@ -19,9 +19,11 @@ public class spawningPosition : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        // Debug.Log(player.GetComponent<PlayerController>().getOrigin());
+
         playerOrigin = player.GetComponent<PlayerController>().getOrigin();
 
-//        Debug.Log("PO " + playerOrigin);
+       // Debug.Log("PO " + playerOrigin);
 
         if (playerOrigin != "")
         {
@@ -34,9 +36,9 @@ public class spawningPosition : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+
     }
-    
+
     // Update is called once per frame
     void Update()
     {
