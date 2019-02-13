@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        origin = "Menu";
         manaUI = GameObject.FindWithTag("Mana").GetComponent<Slider>();
         InvokeRepeating("regenMana", 0, 0.2f);
     }
@@ -38,16 +39,16 @@ public class PlayerController : MonoBehaviour
         VerticalInput = Input.GetAxisRaw("Vertical");
 
         transform.eulerAngles = new Vector3(0, 0, 0);
-        
+
     }
-       
+
 
     void FixedUpdate()
     {
         manaUI.value = mana;
 //        Debug.Log(manaUI);
 //        Debug.Log(mana);
-        
+
         if (Mathf.Abs(HorizontalInput) > 0.5f && Mathf.Abs(VerticalInput) > 0.5f)
         {
             currentMoveSpeed = moveSpeed / 1.4f;
@@ -73,7 +74,7 @@ public class PlayerController : MonoBehaviour
             transform.Translate(new Vector3(0f, VerticalInput * currentMoveSpeed * Time.deltaTime, 0f));
         }
 
-        
+
         if (Input.GetMouseButtonDown(1))
         {
             CastFireBall();
@@ -105,7 +106,7 @@ public class PlayerController : MonoBehaviour
         {
             mana += 1;
         }
-       
+
     }
-    
+
 }
