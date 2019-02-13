@@ -95,7 +95,11 @@ public class PlayerController : MonoBehaviour
     {
         if (mana > 0)
         {
-            Instantiate(fireBall, transform.position, transform.rotation);
+            // repositioning fireball with player sprite
+            var position = transform.position;
+            position[0] += 0.4f;
+            position[1] -= 0.6f;
+            Instantiate(fireBall, position, transform.rotation);
             mana -= 5;
         }
     }

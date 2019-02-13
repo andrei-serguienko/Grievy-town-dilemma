@@ -31,11 +31,6 @@ public class castFireball : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag.Equals("Player"))
-        {	
-            Physics2D.IgnoreCollision( col.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>() );
-   
-        }
         //Destroy the projectile when it hit something
         if (!col.gameObject.tag.Equals("Player"))
         {	
