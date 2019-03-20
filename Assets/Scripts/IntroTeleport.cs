@@ -17,6 +17,7 @@ public class IntroTeleport : MonoBehaviour {
 	void OnEnable(){
 		gameObject.GetComponent<changeScene>().changeOriginName("Intro");
 		Application.LoadLevel("VillagerHouse");
+		Debug.Log("boop");
 		gameObject.SetActive (false);
 	}
 }
