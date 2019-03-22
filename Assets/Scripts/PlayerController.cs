@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     public string origin;
     public float moveSpeed;
+    public bool canMove;
     private float currentMoveSpeed;
     public Rigidbody2D fireBall;
     public int HealingPotion;
@@ -48,7 +49,8 @@ public class PlayerController : MonoBehaviour
         manaUI.value = mana;
 //        Debug.Log(manaUI);
 //        Debug.Log(mana);
-
+      if(canMove)
+      {
         if (Mathf.Abs(HorizontalInput) > 0.5f && Mathf.Abs(VerticalInput) > 0.5f)
         {
             currentMoveSpeed = moveSpeed / 1.4f;
@@ -73,6 +75,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(new Vector3(0f, VerticalInput * currentMoveSpeed * Time.deltaTime, 0f));
         }
+      }
 
 
         if (Input.GetMouseButtonDown(1))

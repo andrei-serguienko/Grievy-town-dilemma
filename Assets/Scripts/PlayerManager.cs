@@ -25,7 +25,7 @@ public class PlayerManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-      print(hasTriggerIntroCinematic);
+    
       if(SceneManager.GetActiveScene().name == "Town" && !hasTriggerIntroCinematic)
       {
         introTimeline = GameObject.FindWithTag("TimeLineManager");
