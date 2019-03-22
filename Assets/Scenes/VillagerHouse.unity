@@ -361,11 +361,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4278160190648394, guid: 89b690934108d1b45802880f72d25c82, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.82
+      value: 7.72
       objectReference: {fileID: 0}
     - target: {fileID: 4278160190648394, guid: 89b690934108d1b45802880f72d25c82, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.06
+      value: -3.03
       objectReference: {fileID: 0}
     - target: {fileID: 4278160190648394, guid: 89b690934108d1b45802880f72d25c82, type: 3}
       propertyPath: m_LocalPosition.z
@@ -389,6 +389,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4278160190648394, guid: 89b690934108d1b45802880f72d25c82, type: 3}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61857777784253566, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.070600614
+      objectReference: {fileID: 0}
+    - target: {fileID: 61857777784253566, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.17879876
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[0].texte
+      value: Hi ! sfjsa
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[0].currentSpeech
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[1].currentSpeech
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[0].step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[1].step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[2].step
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[3].step
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[1].texte
+      value: asdsadas
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[2].texte
+      value: Second setps
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[3].texte
+      value: Second steps 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: currentStep
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
