@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public bool canMove;
     private float currentMoveSpeed;
     public Rigidbody2D fireBall;
+    public Rigidbody2D waterWall;
     public int HealingPotion;
 
     private float HorizontalInput = 0f;
@@ -82,6 +83,10 @@ public class PlayerController : MonoBehaviour
         {
             CastFireBall();
         }
+        if (Input.GetMouseButtonDown(0))
+        {
+            CastWaterWall();
+        }
 
         // use Heal Potion
         float lifePoints =  this.GetComponent<PlayerHealth>().LifePoints;
@@ -104,6 +109,17 @@ public class PlayerController : MonoBehaviour
             position[1] -= 0.6f;
             Instantiate(fireBall, position, transform.rotation);
             mana -= 5;
+        }
+    }
+    void CastWaterWall()
+    {
+        if (mana > 0)
+        {
+            var position = transform.position;
+//            position[0] += 0.4f;
+//            position[1] -= 0.6f;
+            Instantiate(waterWall, position, transform.rotation);
+            mana -= 10;
         }
     }
 
