@@ -11,7 +11,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
     private Queue<string> sentences;
-	
+
     // Use this for initialization
     void Start () {
         sentences = new Queue<string>();
@@ -26,17 +26,20 @@ public class DialogueManager : MonoBehaviour
 //        Debug.Log("startDial");
 
         animator.SetBool("isOpen", true);
-		
+
         nameText.text = dialogue.name;
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (DialogText sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
+            if(sentence.step == dialogue.currentStep)
+            {
+              sentences.Enqueue(sentence.texte);
+            }
         }
         DisplayNextSentence();
     }
-    
+
 
     public void DisplayNextSentence()
     {
@@ -49,7 +52,7 @@ public class DialogueManager : MonoBehaviour
 
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));	
+        StartCoroutine(TypeSentence(sentence));
     }
 
     IEnumerator TypeSentence(string sentence)
