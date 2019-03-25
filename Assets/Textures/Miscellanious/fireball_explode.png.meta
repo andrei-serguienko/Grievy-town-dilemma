@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: f4d1107fd8779c24d977d0fa40bfaf08
+guid: 93d8aed3c217adf4e873e45b32eb67f2
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fireball_0
-    21300002: fireball_1
-    21300004: fireball_2
-    21300006: fireball_3
+    21300000: fireball_explode_0
+    21300002: fireball_explode_1
+    21300004: fireball_explode_2
+    21300006: fireball_explode_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -88,81 +88,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball_0
+      name: fireball_explode_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 12
-        height: 8
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1867184d8d68c58488f6534437642b1c
+      spriteID: fcb3456e4e2ea7d4db3d7a0532a06547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_1
+      name: fireball_explode_1
       rect:
         serializedVersion: 2
-        x: 12
+        x: 16
         y: 0
-        width: 12
-        height: 8
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 048bd2704cdae1b49b67a74c02e688d6
+      spriteID: 626c9fdf691094d4783fea8bcf29eed7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_2
+      name: fireball_explode_2
       rect:
         serializedVersion: 2
-        x: 24
+        x: 32
         y: 0
-        width: 12
-        height: 8
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e42d79bad924acf40bbc9bb3835a9896
+      spriteID: 3d539c2c494d74d4284bb6c0a1259d4a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_3
+      name: fireball_explode_3
       rect:
         serializedVersion: 2
-        x: 36
+        x: 48
         y: 0
-        width: 12
-        height: 8
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd7ec60929f80024bbf87d467cf76276
+      spriteID: 571c9bab53a49dc46b42ea3435d81f3d
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9d83835ab000e4247b0e6fc245c222e9
+    spriteID: 935dfe5c6875acd47b5e1a8c819833a8
     vertices: []
     indices: 
     edges: []

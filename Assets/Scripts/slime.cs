@@ -49,14 +49,23 @@ public class slime : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("playerProjectile"))
         {	
-            lifePoint -= 20;
+            lifePoint -= col.gameObject.GetComponent<castSpell>().damages;
             HittedByPlayer = true;
 //            Debug.Log(lifePoint);
+            
+            Invoke("resetVelocity", 0.6f);
+            
         }
         
         if (col.gameObject.tag.Equals("Player"))
         {	
             FindObjectOfType<PlayerHealth>().TakeAHit(1);
         }
+    }
+
+    void resetVelocity()
+    {
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        Debug.Log("no velo");
     }
 }
