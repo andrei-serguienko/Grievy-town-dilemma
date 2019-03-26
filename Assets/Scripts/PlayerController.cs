@@ -12,8 +12,10 @@ public class PlayerController : MonoBehaviour
 
     public string origin;
     public float moveSpeed;
+    public bool canMove;
     private float currentMoveSpeed;
     public Rigidbody2D fireBall;
+    public Rigidbody2D waterWall;
     public int HealingPotion;
 
     private float HorizontalInput = 0f;
@@ -22,6 +24,7 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        origin = "Menu";
         manaUI = GameObject.FindWithTag("Mana").GetComponent<Slider>();
         InvokeRepeating("regenMana", 0, 0.2f);
     }
@@ -37,17 +40,20 @@ public class PlayerController : MonoBehaviour
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
 
+        print(HorizontalInput);
+        print(VerticalInput);
         transform.eulerAngles = new Vector3(0, 0, 0);
-        
+
     }
-       
+
 
     void FixedUpdate()
     {
         manaUI.value = mana;
 //        Debug.Log(manaUI);
 //        Debug.Log(mana);
-        
+      if(canMove)
+      {
         if (Mathf.Abs(HorizontalInput) > 0.5f && Mathf.Abs(VerticalInput) > 0.5f)
         {
             currentMoveSpeed = moveSpeed / 1.4f;
@@ -72,11 +78,16 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(new Vector3(0f, VerticalInput * currentMoveSpeed * Time.deltaTime, 0f));
         }
+      }
 
-        
+
         if (Input.GetMouseButtonDown(1))
         {
             CastFireBall();
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            CastWaterWall();
         }
 
         // use Heal Potion
@@ -94,8 +105,21 @@ public class PlayerController : MonoBehaviour
     {
         if (mana > 0)
         {
-            Instantiate(fireBall, transform.position, transform.rotation);
+            // repositioning fireball with player sprite
+            var position = transform.position;
+            position[0] += 0.4f;
+            position[1] -= 0.6f;
+            Instantiate(fireBall, position, transform.rotation);
             mana -= 5;
+        }
+    }
+    void CastWaterWall()
+    {
+        if (mana > 0)
+        {
+            var position = transform.position;
+            Instantiate(waterWall, position, transform.rotation);
+            mana -= 10;
         }
     }
 
@@ -105,7 +129,14 @@ public class PlayerController : MonoBehaviour
         {
             mana += 1;
         }
-       
+
     }
-    
+
+    public float getHorizontalInput(){
+      return HorizontalInput;
+    }
+    public float getVerticalInput(){
+      return VerticalInput;
+    }
+
 }

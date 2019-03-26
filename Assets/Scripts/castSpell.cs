@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class castFireball : MonoBehaviour
+public class castSpell : MonoBehaviour
 {
-    
-    public float speed = 10f;
+    public int damages;
+    public float speed;
+    public float destroyTime;
     public Vector3 direction;
+    private Animator anim;
+    
 
     private void Awake()
     {
@@ -19,27 +23,32 @@ public class castFireball : MonoBehaviour
         var dir = Input.mousePosition - pos;
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        anim = GetComponent<Animator>();
 
         Vector2 direction = dir;
         direction.Normalize();
         //GameObject projectile = (GameObject)Instantiate(, pos, Quaternion.identity);
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * speed;
 
-        Destroy(gameObject, 2.0f);
+        Destroy(gameObject, destroyTime);
 
     }
     
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag.Equals("Player"))
-        {	
-            Physics2D.IgnoreCollision( col.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>() );
-   
-        }
         //Destroy the projectile when it hit something
         if (!col.gameObject.tag.Equals("Player"))
-        {	
-            Destroy(gameObject);
+        {
+            string objectName = this.gameObject.name;
+            objectName = objectName.Substring(0, objectName.Length - 7);
+            print(objectName);
+
+            if (objectName == "fireball")
+            {
+                anim.SetBool("destroy", true);
+                Destroy(this.gameObject, 0.3f);
+                
+            }
         }
     }
     
