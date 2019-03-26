@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/MenuProv.unity
     guid: ba6b45c6578b05646b5b52f2ad06d138
   - enabled: 1
     path: Assets/Scenes/Church.unity
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: bc83f9a6b63757649b7ee1c46c269643
+  - enabled: 1
+    path: Assets/Scenes/SwampTest.unity
+    guid: 3e1bf79b52d156c4495b9c56685cbefe
   m_configObjects: {}
