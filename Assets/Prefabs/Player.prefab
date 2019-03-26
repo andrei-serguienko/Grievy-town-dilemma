@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 114858702381409504}
   - component: {fileID: 50069297015440292}
   - component: {fileID: 70964816962882856}
+  - component: {fileID: 2995789185006692282}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -99,6 +100,7 @@ MonoBehaviour:
   mana: 100
   origin: 
   moveSpeed: 10
+  canMove: 0
   fireBall: {fileID: 50617023622312354, guid: 80d37178001987e4a8b2e2250965ebb4, type: 3}
   waterWall: {fileID: 9170127173645643429, guid: 2bf9d0870d35ab84caad94e5d0465aaa,
     type: 3}
@@ -139,7 +141,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 49aa4a91e05d20f42a3b9cdab35feb4a, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!70 &70964816962882856
 CapsuleCollider2D:
@@ -157,6 +159,23 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0143995285, y: -0.37424278}
   m_Size: {x: 0.9812107, y: 1.2515144}
   m_Direction: 0
+--- !u!114 &2995789185006692282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558510653127328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb66cfc674cd51548b08aef24c94e3cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 50
+  startDashTime: 0.1
+  TimeDelay: 3
+  dashEffect: {fileID: 1940242813652360337, guid: e04d6d0d210f68b4f9078f73f0e42345,
+    type: 3}
 --- !u!1 &1611104228962634
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611104228962634}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.002, y: -0.06, z: -1.625107}
+  m_LocalPosition: {x: -0.002, y: -0.06, z: -30}
   m_LocalScale: {x: 0.16448452, y: 0.16448452, z: 0.16448452}
   m_Children: []
   m_Father: {fileID: 4981140206277326}

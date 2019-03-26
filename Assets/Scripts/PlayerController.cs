@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
 
+        print(HorizontalInput);
+        print(VerticalInput);
         transform.eulerAngles = new Vector3(0, 0, 0);
 
     }
@@ -130,6 +132,13 @@ public class PlayerController : MonoBehaviour
             mana += 1;
         }
 
+    }
+
+    public float getHorizontalInput(){
+      return HorizontalInput;
+    }
+    public float getVerticalInput(){
+      return VerticalInput;
     }
 
 }
