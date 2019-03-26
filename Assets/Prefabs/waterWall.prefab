@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8713068923020767293}
   - component: {fileID: 6552505808338910039}
   - component: {fileID: 8093822964937225549}
-  - component: {fileID: 124158085091332465}
   - component: {fileID: 9170127173645643429}
   - component: {fileID: 1269404307891851576}
+  - component: {fileID: 726455062332326477}
   m_Layer: 8
   m_Name: waterWall
   m_TagString: playerProjectile
@@ -102,20 +102,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &124158085091332465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3916654155580374588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ca1632d2a5c6ee4098c59134d0bf5cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  direction: {x: 0, y: 0, z: 0}
 --- !u!50 &9170127173645643429
 Rigidbody2D:
   serializedVersion: 4
@@ -128,7 +114,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -163,3 +149,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.08909989, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &726455062332326477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916654155580374588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59e3dcb8795ed14a9801f33c103e4fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 10
+  speed: 3
+  destroyTime: 0.5
+  direction: {x: 0, y: 0, z: 0}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class castWaterWall : MonoBehaviour
 {
     
+    public int damages;
     public float speed;
     public Vector3 direction;
 
@@ -22,7 +23,7 @@ public class castWaterWall : MonoBehaviour
         //GameObject projectile = (GameObject)Instantiate(, pos, Quaternion.identity);
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * speed;
 
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 0.5f);
     }
 
     // Update is called once per frame

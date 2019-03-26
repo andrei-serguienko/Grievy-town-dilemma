@@ -118,8 +118,6 @@ public class PlayerController : MonoBehaviour
         if (mana > 0)
         {
             var position = transform.position;
-//            position[0] += 0.4f;
-//            position[1] -= 0.6f;
             Instantiate(waterWall, position, transform.rotation);
             mana -= 10;
         }
