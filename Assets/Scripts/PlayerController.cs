@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     private float HorizontalInput = 0f;
     private float VerticalInput = 0f;
+    private Animator anim;
 
     // Use this for initialization
     void Start()
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
         origin = "Menu";
         manaUI = GameObject.FindWithTag("Mana").GetComponent<Slider>();
         InvokeRepeating("regenMana", 0, 0.2f);
+        anim = GetComponent<Animator>();
     }
 
     public string getOrigin()
@@ -65,6 +67,7 @@ public class PlayerController : MonoBehaviour
         if (HorizontalInput > 0.5f)
         {
             transform.Translate(new Vector3(HorizontalInput * currentMoveSpeed * Time.deltaTime, 0f, 0f));
+            
         }
         if (HorizontalInput < 0.5f)
         {
@@ -80,6 +83,14 @@ public class PlayerController : MonoBehaviour
         }
       }
 
+        if (HorizontalInput != 0 || VerticalInput != 0)
+        {
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+        }
 
         if (Input.GetMouseButtonDown(1))
         {
