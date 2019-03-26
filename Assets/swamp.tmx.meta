@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 0724da8667f0c0e47a29f198c4db0a58
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/swamp
+    100002: _MapPrfab/swamp/background
+    100004: _MapPrfab/swamp/Calque 4
+    100006: _MapPrfab/swamp/Calque 5
+    100008: _MapPrfab/swamp/foreground
+    100010: _MapPrfab/swamp/middle
+    400000: _MapPrfab/swamp/Transform
+    400002: _MapPrfab/swamp/background/Transform
+    400004: _MapPrfab/swamp/Calque 4/Transform
+    400006: _MapPrfab/swamp/Calque 5/Transform
+    400008: _MapPrfab/swamp/foreground/Transform
+    400010: _MapPrfab/swamp/middle/Transform
+    11400000: _MapPrfab/swamp/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _superAsset
+    11400004: _MapPrfab/swamp/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400006: _MapPrfab/swamp/background/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400008: _MapPrfab/swamp/background/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400010: _MapPrfab/swamp/background/MonoBehaviour-SuperTiled2Unity.TilemapData
+    11400012: _MapPrfab/swamp/Calque 4/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400014: _MapPrfab/swamp/Calque 4/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400016: _MapPrfab/swamp/Calque 4/MonoBehaviour-SuperTiled2Unity.TilemapData
+    11400018: _MapPrfab/swamp/Calque 5/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400020: _MapPrfab/swamp/Calque 5/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400022: _MapPrfab/swamp/Calque 5/MonoBehaviour-SuperTiled2Unity.TilemapData
+    11400024: _MapPrfab/swamp/foreground/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400026: _MapPrfab/swamp/foreground/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400028: _MapPrfab/swamp/foreground/MonoBehaviour-SuperTiled2Unity.TilemapData
+    11400030: _MapPrfab/swamp/middle/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400032: _MapPrfab/swamp/middle/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400034: _MapPrfab/swamp/middle/MonoBehaviour-SuperTiled2Unity.TilemapData
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/swamp/Grid
+    3664157343022684176: _MapPrfab/swamp/background/TilemapRenderer
+    3664157343022684178: _MapPrfab/swamp/Calque 4/TilemapRenderer
+    3664157343022684180: _MapPrfab/swamp/Calque 5/TilemapRenderer
+    3664157343022684182: _MapPrfab/swamp/foreground/TilemapRenderer
+    3664157343022684184: _MapPrfab/swamp/middle/TilemapRenderer
+    8195094279510102542: _MapPrfab/swamp/background/Tilemap
+    8195094279510102544: _MapPrfab/swamp/Calque 4/Tilemap
+    8195094279510102546: _MapPrfab/swamp/Calque 5/Tilemap
+    8195094279510102548: _MapPrfab/swamp/foreground/Tilemap
+    8195094279510102550: _MapPrfab/swamp/middle/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  errors:
+  - Errors detected in tileset 'basic_tileset.tsx'. Check the tileset inspector for
+    more details. Your map may be broken until these are fixed.
+  - Could not find tile 2866. Make sure the tilesets were successfully imported.
+  - Could not find tile 1294. Make sure the tilesets were successfully imported.
+  - Could not find tile 1293. Make sure the tilesets were successfully imported.
+  - Could not find tile 1407. Make sure the tilesets were successfully imported.
+  - Could not find tile 1351. Make sure the tilesets were successfully imported.
+  - Could not find tile 579. Make sure the tilesets were successfully imported.
+  - Could not find tile 580. Make sure the tilesets were successfully imported.
+  - Could not find tile 915. Make sure the tilesets were successfully imported.
+  - Could not find tile 916. Make sure the tilesets were successfully imported.
+  - Could not find tile 1289. Make sure the tilesets were successfully imported.
+  - Could not find tile 1294. Make sure the tilesets were successfully imported.
+  - Could not find tile 2172. Make sure the tilesets were successfully imported.
+  - Could not find tile 2229. Make sure the tilesets were successfully imported.
+  - Could not find tile 2286. Make sure the tilesets were successfully imported.
+  - Could not find tile 1290. Make sure the tilesets were successfully imported.
+  - Could not find tile 521. Make sure the tilesets were successfully imported.
+  - Could not find tile 522. Make sure the tilesets were successfully imported.
+  - Could not find tile 523. Make sure the tilesets were successfully imported.
+  - Could not find tile 1175. Make sure the tilesets were successfully imported.
+  - Could not find tile 578. Make sure the tilesets were successfully imported.
+  - Could not find tile 1119. Make sure the tilesets were successfully imported.
+  - Could not find tile 1118. Make sure the tilesets were successfully imported.
+  - Could not find tile 974. Make sure the tilesets were successfully imported.
+  - Could not find tile 857. Make sure the tilesets were successfully imported.
+  - Could not find tile 1176. Make sure the tilesets were successfully imported.
+  - Could not find tile 635. Make sure the tilesets were successfully imported.
+  - Could not find tile 636. Make sure the tilesets were successfully imported.
+  - Could not find tile 637. Make sure the tilesets were successfully imported.
+  - Could not find tile 917. Make sure the tilesets were successfully imported.
+  - Could not find tile 634. Make sure the tilesets were successfully imported.
+  - Could not find tile 409. Make sure the tilesets were successfully imported.
+  - Could not find tile 407. Make sure the tilesets were successfully imported.
+  - Could not find tile 466. Make sure the tilesets were successfully imported.
+  - Could not find tile 465. Make sure the tilesets were successfully imported.
+  - Could not find tile 464. Make sure the tilesets were successfully imported.
+  - Could not find tile 408. Make sure the tilesets were successfully imported.
+  - Could not find tile 406. Make sure the tilesets were successfully imported.
+  - Could not find tile 462. Make sure the tilesets were successfully imported.
+  - Could not find tile 690. Make sure the tilesets were successfully imported.
+  - Could not find tile 633. Make sure the tilesets were successfully imported.
+  - Could not find tile 577. Make sure the tilesets were successfully imported.
+  - Could not find tile 520. Make sure the tilesets were successfully imported.
+  - Could not find tile 463. Make sure the tilesets were successfully imported.
+  - Could not find tile 691. Make sure the tilesets were successfully imported.
+  - Could not find tile 916. Make sure the tilesets were successfully imported.
+  - Could not find tile 917. Make sure the tilesets were successfully imported.
+  - Could not find tile 1346. Make sure the tilesets were successfully imported.
+  - Could not find tile 1347. Make sure the tilesets were successfully imported.
+  - Could not find tile 541. Make sure the tilesets were successfully imported.
+  - Could not find tile 598. Make sure the tilesets were successfully imported.
+  - Could not find tile 2362. Make sure the tilesets were successfully imported.
+  - Could not find tile 2364. Make sure the tilesets were successfully imported.
+  - Could not find tile 2419. Make sure the tilesets were successfully imported.
+  - Could not find tile 2421. Make sure the tilesets were successfully imported.
+  - Could not find tile 973. Make sure the tilesets were successfully imported.
+  - Could not find tile 974. Make sure the tilesets were successfully imported.
+  - Could not find tile 2476. Make sure the tilesets were successfully imported.
+  - Could not find tile 2478. Make sure the tilesets were successfully imported.
+  - Could not find tile 972. Make sure the tilesets were successfully imported.
+  - Could not find tile 858. Make sure the tilesets were successfully imported.
+  - Could not find tile 860. Make sure the tilesets were successfully imported.
+  - Could not find tile 859. Make sure the tilesets were successfully imported.
+  - Could not find tile 915. Make sure the tilesets were successfully imported.
+  - Could not find tile 857. Make sure the tilesets were successfully imported.
+  - Could not find tile 914. Make sure the tilesets were successfully imported.
+  - Could not find tile 644. Make sure the tilesets were successfully imported.
+  - Could not find tile 646. Make sure the tilesets were successfully imported.
+  - Could not find tile 1887. Make sure the tilesets were successfully imported.
+  - Could not find tile 1904. Make sure the tilesets were successfully imported.
+  - Could not find tile 1909. Make sure the tilesets were successfully imported.
+  - Could not find tile 645. Make sure the tilesets were successfully imported.
+  - Could not find tile 598. Make sure the tilesets were successfully imported.
+  - Could not find tile 587. Make sure the tilesets were successfully imported.
+  - Could not find tile 589. Make sure the tilesets were successfully imported.
+  - Could not find tile 656. Make sure the tilesets were successfully imported.
+  - Could not find tile 1772. Make sure the tilesets were successfully imported.
+  - Could not find tile 1886. Make sure the tilesets were successfully imported.
+  - Could not find tile 1946. Make sure the tilesets were successfully imported.
+  - Could not find tile 1943. Make sure the tilesets were successfully imported.
+  - Could not find tile 1944. Make sure the tilesets were successfully imported.
+  - Could not find tile 2000. Make sure the tilesets were successfully imported.
+  - Could not find tile 588. Make sure the tilesets were successfully imported.
+  - Could not find tile 1829. Make sure the tilesets were successfully imported.
+  - Could not find tile 1941. Make sure the tilesets were successfully imported.
+  - Could not find tile 1887. Make sure the tilesets were successfully imported.
+  - Could not find tile 1884. Make sure the tilesets were successfully imported.
+  - Could not find tile 2001. Make sure the tilesets were successfully imported.
+  - Could not find tile 2002. Make sure the tilesets were successfully imported.
+  - Could not find tile 541. Make sure the tilesets were successfully imported.
+  - Could not find tile 2003. Make sure the tilesets were successfully imported.
+  - Could not find tile 599. Make sure the tilesets were successfully imported.
+  - Could not find tile 1945. Make sure the tilesets were successfully imported.
+  - Could not find tile 1882. Make sure the tilesets were successfully imported.
+  - Could not find tile 1942. Make sure the tilesets were successfully imported.
+  - Could not find tile 645. Make sure the tilesets were successfully imported.
+  - Could not find tile 1769. Make sure the tilesets were successfully imported.
+  - Could not find tile 1885. Make sure the tilesets were successfully imported.
+  - Could not find tile 1888. Make sure the tilesets were successfully imported.
+  - Could not find tile 1832. Make sure the tilesets were successfully imported.
+  - Could not find tile 1775. Make sure the tilesets were successfully imported.
+  - Could not find tile 1770. Make sure the tilesets were successfully imported.
+  - Could not find tile 1998. Make sure the tilesets were successfully imported.
+  - Could not find tile 1939. Make sure the tilesets were successfully imported.
+  - Could not find tile 1940. Make sure the tilesets were successfully imported.
+  - Could not find tile 1883. Make sure the tilesets were successfully imported.
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  importSorting: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
