@@ -1124,6 +1124,18 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 5d34bd780afeb424d972eeaed48baa7f,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 5d34bd780afeb424d972eeaed48baa7f,
+        type: 3}
+      propertyPath: sentences.Array.data[0].texte
+      value: 'Hey there Fella !
+
+        I''ve seen monsters to the market place !'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
 --- !u!1 &426108542

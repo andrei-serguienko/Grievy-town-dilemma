@@ -10,6 +10,7 @@ public class castSpell : MonoBehaviour
     public float destroyTime;
     public Vector3 direction;
     private Animator anim;
+    private AudioSource audio;
     
 
     private void Awake()
@@ -24,6 +25,7 @@ public class castSpell : MonoBehaviour
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
 
         Vector2 direction = dir;
         direction.Normalize();
@@ -31,6 +33,8 @@ public class castSpell : MonoBehaviour
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * speed;
 
         Destroy(gameObject, destroyTime);
+        
+        audio.Play();
 
     }
     

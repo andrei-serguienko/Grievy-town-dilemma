@@ -53,7 +53,7 @@ public class slime : MonoBehaviour
             HittedByPlayer = true;
 //            Debug.Log(lifePoint);
             
-            Invoke("resetVelocity", 0.6f);
+            Invoke("resetVelocity", 1.1f);
             
         }
         

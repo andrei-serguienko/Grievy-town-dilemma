@@ -17,10 +17,16 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D fireBall;
     public Rigidbody2D waterWall;
     public int HealingPotion;
+    public AudioClip step;
+    
 
     private float HorizontalInput = 0f;
     private float VerticalInput = 0f;
     private Animator anim;
+    AudioSource audio;
+    
+    
+    
 
     // Use this for initialization
     void Start()
@@ -29,6 +35,8 @@ public class PlayerController : MonoBehaviour
         manaUI = GameObject.FindWithTag("Mana").GetComponent<Slider>();
         InvokeRepeating("regenMana", 0, 0.2f);
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
+
     }
 
     public string getOrigin()
@@ -86,6 +94,7 @@ public class PlayerController : MonoBehaviour
         if (HorizontalInput != 0 || VerticalInput != 0)
         {
             anim.SetBool("isWalking", true);
+//            audio.PlayOneShot(step);
         }
         else
         {
