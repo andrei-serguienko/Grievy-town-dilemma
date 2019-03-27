@@ -108,7 +108,6 @@ MonoBehaviour:
     type: 3}
   HealingPotion: 2
   step: {fileID: 8300000, guid: 1239b44017da1464f8e2ac181f75deeb, type: 3}
-  dash: {fileID: 0}
 --- !u!114 &114858702381409504
 MonoBehaviour:
   m_ObjectHideFlags: 0
