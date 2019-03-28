@@ -9,6 +9,7 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
+    public int money;
     public int mana = 100;
     private Slider manaUI;
 
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D fireBall;
     public Rigidbody2D waterWall;
     public int HealingPotion;
+    public int ManaPotion;
     public AudioClip step;
 
 
@@ -161,6 +163,14 @@ public class PlayerController : MonoBehaviour
     }
     public float getVerticalInput(){
       return VerticalInput;
+    }
+
+    public void buyPotionHealth(){
+      print("PPP");
+      HealingPotion += 1;
+    }
+    public void buyPotionMana(){
+      ManaPotion += 1;
     }
 
 }

@@ -15,6 +15,9 @@ TagManager:
   - UI
   - DialogManager
   - TimeLineManager
+  - AnimPotionHealth
+  - AnimPotionMana
+  - buyButton
   layers:
   - Default
   - TransparentFX

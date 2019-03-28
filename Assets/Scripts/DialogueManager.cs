@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public Animator animator;
 
+    private string product;
+
     private Queue<string> sentences;
 
     // Use this for initialization
@@ -21,10 +23,9 @@ public class DialogueManager : MonoBehaviour
     {
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, string product)
     {
-       Debug.Log("startDialEEEEEEEEEEEEEEEE");
-       Debug.Log(dialogue);
+       this.product = product;
        animator.SetBool("isOpen", true);
 
       nameText.text = dialogue.name;
@@ -70,4 +71,24 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("isOpen", false);
     }
+
+    public void buy(){
+      print("AHCAT");
+      print(product);
+      PlayerController player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+      if(player.money < 20){
+        return;
+      }
+
+      if(product == "Health")
+      {
+        player.buyPotionHealth();
+        GameObject.FindWithTag("AnimPotionHealth").GetComponent<Animator>().SetTrigger("Buying");
+      } else if (product == "Mana"){
+        player.buyPotionMana();
+        GameObject.FindWithTag("AnimPotionMana").GetComponent<Animator>().SetTrigger("Buying");
+      }
+      player.money -= 20;
+    }
+
 }

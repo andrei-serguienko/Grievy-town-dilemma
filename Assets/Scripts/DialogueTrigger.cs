@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+  public string product;
+  public GameObject buyButton;
 
-  public bool isDialoguing = false;
 
     public Dialogue dialogue;
 
@@ -13,14 +14,17 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (startStop == true)
         {
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-            isDialoguing = true;
+          if(product != ""){
+            GameObject.Find("Canvas/DialogueBox/Acheter").SetActive(true);
+          }
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue, product);
         }
         else
         {
-            Debug.Log("Fermer");
+          if(product != ""){
+            GameObject.Find("Canvas/DialogueBox/Acheter").SetActive(false);
+          }
             FindObjectOfType<DialogueManager>().EndDialogue();
-            isDialoguing = false;
         }
     }
 

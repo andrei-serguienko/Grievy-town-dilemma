@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NPC : MonoBehaviour {
-
+	
 	public float detectionRange = 1f;
     //public GameObject player;
   public string Name;
 
 	private bool DialogueOn = false;
-    private Transform target;
+  private Transform target;
 
 
     // Use this for initialization
