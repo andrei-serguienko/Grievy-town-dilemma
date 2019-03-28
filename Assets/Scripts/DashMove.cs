@@ -62,7 +62,7 @@ public class DashMove : MonoBehaviour
                 direction = 0;
                 dashTime = startDashTime;
                 rb.velocity = Vector2.zero;
-                // Invoke("resetVelocity", 0.5f);
+                Invoke("resetVelocity", 0.5f);
             }else {
                 dashTime -= Time.deltaTime;
                 // gameObject.GetComponent<PlayerController>().canMove = false
@@ -82,5 +82,8 @@ public class DashMove : MonoBehaviour
             }
         }
         delay -= Time.deltaTime;
+    }
+    void resetVelocity(){
+      rb.velocity = Vector2.zero;
     }
 }

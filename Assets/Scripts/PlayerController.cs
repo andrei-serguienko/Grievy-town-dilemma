@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print(gameObject.GetComponent<Rigidbody2D>().velocity);
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
 
@@ -171,6 +172,16 @@ public class PlayerController : MonoBehaviour
     }
     public void buyPotionMana(){
       ManaPotion += 1;
+    }
+
+    void OnCollisionEnter2D(Collision2D col){
+      gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+    }
+    void OnCollisionExit2D(Collision2D col){
+      print("ColExit");
+
+      gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+      gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.zero);
     }
 
 }
