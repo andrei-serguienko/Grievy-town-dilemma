@@ -5,6 +5,8 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
 
+  public bool isDialoguing = false;
+
     public Dialogue dialogue;
 
     public void TriggerDialogue(bool startStop)
@@ -12,12 +14,14 @@ public class DialogueTrigger : MonoBehaviour
         if (startStop == true)
         {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-//            Debug.Log("dialTrigger");
+            isDialoguing = true;
         }
         else
         {
+            Debug.Log("Fermer");
             FindObjectOfType<DialogueManager>().EndDialogue();
+            isDialoguing = false;
         }
     }
-    
+
 }

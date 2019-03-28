@@ -27,10 +27,8 @@ public class DashMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(delay);
         if(direction == 0){
             // if(gameObject.GetComponent<PlayerController>().getHorizontalInput() < 0)
-            print("SPACE");
             if(Input.GetKey(KeyCode.A) && Input.GetKeyDown(KeyCode.Space) && delay <= 0)
             {
                 direction = 1;

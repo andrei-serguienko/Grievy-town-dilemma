@@ -23,15 +23,16 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-//        Debug.Log("startDial");
+       Debug.Log("startDialEEEEEEEEEEEEEEEE");
+       Debug.Log(dialogue);
+       animator.SetBool("isOpen", true);
 
-        animator.SetBool("isOpen", true);
-
-        nameText.text = dialogue.name;
-        sentences.Clear();
+      nameText.text = dialogue.name;
+      sentences.Clear();
 
         foreach (DialogText sentence in dialogue.sentences)
         {
+            Debug.Log(sentence.texte);
             if(sentence.step == dialogue.currentStep)
             {
               sentences.Enqueue(sentence.texte);

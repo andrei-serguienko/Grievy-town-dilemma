@@ -11,11 +11,11 @@ public class castSpell : MonoBehaviour
     public Vector3 direction;
     private Animator anim;
     private AudioSource audio;
-    
+
 
     private void Awake()
     {
-        
+
     }
 
     private void Start()
@@ -33,11 +33,11 @@ public class castSpell : MonoBehaviour
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * speed;
 
         Destroy(gameObject, destroyTime);
-        
+
         audio.Play();
 
     }
-    
+
     void OnCollisionEnter2D(Collision2D col)
     {
         //Destroy the projectile when it hit something
@@ -45,17 +45,17 @@ public class castSpell : MonoBehaviour
         {
             string objectName = this.gameObject.name;
             objectName = objectName.Substring(0, objectName.Length - 7);
-            print(objectName);
+            //print(objectName);
 
             if (objectName == "fireball")
             {
                 anim.SetBool("destroy", true);
                 Destroy(this.gameObject, 0.3f);
-                
+
             }
         }
     }
-    
+
 }
 
 //

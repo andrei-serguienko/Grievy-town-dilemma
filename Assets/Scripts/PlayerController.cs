@@ -4,6 +4,8 @@ using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,19 +20,22 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D waterWall;
     public int HealingPotion;
     public AudioClip step;
-    
+
 
     private float HorizontalInput = 0f;
     private float VerticalInput = 0f;
     private Animator anim;
     AudioSource audio;
-    
-    
-    
+
+
+
+
+
 
     // Use this for initialization
     void Start()
     {
+      // event = GameObject.Find("EventSystem")
         origin = "Menu";
         manaUI = GameObject.FindWithTag("Mana").GetComponent<Slider>();
         InvokeRepeating("regenMana", 0, 0.2f);
@@ -50,8 +55,7 @@ public class PlayerController : MonoBehaviour
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
 
-        print(HorizontalInput);
-        print(VerticalInput);
+
         transform.eulerAngles = new Vector3(0, 0, 0);
 
     }
@@ -75,7 +79,7 @@ public class PlayerController : MonoBehaviour
         if (HorizontalInput > 0.5f)
         {
             transform.Translate(new Vector3(HorizontalInput * currentMoveSpeed * Time.deltaTime, 0f, 0f));
-            
+
         }
         if (HorizontalInput < 0.5f)
         {
@@ -105,7 +109,7 @@ public class PlayerController : MonoBehaviour
         {
             CastFireBall();
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             CastWaterWall();
         }
