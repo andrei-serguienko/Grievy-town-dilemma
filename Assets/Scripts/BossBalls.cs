@@ -23,14 +23,15 @@ public class BossBalls : MonoBehaviour
         }
     }
     
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (col.gameObject.tag.Equals("playerProjectile"))
+        if (other.gameObject.tag.Equals("playerProjectile"))
         {	
             lifePoints --;
+            other.gameObject.GetComponent<castSpell>().destroyProjectile();
         }
         
-        if (col.gameObject.tag.Equals("Player"))
+        if (other.gameObject.tag.Equals("Player"))
         {	
             FindObjectOfType<PlayerHealth>().TakeAHit(1);
         }

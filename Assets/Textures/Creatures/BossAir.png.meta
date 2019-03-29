@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 15d40c9bd78ba4c4c9761737cf63bfe8
+guid: ccab9d77b6b31934ca181fb69954386e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: AirBoss_0
-    21300002: AirBoss_1
-    21300004: AirBoss_2
-    21300006: AirBoss_3
+    21300000: BossAir_0
+    21300002: BossAir_1
+    21300004: BossAir_2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -88,81 +87,61 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AirBoss_0
+      name: BossAir_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 47
-        height: 48
+        width: 56
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd23ce5a4a5dd97428b41cd1f5562467
+      spriteID: 083144a357802c04fab6b3e5287e42a6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AirBoss_1
+      name: BossAir_1
       rect:
         serializedVersion: 2
-        x: 47
+        x: 56
         y: 0
-        width: 47
-        height: 48
+        width: 56
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c73983c5ada773d44a27f7e71cbe3f72
+      spriteID: 8a586703eb645034281883cd884cda86
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AirBoss_2
+      name: BossAir_2
       rect:
         serializedVersion: 2
-        x: 94
+        x: 112
         y: 0
-        width: 47
-        height: 48
+        width: 56
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e462352e8695bca4b95cb129dbc00698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AirBoss_3
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 0
-        width: 47
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d12aa97fe6e13374f99558e5c252ec1f
+      spriteID: 39ffec0a0dc33ad46bfe514ddbdff69c
       vertices: []
       indices: 
       edges: []
@@ -170,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1256fcbd2b7a9a24392dc9237e776967
+    spriteID: 15102338a0c26814c85ce437e8d5621c
     vertices: []
     indices: 
     edges: []

@@ -41,20 +41,22 @@ public class castSpell : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         //Destroy the projectile when it hit something
-        if (!col.gameObject.tag.Equals("Player"))
-        {
-            string objectName = this.gameObject.name;
-            objectName = objectName.Substring(0, objectName.Length - 7);
-            print(objectName);
+        destroyProjectile();
+    }
 
-            if (objectName == "fireball")
-            {
-                anim.SetBool("destroy", true);
-                Destroy(this.gameObject, 0.3f);
-                
-            }
+    public void destroyProjectile()
+    {
+        string objectName = this.gameObject.name;
+        objectName = objectName.Substring(0, objectName.Length - 7);
+        print(objectName);
+        
+        if (objectName == "fireball")
+        {
+            anim.SetBool("destroy", true);
+            Destroy(this.gameObject, 0.3f);
         }
     }
+
     
 }
 

@@ -28,20 +28,14 @@ public class enemyBall : MonoBehaviour {
 
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (col.gameObject.tag.Equals("Player"))
+        if (other.gameObject.tag.Equals("Player"))
         {
-//            Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             player.GetComponent<PlayerHealth>().TakeAHit(0.5f);
             Destroy(gameObject);
             player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             player.GetComponent<Rigidbody2D>().AddForce(Vector3.zero);
-
-        }
-        else if (col.gameObject.tag.Equals("Boss"))
-        {
-            Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
 
         }
         else

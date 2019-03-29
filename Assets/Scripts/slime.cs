@@ -56,8 +56,11 @@ public class slime : MonoBehaviour
             Invoke("resetVelocity", 1.1f);
             
         }
-        
-        if (col.gameObject.tag.Equals("Player"))
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Player"))
         {	
             FindObjectOfType<PlayerHealth>().TakeAHit(1);
         }
