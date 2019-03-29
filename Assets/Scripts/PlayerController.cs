@@ -58,7 +58,6 @@ public class PlayerController : MonoBehaviour
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
 
-
         transform.eulerAngles = new Vector3(0, 0, 0);
 
     }

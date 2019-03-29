@@ -33,20 +33,6 @@ public class PlayerManager : MonoBehaviour {
         hasTriggerIntroCinematic = true;
       }
 
-        //if (Input.GetKeyDown(KeyCode.I) && !inventory.activeSelf)
-        //{
-        //    inventory.SetActive(true);
-        //} else if ((Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Escape)) && inventory.activeSelf) {
-        //    inventory.SetActive(false);
-        //}
-
-        //if (Input.GetKeyDown(KeyCode.B) && !shop.activeSelf)
-        //{
-        //    shop.SetActive(true);
-        //}
-        //else if ((Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Escape)) && shop.activeSelf)
-        //{
-        //    shop.SetActive(false);
-        //}
+     
     }
 }
