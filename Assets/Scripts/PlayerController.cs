@@ -30,7 +30,10 @@ public class PlayerController : MonoBehaviour
     AudioSource audio;
 
 
-
+    public bool hasDefeatFireBoss;
+    public bool hasDefeatAirBoss;
+    public bool hasDefeatWaterBoss;
+    public bool hasDefeatSwampBoss;
 
 
 
@@ -181,6 +184,20 @@ public class PlayerController : MonoBehaviour
 
       gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
       gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.zero);
+    }
+
+    public void defeatBoss(string name){
+      print(name);
+      if (name == "BossFire"){
+        print("Defeat Fire");
+        hasDefeatFireBoss = true;
+      } else if(name == "BossAir"){
+        hasDefeatAirBoss = true;
+      } else if(name == "BossWater"){
+        hasDefeatWaterBoss = true;
+      } else if(name == "BossSwamp"){
+        hasDefeatSwampBoss = true;
+      }
     }
 
 }

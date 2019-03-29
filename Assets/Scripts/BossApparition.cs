@@ -7,17 +7,19 @@ public class BossApparition : MonoBehaviour
 {
 
 	public GameObject boss;
+	private bool once = false;
 	// Use this for initialization
 	void Start () {
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
 //		Debug.Log("ww" + GameObject.FindWithTag("enemy"));
-		if (GameObject.FindWithTag("enemy") == null)
+		if (GameObject.FindWithTag("enemy") == null && !once)
 		{
+			once = true;
 			boss.SetActive(true);
 		}
 	}

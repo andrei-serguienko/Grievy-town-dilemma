@@ -15,7 +15,7 @@ public class Boss : MonoBehaviour
 
 	public Transform[] points;
 	private Vector3 velocity = Vector3.zero;
-	
+
 	bool started = false;
 	bool pos1 = false;
 	bool pos2 = false;
@@ -28,7 +28,7 @@ public class Boss : MonoBehaviour
 	void Start () {
 		InvokeRepeating("lunchProjectile", 2, 0.4f);
 
-		
+
 	}
 
 	private void Update()
@@ -60,7 +60,7 @@ public class Boss : MonoBehaviour
 //			Debug.Log("1");
             gameObject.transform.position = Vector3.MoveTowards(transform.position, points[0].position, speed * Time.deltaTime);
         }
-		
+
 		if (pos1)
 		{
             //gameObject.transform.position = Vector3.SmoothDamp(transform.position, points[1].position, ref velocity, 1f);
@@ -91,6 +91,7 @@ public class Boss : MonoBehaviour
 	{
 		if (health <= 0)
 		{
+			GameObject.FindWithTag("Player").GetComponent<PlayerController>().defeatBoss(gameObject.name);
 			Destroy(gameObject);
 		}
 	}
@@ -102,7 +103,7 @@ public class Boss : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D other)
 	{
-		if (other.gameObject.tag.Equals("playerProjectile")) 
+		if (other.gameObject.tag.Equals("playerProjectile"))
 		{
 			health -= 1;
 		}
