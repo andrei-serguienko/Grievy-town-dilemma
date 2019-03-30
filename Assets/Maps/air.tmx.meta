@@ -676,6 +676,12 @@ ScriptedImporter:
     101342: _MapPrfab/air/middle/Collision_Default/Polygon (655)
     101344: _MapPrfab/air/middle/Collision_Default/Polygon (656)
     101346: _MapPrfab/air/middle/Collision_Default/Polygon (657)
+    101348: _MapPrfab/air/sky/Collision_Default
+    101350: _MapPrfab/air/sky/Collision_Default/Polygon
+    101352: _MapPrfab/air/sky/Collision_Default/Polygon (1)
+    101354: _MapPrfab/air/sky/Collision_Default/Polygon (2)
+    101356: _MapPrfab/air/sky/Collision_Default/Polygon (3)
+    101358: _MapPrfab/air/sky/Collision_Default/Polygon (4)
     400000: _MapPrfab/air/Transform
     400002: _MapPrfab/air/background/Transform
     400004: _MapPrfab/air/carpet/Transform
@@ -1350,8 +1356,15 @@ ScriptedImporter:
     401342: _MapPrfab/air/middle/Collision_Default/Polygon (655)/Transform
     401344: _MapPrfab/air/middle/Collision_Default/Polygon (656)/Transform
     401346: _MapPrfab/air/middle/Collision_Default/Polygon (657)/Transform
+    401348: _MapPrfab/air/sky/Collision_Default/Transform
+    401350: _MapPrfab/air/sky/Collision_Default/Polygon/Transform
+    401352: _MapPrfab/air/sky/Collision_Default/Polygon (1)/Transform
+    401354: _MapPrfab/air/sky/Collision_Default/Polygon (2)/Transform
+    401356: _MapPrfab/air/sky/Collision_Default/Polygon (3)/Transform
+    401358: _MapPrfab/air/sky/Collision_Default/Polygon (4)/Transform
     5000000: _MapPrfab/air/background/Collision_Default/Rigidbody2D
     5000002: _MapPrfab/air/middle/Collision_Default/Rigidbody2D
+    5000004: _MapPrfab/air/sky/Collision_Default/Rigidbody2D
     6000000: _MapPrfab/air/background/Collision_Default/Polygon/PolygonCollider2D
     6000002: _MapPrfab/air/background/Collision_Default/Polygon (1)/PolygonCollider2D
     6000004: _MapPrfab/air/background/Collision_Default/Polygon (2)/PolygonCollider2D
@@ -2015,8 +2028,14 @@ ScriptedImporter:
     6001320: _MapPrfab/air/middle/Collision_Default/Polygon (655)/PolygonCollider2D
     6001322: _MapPrfab/air/middle/Collision_Default/Polygon (656)/PolygonCollider2D
     6001324: _MapPrfab/air/middle/Collision_Default/Polygon (657)/PolygonCollider2D
+    6001326: _MapPrfab/air/sky/Collision_Default/Polygon/PolygonCollider2D
+    6001328: _MapPrfab/air/sky/Collision_Default/Polygon (1)/PolygonCollider2D
+    6001330: _MapPrfab/air/sky/Collision_Default/Polygon (2)/PolygonCollider2D
+    6001332: _MapPrfab/air/sky/Collision_Default/Polygon (3)/PolygonCollider2D
+    6001334: _MapPrfab/air/sky/Collision_Default/Polygon (4)/PolygonCollider2D
     6600000: _MapPrfab/air/background/Collision_Default/CompositeCollider2D
     6600002: _MapPrfab/air/middle/Collision_Default/CompositeCollider2D
+    6600004: _MapPrfab/air/sky/Collision_Default/CompositeCollider2D
     11400000: _MapPrfab/air/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _superAsset
     11400004: _MapPrfab/air/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -2707,6 +2726,11 @@ ScriptedImporter:
     11401374: _MapPrfab/air/middle/Collision_Default/Polygon (655)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11401376: _MapPrfab/air/middle/Collision_Default/Polygon (656)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11401378: _MapPrfab/air/middle/Collision_Default/Polygon (657)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11401380: _MapPrfab/air/sky/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11401382: _MapPrfab/air/sky/Collision_Default/Polygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11401384: _MapPrfab/air/sky/Collision_Default/Polygon (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11401386: _MapPrfab/air/sky/Collision_Default/Polygon (3)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11401388: _MapPrfab/air/sky/Collision_Default/Polygon (4)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/air/Grid
     3664157343022684176: _MapPrfab/air/background/TilemapRenderer
