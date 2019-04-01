@@ -185,6 +185,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1.7363873
       objectReference: {fileID: 0}
+    - target: {fileID: 114324937091926364, guid: bf21b0168150284448d606651307bf22,
+        type: 3}
+      propertyPath: scene
+      value: HouxHouse
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf21b0168150284448d606651307bf22, type: 3}
 --- !u!1001 &927087811
