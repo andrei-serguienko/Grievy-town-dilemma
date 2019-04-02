@@ -18,6 +18,7 @@ TagManager:
   - AnimPotionHealth
   - AnimPotionMana
   - buyButton
+  - Sea
   layers:
   - Default
   - TransparentFX

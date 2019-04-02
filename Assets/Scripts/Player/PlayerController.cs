@@ -35,7 +35,8 @@ public class PlayerController : MonoBehaviour
     public bool hasDefeatWaterBoss;
     public bool hasDefeatSwampBoss;
 
-
+    public Transform seaCheckPoint;
+    public bool isTriggCheckPoint = false;
 
     // Use this for initialization
     void Start()
@@ -57,7 +58,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(gameObject.GetComponent<Rigidbody2D>().velocity);
+        // print(seaCheckPoint.position);
+
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
 

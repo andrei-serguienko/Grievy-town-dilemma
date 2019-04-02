@@ -211,6 +211,8 @@ MonoBehaviour:
   hasDefeatAirBoss: 0
   hasDefeatWaterBoss: 0
   hasDefeatSwampBoss: 0
+  seaCheckPoint: {fileID: 0}
+  isTriggCheckPoint: 0
 --- !u!114 &114858702381409504
 MonoBehaviour:
   m_ObjectHideFlags: 0
