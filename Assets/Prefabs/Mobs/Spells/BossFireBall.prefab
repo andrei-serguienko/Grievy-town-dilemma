@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3504175280014793383}
   - component: {fileID: 1040728023}
   - component: {fileID: 1090104346340158471}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BossFireBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

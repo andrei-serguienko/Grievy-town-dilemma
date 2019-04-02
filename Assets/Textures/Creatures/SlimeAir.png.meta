@@ -93,8 +93,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 18
-        height: 18
+        width: 28
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -102,7 +102,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b52cc410c8f45840ab520fa63c428a1
+      spriteID: f5841084c0c5b9c45bdfe970f2131d7f
       vertices: []
       indices: 
       edges: []
@@ -111,10 +111,10 @@ TextureImporter:
       name: SlimeAir_1
       rect:
         serializedVersion: 2
-        x: 18
+        x: 28
         y: 0
-        width: 18
-        height: 18
+        width: 28
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,7 +122,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0399d872b73f123408abcf9ad90976dd
+      spriteID: ad65eaa0b26171645be2441b4e8e4b3d
       vertices: []
       indices: 
       edges: []
@@ -131,10 +131,10 @@ TextureImporter:
       name: SlimeAir_2
       rect:
         serializedVersion: 2
-        x: 36
+        x: 56
         y: 0
-        width: 18
-        height: 18
+        width: 28
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0da5f2dd4bb473e479b639e3b71493fe
+      spriteID: 2f80b9c594d3d774cacf7a183befb7fb
       vertices: []
       indices: 
       edges: []
@@ -151,10 +151,10 @@ TextureImporter:
       name: SlimeAir_3
       rect:
         serializedVersion: 2
-        x: 54
+        x: 84
         y: 0
-        width: 18
-        height: 18
+        width: 28
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,7 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e966534e6ecf8e42a7df16b999d9d24
+      spriteID: 0f34900cdf134924481d1a8c90a3b2b5
       vertices: []
       indices: 
       edges: []

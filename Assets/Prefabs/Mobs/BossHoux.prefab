@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3481197759536348241}
   - component: {fileID: 3481197759536348240}
   - component: {fileID: 3481197759536348255}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BossHoux
   m_TagString: Untagged
   m_Icon: {fileID: 0}

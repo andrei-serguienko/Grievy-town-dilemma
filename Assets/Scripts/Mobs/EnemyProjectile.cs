@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyBall : MonoBehaviour {
+public class EnemyProjectile : MonoBehaviour {
     public float speed = 10f;
     public Vector3 direction;
+    public float TimeTillDestroy;
+    public float dammages;
     private GameObject player;
 
 
@@ -24,32 +26,34 @@ public class enemyBall : MonoBehaviour {
         //GameObject projectile = (GameObject)Instantiate(, pos, Quaternion.identity);
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * speed;
 
-        Destroy(gameObject, 2.0f);
+        Destroy(gameObject, TimeTillDestroy);
 
     }
-
-    void OnTriggerEnter2D(Collider2D other)
+    
+    private void FixedUpdate()
     {
-        if (other.gameObject.tag.Equals("Player"))
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 3 * Time.deltaTime);
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag.Equals("Player"))
         {
-            player.GetComponent<PlayerHealth>().TakeAHit(0.5f);
+            player.GetComponent<PlayerHealth>().TakeAHit(dammages);
             Destroy(gameObject);
             player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             player.GetComponent<Rigidbody2D>().AddForce(Vector3.zero);
 
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+//        else
+//        {
+//            Destroy(gameObject);
+//        }
         
          
     }
 
-    private void Update()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 3 * Time.deltaTime);
-    }
+    
     
     
 }

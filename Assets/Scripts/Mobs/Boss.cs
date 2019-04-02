@@ -27,8 +27,6 @@ public class Boss : MonoBehaviour
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating("lunchProjectile", 2, 0.4f);
-
-
 	}
 
 	private void Update()

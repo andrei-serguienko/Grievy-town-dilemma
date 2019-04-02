@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 2929769964838219923}
   - component: {fileID: 6084565561784267532}
   - component: {fileID: 667063454}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BossSwamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
