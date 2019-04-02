@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Swamp.unity
     guid: 3e1bf79b52d156c4495b9c56685cbefe
+  - enabled: 1
+    path: Assets/Scenes/Volcano.unity
+    guid: 7658d273ff70b5346a85b945706a14be
   m_configObjects: {}
