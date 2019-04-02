@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 7135953051058504840}
   - component: {fileID: 7135953051058504887}
   - component: {fileID: 7135953051058504886}
-  m_Layer: 0
+  - component: {fileID: 327983768642631000}
+  - component: {fileID: 5643732343048068850}
+  - component: {fileID: 4142789110700449432}
+  m_Layer: 11
   m_Name: InvocAir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7135953051058504885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.85, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -66,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -305388499
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0423660d59bc47146b7a303ebf6132a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,3 +102,59 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &327983768642631000
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7135953051058504885}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0018261373, y: 0.06394768}
+  m_Size: {x: 0.44982368, y: 0.5084576}
+  m_Direction: 0
+--- !u!114 &5643732343048068850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7135953051058504885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fca50e75846db846a5056b8ef2ad715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifePoints: 100
+  MoveSpeed: 5
+  MinAttackRange: 4.9
+  MaxAttackRange: 5.1
+  FireRate: 0.5
+  Projectile: {fileID: 50917727042582014, guid: 0035839f43fd1304088ec81cffafa3ef,
+    type: 3}
+--- !u!50 &4142789110700449432
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7135953051058504885}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 20
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: d5cec05df3dd05049928de831439d82d, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3504175280014793383}
   - component: {fileID: 3212416707538567537}
   - component: {fileID: 1040728023}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BossAirBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

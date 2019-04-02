@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5814870196852153055}
   - component: {fileID: 5814870196852153054}
   - component: {fileID: 5814870196852153049}
+  - component: {fileID: 8309965606643168004}
+  - component: {fileID: 2201451238942084161}
   m_Layer: 0
   m_Name: InvocFire
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5814870196852153048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,3 +101,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8309965606643168004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5814870196852153048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fca50e75846db846a5056b8ef2ad715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifePoints: 100
+  MoveSpeed: 5
+  MinAttackRange: 4.9
+  MaxAttackRange: 5.1
+  FireRate: 0.5
+  Projectile: {fileID: 50917727042582014, guid: 6bc6b46fe45c8264aae30af06f021f67,
+    type: 3}
+--- !u!70 &2201451238942084161
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5814870196852153048}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0032227635, y: 0.10727313}
+  m_Size: {x: 0.2902776, y: 0.651631}
+  m_Direction: 0
