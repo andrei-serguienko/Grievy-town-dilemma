@@ -13,6 +13,8 @@ public class DashMove : MonoBehaviour
     public float TimeDelay;
     public AudioClip dash;
 
+    public bool dashing = false;
+
     public GameObject dashEffect;
     AudioSource audio;
 
@@ -34,12 +36,14 @@ public class DashMove : MonoBehaviour
                 direction = 1;
                 Instantiate(dashEffect, transform.position + new Vector3(0,0, -10), Quaternion.identity);
                 audio.PlayOneShot(dash);
+                dashing = true;
                 // } else if(gameObject.GetComponent<PlayerController>().getHorizontalInput() > 0)
             } else if(Input.GetKey(KeyCode.D) && Input.GetKeyDown(KeyCode.Space) && delay <= 0)
             {
                 direction = 2;
                 Instantiate(dashEffect, transform.position + new Vector3(0,0, -10), Quaternion.identity);
                 audio.PlayOneShot(dash);
+                dashing = true;
             }
             // else if(gameObject.GetComponent<PlayerController>().getVerticalInput() > 0)
             else if(Input.GetKey(KeyCode.W) && Input.GetKeyDown(KeyCode.Space) && delay <= 0)
@@ -47,6 +51,7 @@ public class DashMove : MonoBehaviour
                 direction = 3;
                 Instantiate(dashEffect, transform.position + new Vector3(0,0, -10), Quaternion.identity);
                 audio.PlayOneShot(dash);
+                dashing = true;
             }
             // else if(gameObject.GetComponent<PlayerController>().getVerticalInput() < 0)
             else if(Input.GetKey(KeyCode.S) && Input.GetKeyDown(KeyCode.Space) && delay <= 0)
@@ -54,6 +59,7 @@ public class DashMove : MonoBehaviour
                 direction = 4;
                 Instantiate(dashEffect, transform.position + new Vector3(0,0, -10), Quaternion.identity);
                 audio.PlayOneShot(dash);
+                dashing = true;
             }
         } else {
             if(dashTime <= 0)
@@ -62,6 +68,7 @@ public class DashMove : MonoBehaviour
                 direction = 0;
                 dashTime = startDashTime;
                 rb.velocity = Vector2.zero;
+                dashing = false;;
                 Invoke("resetVelocity", 0.5f);
             }else {
                 dashTime -= Time.deltaTime;
