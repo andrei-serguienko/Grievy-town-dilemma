@@ -48,11 +48,13 @@ public class castSpell : MonoBehaviour
     {
         string objectName = this.gameObject.name;
         objectName = objectName.Substring(0, objectName.Length - 7);
-        print(objectName);
         
-        if (objectName == "fireball")
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        
+        if (objectName == "fireball" || objectName == "BasicSpell")
         {
             anim.SetBool("destroy", true);
+            print(anim.GetParameter(0));
             Destroy(this.gameObject, 0.3f);
         }
     }

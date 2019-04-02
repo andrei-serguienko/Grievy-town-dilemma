@@ -17,8 +17,10 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public bool canMove;
     private float currentMoveSpeed;
+    public Rigidbody2D basicSpell;
     public Rigidbody2D fireBall;
     public Rigidbody2D waterWall;
+    public Rigidbody2D rockPillar;
     public int HealingPotion;
     public int ManaPotion;
     public AudioClip step;
@@ -110,13 +112,13 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !EventSystem.current.IsPointerOverGameObject())
         {
-            CastFireBall();
+            CastBasicSpell();
         }
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
-            CastWaterWall();
+            CastRockPillar();
         }
 
         // use Heal Potion
@@ -142,6 +144,18 @@ public class PlayerController : MonoBehaviour
             mana -= 5;
         }
     }
+    void CastBasicSpell()
+    {
+        if (mana > 0)
+        {
+            // repositioning fireball with player sprite
+            var position = transform.position;
+            position[0] += 0.4f;
+            position[1] -= 0.6f;
+            Instantiate(basicSpell, position, transform.rotation);
+            mana -= 5;
+        }
+    }
     void CastWaterWall()
     {
         if (mana > 0)
@@ -151,6 +165,20 @@ public class PlayerController : MonoBehaviour
             mana -= 10;
         }
     }
+    
+    void CastRockPillar()
+    {
+        if (mana > 0)
+        {
+//            var position = Input.mousePosition;
+            var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            position.z = 10;
+            print(position);
+            Instantiate(rockPillar, position, Quaternion.identity);
+            mana -= 10;
+        }
+    }
+    
 
     void regenMana()
     {
