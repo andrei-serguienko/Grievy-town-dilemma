@@ -21,7 +21,7 @@ public class degatZoneTeleport : MonoBehaviour
       if(!other.isTrigger && other.gameObject.tag == "Player" && !other.gameObject.GetComponent<DashMove>().dashing && !other.gameObject.GetComponent<PlayerController>().isTriggCheckPoint){
         other.gameObject.GetComponent<PlayerController>().isTriggCheckPoint = true;
         other.gameObject.transform.position = other.gameObject.GetComponent<PlayerController>().seaCheckPoint.position;
-        other.gameObject.GetComponent<PlayerHealth>().LifePoints -= 1;
+        other.gameObject.GetComponent<PlayerHealth>().LifePoints -= 0.5;
         StartCoroutine(HitTimer());
       }
     }
