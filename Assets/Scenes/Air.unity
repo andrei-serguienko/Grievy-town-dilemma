@@ -334,7 +334,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1042582706506850, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
       propertyPath: m_Name
-      value: SpawnTown
+      value: SpawnHouxHouse
       objectReference: {fileID: 0}
     - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
       propertyPath: m_LocalPosition.x
