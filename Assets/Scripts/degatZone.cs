@@ -18,7 +18,7 @@ public class degatZone : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
       if(other.gameObject.tag == "Player" && !other.gameObject.GetComponent<DashMove>().dashing && !other.isTrigger){
-        other.gameObject.GetComponent<PlayerHealth>().LifePoints -= 0.5;
+        other.gameObject.GetComponent<PlayerHealth>().LifePoints -= 0.5f;
       }
     }
 }
