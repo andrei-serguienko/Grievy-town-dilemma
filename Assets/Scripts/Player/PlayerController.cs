@@ -42,6 +42,8 @@ public class PlayerController : MonoBehaviour
     public Transform seaCheckPoint;
     public bool isTriggCheckPoint = false;
 
+    private int Spell = 0;
+
     // Use this for initialization
     void Start()
     {
@@ -51,6 +53,8 @@ public class PlayerController : MonoBehaviour
         InvokeRepeating("regenMana", 0, 0.2f);
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
+
+
 
     }
 
@@ -75,7 +79,30 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
+          if(Spell == 1)
+          {
+            CastRockPillar();
+          } else if (Spell == 2){
+            CastWaterWall();
+          } else if (Spell == 3){
             CastFireBall();
+          } else if (Spell == 4){
+            castTornado();
+          }
+            // CastFireBall();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha1)){
+          Spell = 1;
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha2)){
+          Spell = 2;
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha3)){
+          Spell = 3;
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha4)){
+          Spell = 4;
         }
 
     }
