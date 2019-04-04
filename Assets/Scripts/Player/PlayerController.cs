@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     public Transform seaCheckPoint;
     public bool isTriggCheckPoint = false;
 
-    private int Spell = 0;
+    public int Spell = 0;
 
     // Use this for initialization
     void Start()
@@ -89,21 +89,80 @@ public class PlayerController : MonoBehaviour
           } else if (Spell == 4){
             castTornado();
           }
-            // CastFireBall();
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha1)){
+
+        if(Input.GetKeyDown(KeyCode.Alpha1)  && hasDefeatSwampBoss){
+          if (Spell == 2 && hasDefeatWaterBoss){
+            GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
+
+          }
+          else if (Spell == 3 && hasDefeatFireBoss){
+            GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
+
+          }
+          else if (Spell == 4 && hasDefeatAirBoss){
+            GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
+          }
           Spell = 1;
         }
-        else if(Input.GetKeyDown(KeyCode.Alpha2)){
+        else if(Input.GetKeyDown(KeyCode.Alpha2) && hasDefeatWaterBoss){
+          if(Spell == 1 && hasDefeatSwampBoss){
+            GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
+
+          } else if (Spell == 3 && hasDefeatFireBoss){
+            GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
+
+          }
+          else if (Spell == 4 && hasDefeatAirBoss){
+            GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
+          }
           Spell = 2;
         }
-        else if(Input.GetKeyDown(KeyCode.Alpha3)){
+        else if(Input.GetKeyDown(KeyCode.Alpha3) && hasDefeatFireBoss){
+          if(Spell == 1 && hasDefeatSwampBoss){
+            GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
+
+          } else if (Spell == 2 && hasDefeatWaterBoss){
+            GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
+
+          }
+          else if (Spell == 4 && hasDefeatAirBoss){
+            GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
+          }
           Spell = 3;
         }
-        else if(Input.GetKeyDown(KeyCode.Alpha4)){
+        else if(Input.GetKeyDown(KeyCode.Alpha4) && hasDefeatAirBoss){
+          if(Spell == 1 && hasDefeatSwampBoss){
+            GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
+
+          } else if (Spell == 2 && hasDefeatWaterBoss){
+            GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
+
+          }
+          else if (Spell == 3 && hasDefeatFireBoss){
+            GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
+
+          }
+
           Spell = 4;
         }
+
+
+        if(hasDefeatAirBoss){
+          GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
+        } if (hasDefeatFireBoss){
+          GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
+        }
+       if (hasDefeatSwampBoss){
+          GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
+        }
+       if (hasDefeatWaterBoss){
+          GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
+        }
+
+
+
 
     }
 
