@@ -17,8 +17,12 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public bool canMove;
     private float currentMoveSpeed;
+    public Rigidbody2D basicSpell;
     public Rigidbody2D fireBall;
     public Rigidbody2D waterWall;
+    public Rigidbody2D rockPillar;
+    public GameObject tornado;
+    public float tornadoSpread;
     public int HealingPotion;
     public int ManaPotion;
     public AudioClip step;
@@ -58,8 +62,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // print(seaCheckPoint.position);
-
+//        print(gameObject.GetComponent<Rigidbody2D>().velocity);
+        
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
 
@@ -112,13 +116,13 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !EventSystem.current.IsPointerOverGameObject())
         {
-            CastFireBall();
+            CastBasicSpell();
         }
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
-            CastWaterWall();
+            CastFireBall();
         }
 
         // use Heal Potion
@@ -131,7 +135,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
+    void CastBasicSpell()
+    {
+        if (mana > 0)
+        {
+            // repositioning fireball with player sprite
+            var position = transform.position;
+            position[0] += 0.4f;
+            position[1] -= 0.6f;
+            Instantiate(basicSpell, position, transform.rotation);
+            mana -= 5;
+        }
+    }
+    
     void CastFireBall()
     {
         if (mana > 0)
@@ -144,6 +160,7 @@ public class PlayerController : MonoBehaviour
             mana -= 5;
         }
     }
+    
     void CastWaterWall()
     {
         if (mana > 0)
@@ -152,6 +169,31 @@ public class PlayerController : MonoBehaviour
             Instantiate(waterWall, position, transform.rotation);
             mana -= 10;
         }
+    }
+    
+    void CastRockPillar()
+    {
+        if (mana > 0)
+        {
+            var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            position.z = 10;
+            Instantiate(rockPillar, position, Quaternion.identity);
+            mana -= 10;
+        }
+    }
+
+    void castTornado()
+    {
+        var position = transform.position;
+
+        tornado.GetComponent<castSpell>().angleVariation = tornadoSpread;
+        Instantiate(tornado, position, Quaternion.identity);
+        
+        tornado.GetComponent<castSpell>().angleVariation = 0;
+        Instantiate(tornado, position, Quaternion.identity);
+        
+        tornado.GetComponent<castSpell>().angleVariation = -tornadoSpread;
+        Instantiate(tornado, position, Quaternion.identity);
     }
 
     void regenMana()

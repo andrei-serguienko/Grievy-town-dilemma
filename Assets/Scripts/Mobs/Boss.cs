@@ -8,12 +8,12 @@ using UnityEngine.AI;
 public class Boss : MonoBehaviour
 {
 
-	public int health;
-	public int damage;
-	public Rigidbody2D fireBall;
+	public Rigidbody2D projectile;
 	public int speed;
-
 	public Transform[] points;
+	public Rigidbody2D Minion;
+	public bool spawnTest;
+	
 	private Vector3 velocity = Vector3.zero;
 
 	bool started = false;
@@ -21,18 +21,18 @@ public class Boss : MonoBehaviour
 	bool pos2 = false;
 	bool pos3 = false;
 
-	public float speedball;
 
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating("lunchProjectile", 2, 0.4f);
+//		InvokeRepeating("throwProjectile", 2, 0.4f);
 	}
 
-	private void Update()
+	private void FixedUpdate()
 	{
 //        Debug.Log("pos1" + pos1);
 //        Debug.Log("pos2" + pos2);
+		
         if (transform.position == points[0].position)
         {
             started = true;
@@ -83,32 +83,44 @@ public class Boss : MonoBehaviour
 
 		checkDeath();
 
+		if (spawnTest)
+		{
+			InvokeMinion();
+			spawnTest = false;
+		}
+
 	}
 
 	void checkDeath()
 	{
-		if (health <= 0)
+		if (gameObject.GetComponent<Health>().LifePoints <= 0)
 		{
 			GameObject.FindWithTag("Player").GetComponent<PlayerController>().defeatBoss(gameObject.name);
-			Destroy(gameObject);
 		}
 	}
 
-	void lunchProjectile()
+	void InvokeMinion()
 	{
-		Instantiate(fireBall, transform.position, transform.rotation);
+		var minion1Pos = transform.position;
+		var minion2Pos = transform.position;
+		var minion3Pos = transform.position;
+		
+		minion1Pos.x -= 2;
+		minion1Pos.y -= 3;
+		minion2Pos.y -= 3;
+		minion3Pos.x += 2;
+		minion3Pos.y -= 3;
+		
+		print("Minion Spawn");
+		Instantiate(Minion, minion1Pos, Quaternion.identity);
+		Instantiate(Minion, minion2Pos, Quaternion.identity);
+		Instantiate(Minion, minion3Pos, Quaternion.identity);
 	}
 
-	private void OnCollisionEnter2D(Collision2D other)
+	void throwProjectile()
 	{
-		if (other.gameObject.tag.Equals("playerProjectile"))
-		{
-			health -= 1;
-		}
-		else
-		{
-			Physics2D.IgnoreCollision(other.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-
-		}
+		Instantiate(projectile, transform.position, transform.rotation);
 	}
+
+	
 }
