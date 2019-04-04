@@ -31,8 +31,7 @@ public class PlayerController : MonoBehaviour
     private float HorizontalInput = 0f;
     private float VerticalInput = 0f;
     private Animator anim;
-    AudioSource audio;
-
+    private AudioSource audio;
 
     public bool hasDefeatFireBoss;
     public bool hasDefeatAirBoss;

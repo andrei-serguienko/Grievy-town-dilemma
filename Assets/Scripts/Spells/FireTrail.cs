@@ -41,7 +41,6 @@ public class FireTrail : MonoBehaviour
     void InflictDamage()
     {
         _enemy.GetComponent<Health>().LifePoints -= DamagesPerTick;
-        print(_enemy.GetComponent<Health>().LifePoints);
     }
     
 }

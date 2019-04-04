@@ -11,7 +11,6 @@ public class defeatManager : MonoBehaviour
       switch (element) {
         case "Fire":
           if(GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatFireBoss){
-            print("DESTROY ALL ENEMY");
             foreach(GameObject i in GameObject.FindGameObjectsWithTag("enemy"))
             {
               Destroy(i);

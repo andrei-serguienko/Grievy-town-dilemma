@@ -6,6 +6,8 @@ public class Health : MonoBehaviour
 {
     public int LifePoints;
     public int GivenGold;
+    
+  
 
     private void FixedUpdate()
     {
