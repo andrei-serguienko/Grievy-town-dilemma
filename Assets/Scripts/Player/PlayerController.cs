@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
     public Transform seaCheckPoint;
     public bool isTriggCheckPoint = false;
 
+    private int Spell = 0;
+
     // Use this for initialization
     void Start()
     {
@@ -50,6 +52,8 @@ public class PlayerController : MonoBehaviour
         InvokeRepeating("regenMana", 0, 0.2f);
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
+
+
 
     }
 
@@ -62,11 +66,43 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 //        print(gameObject.GetComponent<Rigidbody2D>().velocity);
-        
+
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
 
         transform.eulerAngles = new Vector3(0, 0, 0);
+
+        if (Input.GetMouseButtonDown(1) && !EventSystem.current.IsPointerOverGameObject())
+        {
+            CastBasicSpell();
+        }
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
+        {
+          if(Spell == 1)
+          {
+            CastRockPillar();
+          } else if (Spell == 2){
+            CastWaterWall();
+          } else if (Spell == 3){
+            CastFireBall();
+          } else if (Spell == 4){
+            castTornado();
+          }
+            // CastFireBall();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha1)){
+          Spell = 1;
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha2)){
+          Spell = 2;
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha3)){
+          Spell = 3;
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha4)){
+          Spell = 4;
+        }
 
     }
 
@@ -115,14 +151,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
-        if (Input.GetMouseButtonDown(1) && !EventSystem.current.IsPointerOverGameObject())
-        {
-            CastBasicSpell();
-        }
-        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
-        {
-            CastFireBall();
-        }
+
 
         // use Heal Potion
         float lifePoints =  this.GetComponent<PlayerHealth>().LifePoints;
@@ -146,7 +175,7 @@ public class PlayerController : MonoBehaviour
             mana -= 5;
         }
     }
-    
+
     void CastFireBall()
     {
         if (mana > 0)
@@ -159,7 +188,7 @@ public class PlayerController : MonoBehaviour
             mana -= 5;
         }
     }
-    
+
     void CastWaterWall()
     {
         if (mana > 0)
@@ -169,7 +198,7 @@ public class PlayerController : MonoBehaviour
             mana -= 10;
         }
     }
-    
+
     void CastRockPillar()
     {
         if (mana > 0)
@@ -187,10 +216,10 @@ public class PlayerController : MonoBehaviour
 
         tornado.GetComponent<castSpell>().angleVariation = tornadoSpread;
         Instantiate(tornado, position, Quaternion.identity);
-        
+
         tornado.GetComponent<castSpell>().angleVariation = 0;
         Instantiate(tornado, position, Quaternion.identity);
-        
+
         tornado.GetComponent<castSpell>().angleVariation = -tornadoSpread;
         Instantiate(tornado, position, Quaternion.identity);
     }
