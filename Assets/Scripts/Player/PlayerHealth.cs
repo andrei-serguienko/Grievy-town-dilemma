@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 //using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
@@ -15,20 +16,31 @@ public class PlayerHealth : MonoBehaviour
 	public Sprite FullHeart;
 	public Sprite HalfHeart;
 	public Sprite EmptyHeart;
+	public AudioClip Oof;
+	public bool tookDamage = false;
+
+	private AudioSource audio;
+	private Animator anim;
+	
 
 
 	void Start()
 	{
         //Debug.Log( GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>());
         Heart = GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().Hearts;
+		audio = GetComponent<AudioSource>();
+		anim = GetComponent<Animator>();
 //        Debug.Log(Heart);
 
-    }
+	}
 
 
     // Update is called once per frame
     void Update () {
 //        Debug.Log(Heart.Length);
+
+	  
+	    
 		for (int i = 0; i < Heart.Length; i++)
 		{
 			if (LifePoints - i == 0.5)
@@ -67,7 +79,18 @@ public class PlayerHealth : MonoBehaviour
 			Debug.LogError("pas possible");
 			return;
 		}
-		LifePoints -= damage;
+
+		if (!tookDamage)
+		{
+			anim.SetTrigger("takeDamage");
+			audio.clip = Oof;
+			audio.Play();
+			LifePoints -= damage;
+			tookDamage = true;
+			print("took damage :" + tookDamage);
+			StartCoroutine(InvincibilityFrame());
+		}
+		
 	}
 
 	public void Heal(float heal)
@@ -82,5 +105,11 @@ public class PlayerHealth : MonoBehaviour
 		Destroy(GameObject.FindGameObjectWithTag("PlayerManager"));
 		Destroy(GameObject.FindGameObjectWithTag("DialogManager"));
 		SceneManager.LoadScene("GameOver");
+	}
+	
+	IEnumerator InvincibilityFrame() {
+		yield return new WaitForSeconds(0.5f);
+		tookDamage = false;
+		print("took damage false");
 	}
 }

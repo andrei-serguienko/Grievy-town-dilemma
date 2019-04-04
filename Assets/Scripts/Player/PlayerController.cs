@@ -17,8 +17,12 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public bool canMove;
     private float currentMoveSpeed;
+    public Rigidbody2D basicSpell;
     public Rigidbody2D fireBall;
     public Rigidbody2D waterWall;
+    public Rigidbody2D rockPillar;
+    public GameObject tornado;
+    public float tornadoSpread;
     public int HealingPotion;
     public int ManaPotion;
     public AudioClip step;
@@ -27,8 +31,7 @@ public class PlayerController : MonoBehaviour
     private float HorizontalInput = 0f;
     private float VerticalInput = 0f;
     private Animator anim;
-    AudioSource audio;
-
+    private AudioSource audio;
 
     public bool hasDefeatFireBoss;
     public bool hasDefeatAirBoss;
@@ -37,6 +40,8 @@ public class PlayerController : MonoBehaviour
 
     public Transform seaCheckPoint;
     public bool isTriggCheckPoint = false;
+
+    private int Spell = 0;
 
     // Use this for initialization
     void Start()
@@ -48,6 +53,8 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
 
+
+
     }
 
     public string getOrigin()
@@ -58,12 +65,44 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // print(seaCheckPoint.position);
+//        print(gameObject.GetComponent<Rigidbody2D>().velocity);
 
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
 
         transform.eulerAngles = new Vector3(0, 0, 0);
+
+        if (Input.GetMouseButtonDown(1) && !EventSystem.current.IsPointerOverGameObject())
+        {
+            CastBasicSpell();
+        }
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
+        {
+          if(Spell == 1)
+          {
+            CastRockPillar();
+          } else if (Spell == 2){
+            CastWaterWall();
+          } else if (Spell == 3){
+            CastFireBall();
+          } else if (Spell == 4){
+            castTornado();
+          }
+            // CastFireBall();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha1)){
+          Spell = 1;
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha2)){
+          Spell = 2;
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha3)){
+          Spell = 3;
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha4)){
+          Spell = 4;
+        }
 
     }
 
@@ -112,14 +151,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
-        if (Input.GetMouseButtonDown(1))
-        {
-            CastFireBall();
-        }
-        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
-        {
-            CastWaterWall();
-        }
+
 
         // use Heal Potion
         float lifePoints =  this.GetComponent<PlayerHealth>().LifePoints;
@@ -131,6 +163,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void CastBasicSpell()
+    {
+        if (mana > 0)
+        {
+            // repositioning fireball with player sprite
+            var position = transform.position;
+            position[0] += 0.4f;
+            position[1] -= 0.6f;
+            Instantiate(basicSpell, position, transform.rotation);
+            mana -= 5;
+        }
+    }
 
     void CastFireBall()
     {
@@ -144,6 +188,7 @@ public class PlayerController : MonoBehaviour
             mana -= 5;
         }
     }
+
     void CastWaterWall()
     {
         if (mana > 0)
@@ -152,6 +197,31 @@ public class PlayerController : MonoBehaviour
             Instantiate(waterWall, position, transform.rotation);
             mana -= 10;
         }
+    }
+
+    void CastRockPillar()
+    {
+        if (mana > 0)
+        {
+            var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            position.z = 10;
+            Instantiate(rockPillar, position, Quaternion.identity);
+            mana -= 10;
+        }
+    }
+
+    void castTornado()
+    {
+        var position = transform.position;
+
+        tornado.GetComponent<castSpell>().angleVariation = tornadoSpread;
+        Instantiate(tornado, position, Quaternion.identity);
+
+        tornado.GetComponent<castSpell>().angleVariation = 0;
+        Instantiate(tornado, position, Quaternion.identity);
+
+        tornado.GetComponent<castSpell>().angleVariation = -tornadoSpread;
+        Instantiate(tornado, position, Quaternion.identity);
     }
 
     void regenMana()

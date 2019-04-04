@@ -270,6 +270,8 @@ GameObject:
   - component: {fileID: 6985102865443554056}
   - component: {fileID: 7223929025009527714}
   - component: {fileID: 4112764232179679318}
+  - component: {fileID: 4591290804040527570}
+  - component: {fileID: 1220387887007588155}
   m_Layer: 11
   m_Name: BossWater
   m_TagString: Untagged
@@ -412,6 +414,38 @@ MonoBehaviour:
   rotationSpeed: 25
   axis: {x: 0, y: 0, z: 5}
   active: 1
+--- !u!114 &4591290804040527570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4745950863264692126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b851e4c1a365b74da2a2ad84fb35535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 50917727042582014, guid: 58cade6005675e748a0fab2f5235a3be,
+    type: 3}
+  speed: 4
+  points: []
+  Minion: {fileID: 4367611970675575586, guid: 72036233c80aa434bb3a01887fd051e5, type: 3}
+  spawnTest: 0
+--- !u!114 &1220387887007588155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4745950863264692126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f0abad15c804b4b9b90695eda1f9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifePoints: 500
+  GivenGold: 100
 --- !u!1 &6017718122656439204
 GameObject:
   m_ObjectHideFlags: 0

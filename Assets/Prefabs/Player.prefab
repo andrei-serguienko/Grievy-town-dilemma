@@ -201,9 +201,15 @@ MonoBehaviour:
   origin: 
   moveSpeed: 10
   canMove: 0
+  basicSpell: {fileID: 6627208812015737013, guid: 972af988845a86a4494f5cca7cdea973,
+    type: 3}
   fireBall: {fileID: 50617023622312354, guid: 80d37178001987e4a8b2e2250965ebb4, type: 3}
   waterWall: {fileID: 9170127173645643429, guid: 2bf9d0870d35ab84caad94e5d0465aaa,
     type: 3}
+  rockPillar: {fileID: 8534137451505862671, guid: 2e87fc81c814c12449f13dd0fbf82f3e,
+    type: 3}
+  tornado: {fileID: 3888409683446867473, guid: e7a2396c471264b46bd505d55f714fe0, type: 3}
+  tornadoSpread: 10
   HealingPotion: 0
   ManaPotion: 0
   step: {fileID: 8300000, guid: 1239b44017da1464f8e2ac181f75deeb, type: 3}
@@ -230,6 +236,8 @@ MonoBehaviour:
   FullHeart: {fileID: 21300000, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
   HalfHeart: {fileID: 21300002, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
   EmptyHeart: {fileID: 21300004, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
+  Oof: {fileID: 8300000, guid: 0042f396f48717248b97d0a9e2370127, type: 3}
+  testDamage: 0
 --- !u!50 &50069297015440292
 Rigidbody2D:
   serializedVersion: 4

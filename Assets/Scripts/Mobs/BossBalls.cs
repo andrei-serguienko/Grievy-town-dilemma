@@ -28,6 +28,7 @@ public class BossBalls : MonoBehaviour
         if (other.gameObject.tag.Equals("playerProjectile"))
         {	
             lifePoints --;
+            print("BossBalls :"+lifePoints);
             other.gameObject.GetComponent<castSpell>().destroyProjectile();
         }
         

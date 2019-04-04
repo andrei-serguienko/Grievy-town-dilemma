@@ -44,11 +44,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4844766483518918}
   - component: {fileID: 212940856696902784}
-  - component: {fileID: 114163945669568736}
   - component: {fileID: 95877768425933796}
   - component: {fileID: 61840011683034390}
   - component: {fileID: 4963107360874471350}
+  - component: {fileID: 114163945669568736}
   - component: {fileID: 4042422621358406899}
+  - component: {fileID: 1233759393466311737}
   m_Layer: 11
   m_Name: BossFire
   m_TagString: Boss
@@ -119,27 +120,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &114163945669568736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713982243950894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b851e4c1a365b74da2a2ad84fb35535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
-  damage: 0
-  fireBall: {fileID: 50917727042582014, guid: 6bc6b46fe45c8264aae30af06f021f67, type: 3}
-  speed: 3
-  points:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  speedball: 0.5
 --- !u!95 &95877768425933796
 Animator:
   serializedVersion: 3
@@ -201,6 +181,27 @@ CapsuleCollider2D:
   m_Offset: {x: -0.009537712, y: -0.04019618}
   m_Size: {x: 0.29585615, y: 0.77784276}
   m_Direction: 0
+--- !u!114 &114163945669568736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713982243950894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b851e4c1a365b74da2a2ad84fb35535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 50917727042582014, guid: 6bc6b46fe45c8264aae30af06f021f67,
+    type: 3}
+  speed: 3
+  points:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Minion: {fileID: 5814870196852153048, guid: 4d670906c9e7e754cae149d31e76f413, type: 3}
+  spawnTest: 0
 --- !u!114 &4042422621358406899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +218,20 @@ MonoBehaviour:
   rotationSpeed: 25
   axis: {x: 0, y: 0, z: 5}
   active: 1
+--- !u!114 &1233759393466311737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713982243950894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f0abad15c804b4b9b90695eda1f9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifePoints: 500
+  GivenGold: 100
 --- !u!1001 &709409878749370504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -358,6 +373,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090104346340158471, guid: c998a719090539249bdc74d6d9290b1e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c998a719090539249bdc74d6d9290b1e, type: 3}
