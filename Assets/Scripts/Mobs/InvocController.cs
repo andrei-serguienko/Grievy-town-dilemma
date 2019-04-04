@@ -25,10 +25,7 @@ public class InvocController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (LifePoints <= 0)
-        {
-            Die();
-        }
+        
         
         // When the Player is within AttackRange, attack him and stay at constant distance
         float distToPlayer = Vector3.Distance(_target.position, transform.position);
@@ -55,12 +52,6 @@ public class InvocController : MonoBehaviour
         }
     }
 
-    public void Die()
-    {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().money += 20;
-        Destroy(gameObject);
-    }
-
     public void castProjectile()
     {
         print("fire");
@@ -71,7 +62,6 @@ public class InvocController : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("playerProjectile"))
         {
-            LifePoints -= col.gameObject.GetComponent<castSpell>().damages;
             _hittedByPlayer = true;
 
             Invoke("resetVelocity", 1.1f);

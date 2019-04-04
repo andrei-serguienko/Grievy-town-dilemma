@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 56614677550562186}
   - component: {fileID: 56614677550562185}
   - component: {fileID: 124629199882438545}
+  - component: {fileID: 1561361204331733874}
+  - component: {fileID: 8746512041611178743}
   m_Layer: 11
   m_Name: BossAir
   m_TagString: Untagged
@@ -117,6 +119,38 @@ MonoBehaviour:
   rotationSpeed: 25
   axis: {x: 0, y: 0, z: 5}
   active: 1
+--- !u!114 &1561361204331733874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56614677550562184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b851e4c1a365b74da2a2ad84fb35535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 50917727042582014, guid: 0035839f43fd1304088ec81cffafa3ef,
+    type: 3}
+  speed: 5
+  points: []
+  Minion: {fileID: 4142789110700449432, guid: 0f1718be100d671458fe8c0758e4ac55, type: 3}
+  spawnTest: 0
+--- !u!114 &8746512041611178743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56614677550562184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f0abad15c804b4b9b90695eda1f9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifePoints: 500
+  GivenGold: 100
 --- !u!1 &56614677705584022
 GameObject:
   m_ObjectHideFlags: 0

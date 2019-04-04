@@ -9,7 +9,6 @@ public class slime : MonoBehaviour
     public float moveSpeed = 1f;
     public Transform target;
     public float detectionRange = 4f;
-    public int lifePoint = 100;
 //    public int armorPoint = 0;
 
     private bool moveTowardsPlayer = false;
@@ -27,11 +26,7 @@ public class slime : MonoBehaviour
     // Update is called once per frame
     void Update () {
 
-        if (lifePoint <= 0)
-        {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().money += 20;
-            Destroy(gameObject);
-        }
+        
 
         // if the Player is near enough, the enemy will move towards him
         float distToPlayer = Vector3.Distance(target.position, transform.position);
@@ -50,12 +45,8 @@ public class slime : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("playerProjectile"))
         {
-            lifePoint -= col.gameObject.GetComponent<castSpell>().damages;
             HittedByPlayer = true;
-//            Debug.Log(lifePoint);
-
             Invoke("resetVelocity", 1.1f);
-
         }
     }
 

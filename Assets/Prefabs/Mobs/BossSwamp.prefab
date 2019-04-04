@@ -48,6 +48,8 @@ GameObject:
   - component: {fileID: 2929769964838219923}
   - component: {fileID: 6084565561784267532}
   - component: {fileID: 667063454}
+  - component: {fileID: 8161700866283336205}
+  - component: {fileID: 4375011733750154829}
   m_Layer: 11
   m_Name: BossSwamp
   m_TagString: Untagged
@@ -190,6 +192,38 @@ MonoBehaviour:
   rotationSpeed: 25
   axis: {x: 0, y: 0, z: 5}
   active: 1
+--- !u!114 &8161700866283336205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355610536504537502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b851e4c1a365b74da2a2ad84fb35535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 50917727042582014, guid: 541246bd0f203a141897488d096a0d53,
+    type: 3}
+  speed: 3
+  points: []
+  Minion: {fileID: 8809465371505368199, guid: 8e83736922ae1e945a5279de1f68c9dd, type: 3}
+  spawnTest: 0
+--- !u!114 &4375011733750154829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355610536504537502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f0abad15c804b4b9b90695eda1f9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifePoints: 500
+  GivenGold: 100
 --- !u!1001 &337700835327390680
 PrefabInstance:
   m_ObjectHideFlags: 0
