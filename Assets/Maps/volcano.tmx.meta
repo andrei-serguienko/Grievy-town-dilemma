@@ -796,6 +796,10 @@ ScriptedImporter:
     101582: _MapPrfab/volcano/middle/Collision_Default/Polygon (18)
     101584: _MapPrfab/volcano/middle/Collision_Default/Polygon (19)
     101586: _MapPrfab/volcano/middle/Collision_Default/Polygon (20)
+    101588: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (16)
+    101590: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (17)
+    101592: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (18)
+    101594: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (19)
     400000: _MapPrfab/volcano/Transform
     400002: _MapPrfab/volcano/background/Transform
     400004: _MapPrfab/volcano/background/Collision_Default/Transform
@@ -1590,6 +1594,10 @@ ScriptedImporter:
     401582: _MapPrfab/volcano/middle/Collision_Default/Polygon (18)/Transform
     401584: _MapPrfab/volcano/middle/Collision_Default/Polygon (19)/Transform
     401586: _MapPrfab/volcano/middle/Collision_Default/Polygon (20)/Transform
+    401588: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (16)/Transform
+    401590: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (17)/Transform
+    401592: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (18)/Transform
+    401594: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (19)/Transform
     5000000: _MapPrfab/volcano/background/Collision_Default/Rigidbody2D
     5000002: _MapPrfab/volcano/beforeDetails/Collision_Default/Rigidbody2D
     5000004: _MapPrfab/volcano/Calque 6/Collision_Default/Rigidbody2D
@@ -2375,6 +2383,10 @@ ScriptedImporter:
     6001550: _MapPrfab/volcano/middle/Collision_Default/Polygon (18)/PolygonCollider2D
     6001552: _MapPrfab/volcano/middle/Collision_Default/Polygon (19)/PolygonCollider2D
     6001554: _MapPrfab/volcano/middle/Collision_Default/Polygon (20)/PolygonCollider2D
+    6001556: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (16)/PolygonCollider2D
+    6001558: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (17)/PolygonCollider2D
+    6001560: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (18)/PolygonCollider2D
+    6001562: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (19)/PolygonCollider2D
     6600000: _MapPrfab/volcano/background/Collision_Default/CompositeCollider2D
     6600002: _MapPrfab/volcano/beforeDetails/Collision_Default/CompositeCollider2D
     6600004: _MapPrfab/volcano/Calque 6/Collision_Default/CompositeCollider2D
@@ -3187,6 +3199,10 @@ ScriptedImporter:
     11401604: _MapPrfab/volcano/middle/Collision_Default/Polygon (19)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11401606: _MapPrfab/volcano/middle/Collision_Default/Polygon (20)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11401608: _superAsset
+    11401610: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (16)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11401612: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (17)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11401614: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (18)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11401616: _MapPrfab/volcano/beforeDetails/Collision_Default/Polygon (19)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/volcano/Grid
     3664157343022684176: _MapPrfab/volcano/background/TilemapRenderer
