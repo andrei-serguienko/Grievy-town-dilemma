@@ -2227,6 +2227,17 @@ ScriptedImporter:
     104444: _MapPrfab/sea/middle/Collision_Default/Polygon (34)
     104446: _MapPrfab/sea/middle/Collision_Default/Polygon (35)
     104448: _MapPrfab/sea/middle/Collision_Default/Polygon (36)
+    104450: _MapPrfab/sea/details/Collision_Default/Polygon (161)
+    104452: _MapPrfab/sea/details/Collision_Default/Polygon (162)
+    104454: _MapPrfab/sea/details/Collision_Default/Polygon (163)
+    104456: _MapPrfab/sea/details/Collision_Default/Polygon (164)
+    104458: _MapPrfab/sea/details/Collision_Default/Polygon (165)
+    104460: _MapPrfab/sea/foreground/Collision_Default/Polygon (142)
+    104462: _MapPrfab/sea/foreground/Collision_Default/Polygon (143)
+    104464: _MapPrfab/sea/foreground/Collision_Default/Polygon (144)
+    104466: _MapPrfab/sea/foreground/Collision_Default/Polygon (145)
+    104468: _MapPrfab/sea/foreground/Collision_Default/Polygon (146)
+    104470: _MapPrfab/sea/foreground/Collision_Default/Polygon (147)
     400000: _MapPrfab/sea/Transform
     400002: _MapPrfab/sea/background/Transform
     400004: _MapPrfab/sea/details/Transform
@@ -4452,6 +4463,17 @@ ScriptedImporter:
     404444: _MapPrfab/sea/middle/Collision_Default/Polygon (34)/Transform
     404446: _MapPrfab/sea/middle/Collision_Default/Polygon (35)/Transform
     404448: _MapPrfab/sea/middle/Collision_Default/Polygon (36)/Transform
+    404450: _MapPrfab/sea/details/Collision_Default/Polygon (161)/Transform
+    404452: _MapPrfab/sea/details/Collision_Default/Polygon (162)/Transform
+    404454: _MapPrfab/sea/details/Collision_Default/Polygon (163)/Transform
+    404456: _MapPrfab/sea/details/Collision_Default/Polygon (164)/Transform
+    404458: _MapPrfab/sea/details/Collision_Default/Polygon (165)/Transform
+    404460: _MapPrfab/sea/foreground/Collision_Default/Polygon (142)/Transform
+    404462: _MapPrfab/sea/foreground/Collision_Default/Polygon (143)/Transform
+    404464: _MapPrfab/sea/foreground/Collision_Default/Polygon (144)/Transform
+    404466: _MapPrfab/sea/foreground/Collision_Default/Polygon (145)/Transform
+    404468: _MapPrfab/sea/foreground/Collision_Default/Polygon (146)/Transform
+    404470: _MapPrfab/sea/foreground/Collision_Default/Polygon (147)/Transform
     5000000: _MapPrfab/sea/background/Collision_Default/Rigidbody2D
     5000002: _MapPrfab/sea/details/Collision_Default/Rigidbody2D
     5000004: _MapPrfab/sea/floor/Collision_Default/Rigidbody2D
@@ -6662,6 +6684,17 @@ ScriptedImporter:
     6004404: _MapPrfab/sea/middle/Collision_Default/Polygon (34)/PolygonCollider2D
     6004406: _MapPrfab/sea/middle/Collision_Default/Polygon (35)/PolygonCollider2D
     6004408: _MapPrfab/sea/middle/Collision_Default/Polygon (36)/PolygonCollider2D
+    6004410: _MapPrfab/sea/details/Collision_Default/Polygon (161)/PolygonCollider2D
+    6004412: _MapPrfab/sea/details/Collision_Default/Polygon (162)/PolygonCollider2D
+    6004414: _MapPrfab/sea/details/Collision_Default/Polygon (163)/PolygonCollider2D
+    6004416: _MapPrfab/sea/details/Collision_Default/Polygon (164)/PolygonCollider2D
+    6004418: _MapPrfab/sea/details/Collision_Default/Polygon (165)/PolygonCollider2D
+    6004420: _MapPrfab/sea/foreground/Collision_Default/Polygon (142)/PolygonCollider2D
+    6004422: _MapPrfab/sea/foreground/Collision_Default/Polygon (143)/PolygonCollider2D
+    6004424: _MapPrfab/sea/foreground/Collision_Default/Polygon (144)/PolygonCollider2D
+    6004426: _MapPrfab/sea/foreground/Collision_Default/Polygon (145)/PolygonCollider2D
+    6004428: _MapPrfab/sea/foreground/Collision_Default/Polygon (146)/PolygonCollider2D
+    6004430: _MapPrfab/sea/foreground/Collision_Default/Polygon (147)/PolygonCollider2D
     6600000: _MapPrfab/sea/background/Collision_Default/CompositeCollider2D
     6600002: _MapPrfab/sea/details/Collision_Default/CompositeCollider2D
     6600004: _MapPrfab/sea/floor/Collision_Default/CompositeCollider2D
@@ -8908,6 +8941,17 @@ ScriptedImporter:
     11404458: _MapPrfab/sea/middle/Collision_Default/Polygon (34)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11404460: _MapPrfab/sea/middle/Collision_Default/Polygon (35)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11404462: _MapPrfab/sea/middle/Collision_Default/Polygon (36)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404464: _MapPrfab/sea/details/Collision_Default/Polygon (161)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404466: _MapPrfab/sea/details/Collision_Default/Polygon (162)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404468: _MapPrfab/sea/details/Collision_Default/Polygon (163)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404470: _MapPrfab/sea/details/Collision_Default/Polygon (164)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404472: _MapPrfab/sea/details/Collision_Default/Polygon (165)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404474: _MapPrfab/sea/foreground/Collision_Default/Polygon (142)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404476: _MapPrfab/sea/foreground/Collision_Default/Polygon (143)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404478: _MapPrfab/sea/foreground/Collision_Default/Polygon (144)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404480: _MapPrfab/sea/foreground/Collision_Default/Polygon (145)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404482: _MapPrfab/sea/foreground/Collision_Default/Polygon (146)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11404484: _MapPrfab/sea/foreground/Collision_Default/Polygon (147)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/sea/Grid
     3664157343022684176: _MapPrfab/sea/background/TilemapRenderer

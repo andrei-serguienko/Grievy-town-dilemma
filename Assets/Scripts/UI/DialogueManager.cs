@@ -73,7 +73,6 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void buy(){
-      print("AHCAT");
       print(product);
       PlayerController player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
       if(player.money < 20){
