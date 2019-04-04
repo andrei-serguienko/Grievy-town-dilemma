@@ -132,6 +132,18 @@ ScriptedImporter:
     100254: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (48)
     100256: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (49)
     100258: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (50)
+    100260: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (24)
+    100262: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (25)
+    100264: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (26)
+    100266: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (27)
+    100268: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (28)
+    100270: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (29)
+    100272: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (30)
+    100274: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (31)
+    100276: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (32)
+    100278: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (33)
+    100280: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (34)
+    100282: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (35)
     400000: _MapPrfab/swamp_boss/Transform
     400002: _MapPrfab/swamp_boss/background/Transform
     400004: _MapPrfab/swamp_boss/details/Transform
@@ -262,6 +274,18 @@ ScriptedImporter:
     400254: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (48)/Transform
     400256: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (49)/Transform
     400258: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (50)/Transform
+    400260: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (24)/Transform
+    400262: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (25)/Transform
+    400264: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (26)/Transform
+    400266: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (27)/Transform
+    400268: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (28)/Transform
+    400270: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (29)/Transform
+    400272: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (30)/Transform
+    400274: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (31)/Transform
+    400276: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (32)/Transform
+    400278: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (33)/Transform
+    400280: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (34)/Transform
+    400282: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (35)/Transform
     5000000: _MapPrfab/swamp_boss/background/Collision_Default/Rigidbody2D
     5000002: _MapPrfab/swamp_boss/details/Collision_Default/Rigidbody2D
     5000004: _MapPrfab/swamp_boss/middle/Collision_Default/Rigidbody2D
@@ -385,6 +409,18 @@ ScriptedImporter:
     6000232: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (48)/PolygonCollider2D
     6000234: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (49)/PolygonCollider2D
     6000236: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (50)/PolygonCollider2D
+    6000238: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (24)/PolygonCollider2D
+    6000240: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (25)/PolygonCollider2D
+    6000242: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (26)/PolygonCollider2D
+    6000244: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (27)/PolygonCollider2D
+    6000246: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (28)/PolygonCollider2D
+    6000248: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (29)/PolygonCollider2D
+    6000250: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (30)/PolygonCollider2D
+    6000252: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (31)/PolygonCollider2D
+    6000254: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (32)/PolygonCollider2D
+    6000256: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (33)/PolygonCollider2D
+    6000258: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (34)/PolygonCollider2D
+    6000260: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (35)/PolygonCollider2D
     6600000: _MapPrfab/swamp_boss/background/Collision_Default/CompositeCollider2D
     6600002: _MapPrfab/swamp_boss/details/Collision_Default/CompositeCollider2D
     6600004: _MapPrfab/swamp_boss/middle/Collision_Default/CompositeCollider2D
@@ -529,6 +565,18 @@ ScriptedImporter:
     11400274: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (48)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400276: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (49)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400278: _MapPrfab/swamp_boss/swamp/Collision_Default/Polygon (50)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400280: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (24)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400282: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (25)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400284: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (26)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400286: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (27)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400288: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (28)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400290: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (29)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400292: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (30)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400294: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (31)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400296: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (32)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400298: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (33)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400300: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (34)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400302: _MapPrfab/swamp_boss/middle/Collision_Default/Polygon (35)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/swamp_boss/Grid
     3664157343022684176: _MapPrfab/swamp_boss/background/TilemapRenderer
