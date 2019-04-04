@@ -44,7 +44,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2606228141492076448}
   - component: {fileID: 2051638810536108400}
-  - component: {fileID: 319182776171342169}
   - component: {fileID: 3516167974032684642}
   - component: {fileID: 2929769964838219923}
   - component: {fileID: 6084565561784267532}
@@ -121,23 +120,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &319182776171342169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4355610536504537502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b851e4c1a365b74da2a2ad84fb35535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
-  speed: 0
-  points: []
-  Minion: {fileID: 0}
-  spawnTest: 0
 --- !u!95 &3516167974032684642
 Animator:
   serializedVersion: 3
