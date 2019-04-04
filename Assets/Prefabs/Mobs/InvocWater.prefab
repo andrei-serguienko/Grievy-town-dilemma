@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 6444410061024715430}
   - component: {fileID: 799798522922432777}
   - component: {fileID: 2413505848083854169}
-  m_Layer: 0
+  - component: {fileID: 4367611970675575586}
+  - component: {fileID: 8995402887783072016}
+  m_Layer: 11
   m_Name: InvocWater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,3 +138,38 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.63619614, y: 0.446342}
   m_Direction: 1
+--- !u!50 &4367611970675575586
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6444410061024715429}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 20
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: d5cec05df3dd05049928de831439d82d, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &8995402887783072016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6444410061024715429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f0abad15c804b4b9b90695eda1f9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifePoints: 150
+  GivenGold: 30

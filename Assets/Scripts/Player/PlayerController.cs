@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D fireBall;
     public Rigidbody2D waterWall;
     public Rigidbody2D rockPillar;
+    public GameObject tornado;
+    public float tornadoSpread;
     public int HealingPotion;
     public int ManaPotion;
     public AudioClip step;
@@ -59,7 +61,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(gameObject.GetComponent<Rigidbody2D>().velocity);
+//        print(gameObject.GetComponent<Rigidbody2D>().velocity);
+        
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
 
@@ -118,7 +121,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
-            CastRockPillar();
+            CastFireBall();
         }
 
         // use Heal Potion
@@ -131,19 +134,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
-    void CastFireBall()
-    {
-        if (mana > 0)
-        {
-            // repositioning fireball with player sprite
-            var position = transform.position;
-            position[0] += 0.4f;
-            position[1] -= 0.6f;
-            Instantiate(fireBall, position, transform.rotation);
-            mana -= 5;
-        }
-    }
     void CastBasicSpell()
     {
         if (mana > 0)
@@ -156,6 +146,20 @@ public class PlayerController : MonoBehaviour
             mana -= 5;
         }
     }
+    
+    void CastFireBall()
+    {
+        if (mana > 0)
+        {
+            // repositioning fireball with player sprite
+            var position = transform.position;
+            position[0] += 0.4f;
+            position[1] -= 0.6f;
+            Instantiate(fireBall, position, transform.rotation);
+            mana -= 5;
+        }
+    }
+    
     void CastWaterWall()
     {
         if (mana > 0)
@@ -170,15 +174,26 @@ public class PlayerController : MonoBehaviour
     {
         if (mana > 0)
         {
-//            var position = Input.mousePosition;
             var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             position.z = 10;
-            print(position);
             Instantiate(rockPillar, position, Quaternion.identity);
             mana -= 10;
         }
     }
-    
+
+    void castTornado()
+    {
+        var position = transform.position;
+
+        tornado.GetComponent<castSpell>().angleVariation = tornadoSpread;
+        Instantiate(tornado, position, Quaternion.identity);
+        
+        tornado.GetComponent<castSpell>().angleVariation = 0;
+        Instantiate(tornado, position, Quaternion.identity);
+        
+        tornado.GetComponent<castSpell>().angleVariation = -tornadoSpread;
+        Instantiate(tornado, position, Quaternion.identity);
+    }
 
     void regenMana()
     {
