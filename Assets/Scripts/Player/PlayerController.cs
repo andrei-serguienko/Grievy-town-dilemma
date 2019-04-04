@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-      // event = GameObject.Find("EventSystem")
+        // event = GameObject.Find("EventSystem")
         origin = "Menu";
         manaUI = GameObject.FindWithTag("Mana").GetComponent<Slider>();
         InvokeRepeating("regenMana", 0, 0.2f);
@@ -78,30 +78,30 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
-          if(Spell == 1)
-          {
-            CastRockPillar();
-          } else if (Spell == 2){
-            CastWaterWall();
-          } else if (Spell == 3){
-            CastFireBall();
-          } else if (Spell == 4){
-            castTornado();
-          }
+            if(Spell == 1)
+            {
+                CastRockPillar();
+            } else if (Spell == 2){
+                CastWaterWall();
+            } else if (Spell == 3){
+                CastFireBall();
+            } else if (Spell == 4){
+                castTornado();
+            }
             // CastFireBall();
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha1)){
-          Spell = 1;
+            Spell = 1;
         }
         else if(Input.GetKeyDown(KeyCode.Alpha2)){
-          Spell = 2;
+            Spell = 2;
         }
         else if(Input.GetKeyDown(KeyCode.Alpha3)){
-          Spell = 3;
+            Spell = 3;
         }
         else if(Input.GetKeyDown(KeyCode.Alpha4)){
-          Spell = 4;
+            Spell = 4;
         }
 
     }
@@ -112,39 +112,44 @@ public class PlayerController : MonoBehaviour
         manaUI.value = mana;
 //        Debug.Log(manaUI);
 //        Debug.Log(mana);
-      if(canMove)
-      {
-        if (Mathf.Abs(HorizontalInput) > 0.5f && Mathf.Abs(VerticalInput) > 0.5f)
+        if(canMove)
         {
-            currentMoveSpeed = moveSpeed / 1.4f;
-        }else
-        {
-            currentMoveSpeed = moveSpeed;
-        }
+            if (Mathf.Abs(HorizontalInput) > 0.5f && Mathf.Abs(VerticalInput) > 0.5f)
+            {
+                currentMoveSpeed = moveSpeed / 1.4f;
+            }else
+            {
+                currentMoveSpeed = moveSpeed;
+            }
 
-        if (HorizontalInput > 0.5f)
-        {
-            transform.Translate(new Vector3(HorizontalInput * currentMoveSpeed * Time.deltaTime, 0f, 0f));
+            if (HorizontalInput > 0.5f)
+            {
+                transform.Translate(new Vector3(HorizontalInput * currentMoveSpeed * Time.deltaTime, 0f, 0f));
 
+            }
+            if (HorizontalInput < 0.5f)
+            {
+                transform.Translate(new Vector3(HorizontalInput * currentMoveSpeed * Time.deltaTime, 0f, 0f));
+            }
+            if (VerticalInput > 0.5f)
+            {
+                transform.Translate(new Vector3(0f, VerticalInput * currentMoveSpeed * Time.deltaTime, 0f));
+            }
+            if (VerticalInput < 0.5f)
+            {
+                transform.Translate(new Vector3(0f, VerticalInput * currentMoveSpeed * Time.deltaTime, 0f));
+            }
         }
-        if (HorizontalInput < 0.5f)
-        {
-            transform.Translate(new Vector3(HorizontalInput * currentMoveSpeed * Time.deltaTime, 0f, 0f));
-        }
-        if (VerticalInput > 0.5f)
-        {
-            transform.Translate(new Vector3(0f, VerticalInput * currentMoveSpeed * Time.deltaTime, 0f));
-        }
-        if (VerticalInput < 0.5f)
-        {
-            transform.Translate(new Vector3(0f, VerticalInput * currentMoveSpeed * Time.deltaTime, 0f));
-        }
-      }
 
         if (HorizontalInput != 0 || VerticalInput != 0)
         {
             anim.SetBool("isWalking", true);
-//            audio.PlayOneShot(step);
+            if (!audio.isPlaying)
+            {
+                audio.clip = step;
+                audio.Play();
+            }
+
         }
         else
         {
@@ -234,42 +239,40 @@ public class PlayerController : MonoBehaviour
     }
 
     public float getHorizontalInput(){
-      return HorizontalInput;
+        return HorizontalInput;
     }
     public float getVerticalInput(){
-      return VerticalInput;
+        return VerticalInput;
     }
 
     public void buyPotionHealth(){
-      print("PPP");
-      HealingPotion += 1;
+        HealingPotion += 1;
     }
     public void buyPotionMana(){
-      ManaPotion += 1;
+        ManaPotion += 1;
     }
 
     void OnCollisionEnter2D(Collision2D col){
-      gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
     void OnCollisionExit2D(Collision2D col){
-      print("ColExit");
 
-      gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-      gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.zero);
+        gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.zero);
     }
 
     public void defeatBoss(string name){
-      print(name);
-      if (name == "BossFire"){
-        print("Defeat Fire");
-        hasDefeatFireBoss = true;
-      } else if(name == "BossAir"){
-        hasDefeatAirBoss = true;
-      } else if(name == "BossWater"){
-        hasDefeatWaterBoss = true;
-      } else if(name == "BossSwamp"){
-        hasDefeatSwampBoss = true;
-      }
+        print(name);
+        if (name == "BossFire"){
+            print("Defeat Fire");
+            hasDefeatFireBoss = true;
+        } else if(name == "BossAir"){
+            hasDefeatAirBoss = true;
+        } else if(name == "BossWater"){
+            hasDefeatWaterBoss = true;
+        } else if(name == "BossSwamp"){
+            hasDefeatSwampBoss = true;
+        }
     }
 
 }
