@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8858973141322529378}
   m_Layer: 8
   m_Name: TornadoSpell
-  m_TagString: Untagged
+  m_TagString: playerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

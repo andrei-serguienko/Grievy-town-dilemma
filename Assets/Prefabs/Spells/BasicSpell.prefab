@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4469670589564564646}
   m_Layer: 8
   m_Name: BasicSpell
-  m_TagString: Untagged
+  m_TagString: playerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
