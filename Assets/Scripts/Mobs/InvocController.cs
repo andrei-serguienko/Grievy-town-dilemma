@@ -10,23 +10,25 @@ public class InvocController : MonoBehaviour
     public float MaxAttackRange;
     public float FireRate;
     public Rigidbody2D Projectile;
+    public AudioClip Grrr;
 
     private Transform _target;
     private bool _reaching = false;
     private bool _hittedByPlayer = false;
     private bool _firing = false;
+    private bool _hasGrrr = false;
+    private AudioSource audio;
     
     // Start is called before the first frame update
     void Start()
     {
         _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        audio = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        
-        
         // When the Player is within AttackRange, attack him and stay at constant distance
         float distToPlayer = Vector3.Distance(_target.position, transform.position);
         
@@ -49,6 +51,13 @@ public class InvocController : MonoBehaviour
         {
             _firing = true;
             InvokeRepeating("castProjectile", 0, FireRate);
+        }
+
+        if (_reaching && !_hasGrrr)
+        {
+            audio.clip = Grrr;
+            audio.Play();
+            _hasGrrr = true;
         }
     }
 

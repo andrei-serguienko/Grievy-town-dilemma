@@ -212,13 +212,17 @@ MonoBehaviour:
   tornadoSpread: 10
   HealingPotion: 0
   ManaPotion: 0
-  step: {fileID: 8300000, guid: 1239b44017da1464f8e2ac181f75deeb, type: 3}
+  ChangeSpell: {fileID: 8300000, guid: 99a3ca48ab387054b9ac96549b38f8db, type: 3}
+  HealingPotionClip: {fileID: 8300000, guid: 0be099016bd8fe640836e2be98f7c0db, type: 3}
+  ManaPotionClip: {fileID: 8300000, guid: 95e1621a5cb8a5241b7ec76bf592c802, type: 3}
+  BuyPotion: {fileID: 8300000, guid: 03bb4a556babbcb48aa5ba4f65e726d5, type: 3}
   hasDefeatFireBoss: 0
   hasDefeatAirBoss: 0
   hasDefeatWaterBoss: 0
   hasDefeatSwampBoss: 0
   seaCheckPoint: {fileID: 0}
   isTriggCheckPoint: 0
+  Spell: 0
 --- !u!114 &114858702381409504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,7 +241,7 @@ MonoBehaviour:
   HalfHeart: {fileID: 21300002, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
   EmptyHeart: {fileID: 21300004, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
   Oof: {fileID: 8300000, guid: 0042f396f48717248b97d0a9e2370127, type: 3}
-  testDamage: 0
+  tookDamage: 0
 --- !u!50 &50069297015440292
 Rigidbody2D:
   serializedVersion: 4

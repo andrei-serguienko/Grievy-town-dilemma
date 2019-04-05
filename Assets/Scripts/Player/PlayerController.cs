@@ -25,7 +25,13 @@ public class PlayerController : MonoBehaviour
     public float tornadoSpread;
     public int HealingPotion;
     public int ManaPotion;
-    public AudioClip step;
+    public AudioClip ChangeSpell;
+    public AudioClip HealingPotionClip;
+    public AudioClip ManaPotionClip;
+    public AudioClip BuyPotion;
+    public AudioClip Step1;
+    public AudioClip Step2;
+    
 
 
     private float HorizontalInput = 0f;
@@ -78,90 +84,115 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
-          if(Spell == 1)
-          {
-            CastRockPillar();
-          } else if (Spell == 2){
-            CastWaterWall();
-          } else if (Spell == 3){
-            CastFireBall();
-          } else if (Spell == 4){
-            castTornado();
-          }
+            if(Spell == 1)
+            {
+                CastRockPillar();
+            } else if (Spell == 2){
+                CastWaterWall();
+            } else if (Spell == 3){
+                CastFireBall();
+            } else if (Spell == 4){
+                castTornado();
+            }
         }
 
 
         if(Input.GetKeyDown(KeyCode.Alpha1)  && hasDefeatSwampBoss){
-          if (Spell == 2 && hasDefeatWaterBoss){
-            GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
+            if (Spell == 2 && hasDefeatWaterBoss){
+                GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
 
-          }
-          else if (Spell == 3 && hasDefeatFireBoss){
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
+            }
+            else if (Spell == 3 && hasDefeatFireBoss){
+                GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
 
-          }
-          else if (Spell == 4 && hasDefeatAirBoss){
-            GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
-          }
-          Spell = 1;
+            }
+            else if (Spell == 4 && hasDefeatAirBoss){
+                GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
+            }
+            Spell = 1;
+            ChangeSpellSound();
         }
         else if(Input.GetKeyDown(KeyCode.Alpha2) && hasDefeatWaterBoss){
-          if(Spell == 1 && hasDefeatSwampBoss){
-            GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
+            if(Spell == 1 && hasDefeatSwampBoss){
+                GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
 
-          } else if (Spell == 3 && hasDefeatFireBoss){
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
+            } else if (Spell == 3 && hasDefeatFireBoss){
+                GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
 
-          }
-          else if (Spell == 4 && hasDefeatAirBoss){
-            GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
-          }
-          Spell = 2;
+            }
+            else if (Spell == 4 && hasDefeatAirBoss){
+                GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
+            }
+            Spell = 2;
+            ChangeSpellSound();
         }
         else if(Input.GetKeyDown(KeyCode.Alpha3) && hasDefeatFireBoss){
-          if(Spell == 1 && hasDefeatSwampBoss){
-            GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
+            if(Spell == 1 && hasDefeatSwampBoss){
+                GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
 
-          } else if (Spell == 2 && hasDefeatWaterBoss){
-            GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
+            } else if (Spell == 2 && hasDefeatWaterBoss){
+                GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
 
-          }
-          else if (Spell == 4 && hasDefeatAirBoss){
-            GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
-          }
-          Spell = 3;
+            }
+            else if (Spell == 4 && hasDefeatAirBoss){
+                GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
+            }
+            Spell = 3;
+            ChangeSpellSound();
         }
         else if(Input.GetKeyDown(KeyCode.Alpha4) && hasDefeatAirBoss){
-          if(Spell == 1 && hasDefeatSwampBoss){
-            GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
+            if(Spell == 1 && hasDefeatSwampBoss){
+                GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
 
-          } else if (Spell == 2 && hasDefeatWaterBoss){
-            GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
+            } else if (Spell == 2 && hasDefeatWaterBoss){
+                GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
 
-          }
-          else if (Spell == 3 && hasDefeatFireBoss){
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
+            }
+            else if (Spell == 3 && hasDefeatFireBoss){
+                GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
 
-          }
+            }
 
-          Spell = 4;
+            Spell = 4;
+            ChangeSpellSound();
         }
 
 
         if(hasDefeatAirBoss){
-          GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
+            GameObject.Find("Canvas/Air").GetComponent<Image>().color = new Color(77,77,77,255);
         } if (hasDefeatFireBoss){
-          GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
+            GameObject.Find("Canvas/Fire").GetComponent<Image>().color = new Color(77,77,77,255);
         }
-       if (hasDefeatSwampBoss){
-          GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
+        if (hasDefeatSwampBoss){
+            GameObject.Find("Canvas/Rock").GetComponent<Image>().color = new Color(77,77,77,255);
         }
-       if (hasDefeatWaterBoss){
-          GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
+        if (hasDefeatWaterBoss){
+            GameObject.Find("Canvas/Water").GetComponent<Image>().color = new Color(77,77,77,255);
         }
 
 
-
+        // use Heal Potion
+        float lifePoints =  this.GetComponent<PlayerHealth>().LifePoints;
+        int numberOfHeart = this.GetComponent<PlayerHealth>().numOfHeart;
+        if (Input.GetKeyDown("q") && HealingPotion > 0 && lifePoints < numberOfHeart)
+        {
+            HealingPotion -= 1;
+            this.GetComponent<PlayerHealth>().Heal(1);
+            audio.clip = HealingPotionClip;
+            audio.Play();
+            if (lifePoints > numberOfHeart)
+                lifePoints = numberOfHeart;
+        }
+        
+        if (Input.GetKeyDown("r") && ManaPotion > 0 && mana < 90)
+        {
+            ManaPotion -= 1;
+            mana += 50;
+            audio.clip = ManaPotionClip;
+            audio.Play();
+            if (mana > 100)
+                mana = 100;
+        }
 
     }
 
@@ -203,28 +234,14 @@ public class PlayerController : MonoBehaviour
         if (HorizontalInput != 0 || VerticalInput != 0)
         {
             anim.SetBool("isWalking", true);
-            if (!audio.isPlaying)
-            {
-                audio.clip = step;
-                audio.Play();
-            }
+            
 
         }
         else
         {
             anim.SetBool("isWalking", false);
         }
-
-
-
-        // use Heal Potion
-        float lifePoints =  this.GetComponent<PlayerHealth>().LifePoints;
-        int numberOfHeart = this.GetComponent<PlayerHealth>().numOfHeart;
-        if (Input.GetKeyDown("p") && HealingPotion > 0 && lifePoints <numberOfHeart)
-        {
-            HealingPotion -= 1;
-            this.GetComponent<PlayerHealth>().Heal(1);
-        }
+        
     }
 
     void CastBasicSpell()
@@ -306,9 +323,13 @@ public class PlayerController : MonoBehaviour
 
     public void buyPotionHealth(){
         HealingPotion += 1;
+        audio.clip = BuyPotion;
+        audio.Play();
     }
     public void buyPotionMana(){
         ManaPotion += 1;
+        audio.clip = BuyPotion;
+        audio.Play();
     }
 
     void OnCollisionEnter2D(Collision2D col){
@@ -334,4 +355,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void ChangeSpellSound()
+    {
+        audio.clip = ChangeSpell;
+        audio.Play();
+    }
+
+    public void PlayStep1()
+    {
+        audio.clip = Step1;
+        audio.Play();
+        print("bite");
+    }
+    public void PlayStep2()
+    {
+        audio.clip = Step2;
+        audio.Play();
+        print("pute");
+    }
 }

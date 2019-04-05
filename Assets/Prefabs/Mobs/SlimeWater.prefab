@@ -179,3 +179,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifePoints: 100
   GivenGold: 20
+  Coins: {fileID: 8300000, guid: eabd99e960d432a41bd552aad9cfd49e, type: 3}
