@@ -223,6 +223,14 @@ MonoBehaviour:
   seaCheckPoint: {fileID: 0}
   isTriggCheckPoint: 0
   Spell: 0
+  RockDisable: {fileID: 21300000, guid: 434e1df1b1c3b254188dbce3a3282a92, type: 3}
+  RockActive: {fileID: 21300000, guid: 312e00cd895ec5a4980ec4f52d235ca9, type: 3}
+  AirDisable: {fileID: 21300000, guid: ccd317e11cbb332488b75739bf31ed82, type: 3}
+  AirActive: {fileID: 21300000, guid: 67b941bbfba6bb542a51abe82a650127, type: 3}
+  WaterDisable: {fileID: 21300000, guid: d84bb422f3327444293a6a54d19a2933, type: 3}
+  WaterActive: {fileID: 21300000, guid: 916a74bd9d3a150498a321fea6913a96, type: 3}
+  FireDisable: {fileID: 21300000, guid: c7b50c838f674e945b6b68e2d880d4ae, type: 3}
+  FireActive: {fileID: 21300000, guid: b53e1a3c6449e88499c0187101cef004, type: 3}
 --- !u!114 &114858702381409504
 MonoBehaviour:
   m_ObjectHideFlags: 0
