@@ -216,6 +216,8 @@ MonoBehaviour:
   HealingPotionClip: {fileID: 8300000, guid: 0be099016bd8fe640836e2be98f7c0db, type: 3}
   ManaPotionClip: {fileID: 8300000, guid: 95e1621a5cb8a5241b7ec76bf592c802, type: 3}
   BuyPotion: {fileID: 8300000, guid: 03bb4a556babbcb48aa5ba4f65e726d5, type: 3}
+  Step1: {fileID: 8300000, guid: aa5a537f0e1a2eb4db5cc35ca635dd5b, type: 3}
+  Step2: {fileID: 8300000, guid: 2b156cf35dbaae5419c5de088d1c1a1d, type: 3}
   hasDefeatFireBoss: 0
   hasDefeatAirBoss: 0
   hasDefeatWaterBoss: 0
