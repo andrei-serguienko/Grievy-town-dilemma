@@ -15,7 +15,7 @@ public class LavaCold : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      print(col.transform);
+      // print(col.transform);
     }
 
     void OnTriggerEnter2D(Collider2D other)

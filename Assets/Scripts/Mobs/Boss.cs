@@ -8,7 +8,7 @@ using UnityEngine.AI;
 public class Boss : MonoBehaviour
 {
 
-	
+
 	public int speed;
 	public float FireRate;
 	public Rigidbody2D projectile;
@@ -35,7 +35,7 @@ public class Boss : MonoBehaviour
 //        Debug.Log("pos1" + pos1);
 //        Debug.Log("pos2" + pos2);
 
-    
+
 
 		checkDeath();
 
@@ -67,7 +67,7 @@ public class Boss : MonoBehaviour
 		minion3Pos.x += 2;
 		minion3Pos.y -= 3;
 
-		print("Minion Spawn");
+		// print("Minion Spawn");
 		Instantiate(Minion, minion1Pos, Quaternion.identity);
 		Instantiate(Minion, minion2Pos, Quaternion.identity);
 		Instantiate(Minion, minion3Pos, Quaternion.identity);
@@ -77,6 +77,5 @@ public class Boss : MonoBehaviour
 	{
 		Instantiate(projectile, transform.position, transform.rotation);
 	}
-
 
 }

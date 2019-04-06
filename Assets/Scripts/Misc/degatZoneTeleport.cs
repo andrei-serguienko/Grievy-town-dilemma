@@ -17,7 +17,7 @@ public class degatZoneTeleport : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
-      print(other);
+      // print(other);
       if(!other.isTrigger && other.gameObject.tag == "Player" && !other.gameObject.GetComponent<DashMove>().dashing && !other.gameObject.GetComponent<PlayerController>().isTriggCheckPoint){
         other.gameObject.GetComponent<PlayerController>().isTriggCheckPoint = true;
         other.gameObject.transform.position = other.gameObject.GetComponent<PlayerController>().seaCheckPoint.position;
@@ -27,7 +27,7 @@ public class degatZoneTeleport : MonoBehaviour
     }
 
     IEnumerator HitTimer() {
-      print("Hit Enemy...");
+      // print("Hit Enemy...");
       yield return new WaitForSeconds(1);
       GameObject.FindWithTag("Player").GetComponent<PlayerController>().isTriggCheckPoint = false;
     }

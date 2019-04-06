@@ -153,7 +153,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &815422910799130570
 AudioSource:
   m_ObjectHideFlags: 0
@@ -403,7 +403,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &4653387310624240349
 AudioSource:
   m_ObjectHideFlags: 0
@@ -653,7 +653,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &1420734801478301307
 AudioSource:
   m_ObjectHideFlags: 0
@@ -903,7 +903,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &400409640002564294
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1153,7 +1153,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &3237157146034761372
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1403,7 +1403,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &7808571603155573712
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1653,7 +1653,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &1004157625133541672
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1903,7 +1903,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &4862584755459420854
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2153,7 +2153,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &2651933425010025413
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2403,7 +2403,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &7419850477688047858
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2653,7 +2653,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &3246578719763347160
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2903,7 +2903,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &4265489398558235885
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3153,7 +3153,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &2321626873320894902
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3403,7 +3403,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &5503795355465935657
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3653,7 +3653,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &2612544018014261891
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3903,7 +3903,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &5535976683653321639
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4153,7 +4153,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &5731446798120458476
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4403,7 +4403,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &5731446798268830603
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4653,7 +4653,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &5731446798893292460
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4903,7 +4903,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &5731446799315069674
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5153,7 +5153,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &5731446799623514513
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5403,7 +5403,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &5731446799851298373
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5653,7 +5653,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &5731446799911505077
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5903,7 +5903,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &5731446799924873090
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6153,7 +6153,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &3565610800240731350
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6403,7 +6403,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &896435242886489038
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6715,7 +6715,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &4262123927624841727
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6965,7 +6965,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &1217969343054070026
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7215,7 +7215,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &8927059705389203732
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7465,7 +7465,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &1497796617723548100
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7715,7 +7715,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &566670673845586754
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7965,7 +7965,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &4352584273052153127
 AudioSource:
   m_ObjectHideFlags: 0

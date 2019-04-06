@@ -18,35 +18,47 @@ public class EarthUltimate : MonoBehaviour
     private void Update()
     {
         //check boss Health here -> ActivateUlti = true;
-        
+
         if (ActiveUltimate)
         {
             StartCoroutine(Ultimate());
             ActiveUltimate = false;
         }
     }
-    
+
     private IEnumerator Ultimate()
     {
         print("Ultimate");
-        Instantiate(FirstRing);
+        Transform pos = transform;
+        GameObject circle1 = Instantiate(FirstRing, pos)as GameObject;
+        circle1.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
         yield return new WaitForSeconds(Delay);
-        Instantiate(SecondRing);
+        GameObject circle2 = Instantiate(SecondRing, pos)as GameObject;
+        circle2.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
         yield return new WaitForSeconds(Delay);
-        Instantiate(ThirdRing);
+        GameObject circle3 = Instantiate(ThirdRing, pos)as GameObject;
+        circle3.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
         yield return new WaitForSeconds(Delay);
-        Instantiate(FourthRing);
+        GameObject circle4 = Instantiate(FourthRing, pos)as GameObject;
+        circle4.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
         yield return new WaitForSeconds(Delay);
-        Instantiate(FifthRing);
+        GameObject circle5 = Instantiate(FifthRing, pos)as GameObject;
+        circle5.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
         yield return new WaitForSeconds(Delay);
-        Instantiate(SixthRing);
+        GameObject circle6 = Instantiate(SixthRing, pos)as GameObject;
+        circle6.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
         yield return new WaitForSeconds(Delay);
-        Instantiate(SeventhRing);
-        
+        GameObject circle7 = Instantiate(SeventhRing, pos)as GameObject;
+        circle7.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
+
         yield return new WaitForSeconds(3);
         foreach(GameObject i in GameObject.FindGameObjectsWithTag("EarthRing"))
         {
             Destroy(i);
         }
+    }
+
+    public void lunchUlti(){
+      ActiveUltimate = true;
     }
 }

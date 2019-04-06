@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2606228141492076448}
   - component: {fileID: 2051638810536108400}
   - component: {fileID: 3516167974032684642}
+  - component: {fileID: 2427831312653147862}
   - component: {fileID: 2929769964838219923}
   - component: {fileID: 6084565561784267532}
   - component: {fileID: 667063454}
@@ -141,6 +142,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2427831312653147862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355610536504537502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe569ec72a3f6cb4f978ca3f305dd6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &2929769964838219923
 Rigidbody2D:
   serializedVersion: 4
@@ -226,6 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LifePoints: 500
+  maxHealth: 0
   GivenGold: 100
 --- !u!114 &4829034299880070920
 MonoBehaviour:
@@ -239,6 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa57cbdbcb08674e8aa5915d56fd84f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ActiveUltimate: 0
   Delay: 0.5
   FirstRing: {fileID: 6471478751868079391, guid: bb05e7f3ac9409e4095137e9db23a7d5,
     type: 3}
