@@ -13,7 +13,7 @@ public class Boss : MonoBehaviour
 	public Transform[] points;
 	public Rigidbody2D Minion;
 	public bool spawnTest;
-	
+
 	private Vector3 velocity = Vector3.zero;
 
 	bool started = false;
@@ -32,54 +32,8 @@ public class Boss : MonoBehaviour
 	{
 //        Debug.Log("pos1" + pos1);
 //        Debug.Log("pos2" + pos2);
-		
-        if (transform.position == points[0].position)
-        {
-            started = true;
-            pos2 = false;
-            pos3 = false;
-            pos1 = true;
-        }
-        else if (transform.position == points[1].position)
-        {
-            pos1 = false;
-            pos2 = true;
-            pos3 = false;
-        } else if (transform.position == points[2].position)
-        {
-            pos1 = false;
-            pos2 = false;
-            pos3 = true;
-        }
 
-            if (!started)
-		{
-            //gameObject.transform.position = Vector3.SmoothDamp(transform.position, points[0].position, ref velocity, 1f);
-//			Debug.Log("1");
-            gameObject.transform.position = Vector3.MoveTowards(transform.position, points[0].position, speed * Time.deltaTime);
-        }
-
-		if (pos1)
-		{
-            //gameObject.transform.position = Vector3.SmoothDamp(transform.position, points[1].position, ref velocity, 1f);
-//			Debug.Log("2");
-            gameObject.transform.position = Vector3.MoveTowards(transform.position, points[1].position, speed * Time.deltaTime);
-
-        }
-        if (pos2)
-		{
-            //gameObject.transform.position = Vector3.SmoothDamp(transform.position, points[0].position, ref velocity, 1f);
-//			Debug.Log("3");
-            gameObject.transform.position = Vector3.MoveTowards(transform.position, points[2].position, speed * Time.deltaTime);
-
-        }
-        if (pos3)
-        {
-            //gameObject.transform.position = Vector3.SmoothDamp(transform.position, points[0].position, ref velocity, 1f);
-//	        Debug.Log("4");
-            gameObject.transform.position = Vector3.MoveTowards(transform.position, points[0].position, speed * Time.deltaTime);
-
-        }
+    
 
 		checkDeath();
 
@@ -104,13 +58,13 @@ public class Boss : MonoBehaviour
 		var minion1Pos = transform.position;
 		var minion2Pos = transform.position;
 		var minion3Pos = transform.position;
-		
+
 		minion1Pos.x -= 2;
 		minion1Pos.y -= 3;
 		minion2Pos.y -= 3;
 		minion3Pos.x += 2;
 		minion3Pos.y -= 3;
-		
+
 		print("Minion Spawn");
 		Instantiate(Minion, minion1Pos, Quaternion.identity);
 		Instantiate(Minion, minion2Pos, Quaternion.identity);
@@ -122,5 +76,5 @@ public class Boss : MonoBehaviour
 		Instantiate(projectile, transform.position, transform.rotation);
 	}
 
-	
+
 }
