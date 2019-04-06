@@ -194,9 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b851e4c1a365b74da2a2ad84fb35535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
+  FireRate: 2
   projectile: {fileID: 50917727042582014, guid: 6bc6b46fe45c8264aae30af06f021f67,
     type: 3}
-  speed: 3
   points:
   - {fileID: 0}
   - {fileID: 0}
@@ -233,7 +234,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifePoints: 500
   GivenGold: 100
-  Coins: {fileID: 8300000, guid: eabd99e960d432a41bd552aad9cfd49e, type: 3}
 --- !u!82 &1425109155311336999
 AudioSource:
   m_ObjectHideFlags: 0

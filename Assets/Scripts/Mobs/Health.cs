@@ -32,7 +32,12 @@ public class Health : MonoBehaviour
           
            LifePoints -= other.gameObject.GetComponent<castSpell>().damages;
         }
-		
+        
+        Invoke("resetVelocity", 1.1f);
     }
     
+    void resetVelocity()
+    {
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+    }
 }
