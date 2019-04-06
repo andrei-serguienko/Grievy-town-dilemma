@@ -6,7 +6,6 @@ public class Health : MonoBehaviour
 {
     public int LifePoints;
     public int GivenGold;
-    public AudioClip Coins;
 
     private AudioSource audio;
 
@@ -19,9 +18,9 @@ public class Health : MonoBehaviour
     {
         if (LifePoints <= 0)
         {
+            
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().money += GivenGold;
-            audio.clip = Coins;
-            audio.Play();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().PlayGoldSound();
             Destroy(gameObject);
         }
     }
@@ -30,9 +29,15 @@ public class Health : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("playerProjectile"))
         {
-            LifePoints -= other.gameObject.GetComponent<castSpell>().damages;
+          
+           LifePoints -= other.gameObject.GetComponent<castSpell>().damages;
         }
-		
+        
+        Invoke("resetVelocity", 1.1f);
     }
     
+    void resetVelocity()
+    {
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+    }
 }

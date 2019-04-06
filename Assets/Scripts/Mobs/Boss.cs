@@ -8,8 +8,10 @@ using UnityEngine.AI;
 public class Boss : MonoBehaviour
 {
 
-	public Rigidbody2D projectile;
+	
 	public int speed;
+	public float FireRate;
+	public Rigidbody2D projectile;
 	public Transform[] points;
 	public Rigidbody2D Minion;
 	public bool spawnTest;
@@ -25,7 +27,7 @@ public class Boss : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-//		InvokeRepeating("throwProjectile", 2, 0.4f);
+//		InvokeRepeating("throwProjectile", FireRate, 0.4f);
 	}
 
 	private void FixedUpdate()

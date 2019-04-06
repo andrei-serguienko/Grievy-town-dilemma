@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip BuyPotion;
     public AudioClip Step1;
     public AudioClip Step2;
+    public AudioClip Coins;
     
 
 
@@ -120,8 +121,7 @@ public class PlayerController : MonoBehaviour
             }
             GameObject.Find("Canvas/Rock").GetComponent<Image>().sprite = RockActive;
             Spell = 1;
-            audio.clip = ChangeSpell;
-            audio.Play();
+            ChangeSpellSound();
 
         }
         else if(Input.GetKeyDown(KeyCode.Alpha2) && hasDefeatWaterBoss){
@@ -137,8 +137,7 @@ public class PlayerController : MonoBehaviour
             }
             GameObject.Find("Canvas/Water").GetComponent<Image>().sprite = WaterActive;
             Spell = 2;
-            audio.clip = ChangeSpell;
-            audio.Play();
+            ChangeSpellSound();
         }
         else if(Input.GetKeyDown(KeyCode.Alpha3) && hasDefeatFireBoss){
             if(Spell == 1 && hasDefeatSwampBoss){
@@ -153,8 +152,7 @@ public class PlayerController : MonoBehaviour
             }
             GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = FireActive;
             Spell = 3;
-            audio.clip = ChangeSpell;
-            audio.Play();
+            ChangeSpellSound();
         }
         else if(Input.GetKeyDown(KeyCode.Alpha4) && hasDefeatAirBoss){
             if(Spell == 1 && hasDefeatSwampBoss){
@@ -170,8 +168,7 @@ public class PlayerController : MonoBehaviour
             }
             GameObject.Find("Canvas/Air").GetComponent<Image>().sprite = AirActive;
             Spell = 4;
-            audio.clip = ChangeSpell;
-            audio.Play();
+            ChangeSpellSound();
         }
 
 
@@ -363,12 +360,16 @@ public class PlayerController : MonoBehaviour
         if (name == "BossFire"){
             print("Defeat Fire");
             hasDefeatFireBoss = true;
+            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = FireActive;
         } else if(name == "BossAir"){
             hasDefeatAirBoss = true;
+            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = AirActive;
         } else if(name == "BossWater"){
             hasDefeatWaterBoss = true;
+            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = WaterActive;
         } else if(name == "BossSwamp"){
             hasDefeatSwampBoss = true;
+            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = RockActive;
         }
     }
 
@@ -382,12 +383,16 @@ public class PlayerController : MonoBehaviour
     {
         audio.clip = Step1;
         audio.Play();
-        print("bite");
     }
     public void PlayStep2()
     {
         audio.clip = Step2;
         audio.Play();
-        print("pute");
+    }
+
+    public void PlayGoldSound()
+    {
+        audio.clip = Coins;
+        audio.Play();
     }
 }

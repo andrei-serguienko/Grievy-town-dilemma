@@ -46,7 +46,6 @@ public class slime : MonoBehaviour
         if (col.gameObject.tag.Equals("playerProjectile"))
         {
             HittedByPlayer = true;
-            Invoke("resetVelocity", 1.1f);
         }
     }
 
@@ -58,9 +57,4 @@ public class slime : MonoBehaviour
         }
     }
 
-    void resetVelocity()
-    {
-        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-        Debug.Log("no velo");
-    }
 }
