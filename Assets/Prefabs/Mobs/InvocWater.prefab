@@ -123,7 +123,7 @@ MonoBehaviour:
   FireRate: 0.5
   Projectile: {fileID: 50917727042582014, guid: 58cade6005675e748a0fab2f5235a3be,
     type: 3}
-  Grrr: {fileID: 8300000, guid: b87acd528bfced444933c02e3092c5cc, type: 3}
+  Grrr: {fileID: 8300000, guid: 5a2272c6922fba544b41bb4d07895f95, type: 3}
 --- !u!70 &2413505848083854169
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -174,8 +174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LifePoints: 150
+  maxHealth: 0
   GivenGold: 30
-  Coins: {fileID: 8300000, guid: eabd99e960d432a41bd552aad9cfd49e, type: 3}
 --- !u!82 &546920984506088526
 AudioSource:
   m_ObjectHideFlags: 0
