@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyProjectile : MonoBehaviour {
+public class BossFireballs : MonoBehaviour {
     public float speed = 10f;
     public Vector3 direction;
     public float TimeTillDestroy;
     public float dammages;
+    public GameObject FireTrail;
+    
     private GameObject player;
 
 
@@ -14,25 +16,22 @@ public class EnemyProjectile : MonoBehaviour {
 
     private void Start()
     {
-        player = GameObject.FindWithTag("Player");
-//        Debug.Log(player);
-        var pos = this.gameObject.transform.position;
-        var dir = player.transform.position - pos;
+        var dir = this.direction;
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        Vector2 direction = dir;
         direction.Normalize();
-        //GameObject projectile = (GameObject)Instantiate(, pos, Quaternion.identity);
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * speed;
 
-//        Destroy(gameObject, TimeTillDestroy);
+        Destroy(gameObject, TimeTillDestroy);
 
     }
     
     private void FixedUpdate()
     {
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 3 * Time.deltaTime);
+        
+        InvokeRepeating("spawnFireTrail", 0, 0.1f);
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -45,15 +44,14 @@ public class EnemyProjectile : MonoBehaviour {
             player.GetComponent<Rigidbody2D>().AddForce(Vector3.zero);
 
         }
-//        else
-//        {
-//            Destroy(gameObject);
-//        }
-        
-         
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-
     
-    
-    
+    void spawnFireTrail()
+    {
+        Instantiate(FireTrail, transform.position, Quaternion.identity);
+    }
 }

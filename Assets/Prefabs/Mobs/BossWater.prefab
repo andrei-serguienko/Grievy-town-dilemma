@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 4112764232179679318}
   - component: {fileID: 4591290804040527570}
   - component: {fileID: 1220387887007588155}
+  - component: {fileID: 963354376207359432}
   - component: {fileID: 1835293964077543115}
   m_Layer: 11
   m_Name: BossWater
@@ -447,7 +448,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LifePoints: 500
+  maxHealth: 0
   GivenGold: 100
+--- !u!114 &963354376207359432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4745950863264692126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4d95c890375f3446b2b24f91eb58bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveUltimate: 0
+  Delay: 0.5
+  FirstWave: {fileID: 962642140198634491, guid: 61c9e18f3253328438e4ab3439b1f94e,
+    type: 3}
+  SecondWave: {fileID: 6911868027006772423, guid: 1597cfaac04684241b664c9754c0dc2e,
+    type: 3}
+  ThirdWave: {fileID: 7707634445628271343, guid: 6e9fa7a60e36690408d196e89b5bfa41,
+    type: 3}
 --- !u!82 &1835293964077543115
 AudioSource:
   m_ObjectHideFlags: 0

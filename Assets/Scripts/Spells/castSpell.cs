@@ -41,7 +41,6 @@ public class castSpell : MonoBehaviour
         Vector2 direction = Quaternion.AngleAxis(angleVariation, Vector3.forward) * dir;
         
         direction.Normalize();
-        //GameObject projectile = (GameObject)Instantiate(, pos, Quaternion.identity);
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * speed;
 
         Destroy(gameObject, destroyTime);
