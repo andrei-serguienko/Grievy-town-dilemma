@@ -166,6 +166,8 @@ MonoBehaviour:
   speed: 3
   destroyTime: 1
   direction: {x: 0, y: 0, z: 0}
+  angleVariation: 0
+  FireTrail: {fileID: 0}
 --- !u!82 &6393578066532918877
 AudioSource:
   m_ObjectHideFlags: 0
@@ -176,7 +178,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 83423e69acbf46b4ebea0cd4bda092b0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9176058c48a054045bf5cfc976738a15, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

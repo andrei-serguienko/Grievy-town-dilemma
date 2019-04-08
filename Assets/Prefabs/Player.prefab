@@ -212,13 +212,13 @@ MonoBehaviour:
   tornadoSpread: 10
   HealingPotion: 0
   ManaPotion: 0
-  ChangeSpell: {fileID: 8300000, guid: 99a3ca48ab387054b9ac96549b38f8db, type: 3}
-  HealingPotionClip: {fileID: 8300000, guid: 0be099016bd8fe640836e2be98f7c0db, type: 3}
-  ManaPotionClip: {fileID: 8300000, guid: 95e1621a5cb8a5241b7ec76bf592c802, type: 3}
-  BuyPotion: {fileID: 8300000, guid: 03bb4a556babbcb48aa5ba4f65e726d5, type: 3}
-  Step1: {fileID: 8300000, guid: aa5a537f0e1a2eb4db5cc35ca635dd5b, type: 3}
-  Step2: {fileID: 8300000, guid: 2b156cf35dbaae5419c5de088d1c1a1d, type: 3}
-  Coins: {fileID: 8300000, guid: eabd99e960d432a41bd552aad9cfd49e, type: 3}
+  ChangeSpell: {fileID: 8300000, guid: d5170a6c3f2128543b1e89b06b4b0c79, type: 3}
+  HealingPotionClip: {fileID: 8300000, guid: 1130f83f67b6e6441957d6724fd8ed68, type: 3}
+  ManaPotionClip: {fileID: 8300000, guid: f1938effd7e0fa548a0b493c83ad6680, type: 3}
+  BuyPotion: {fileID: 8300000, guid: f8ca5f41439f68943bc413f2df1007bc, type: 3}
+  Step1: {fileID: 8300000, guid: 2779d76fa6a9d0b41aa845715b290a5a, type: 3}
+  Step2: {fileID: 8300000, guid: ef88b0d9e4b02d94e8fad2f001cba41f, type: 3}
+  Coins: {fileID: 8300000, guid: 27824ab6b8fcb1f4e9f56ca3c7cab74d, type: 3}
   hasDefeatFireBoss: 0
   hasDefeatAirBoss: 0
   hasDefeatWaterBoss: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   FullHeart: {fileID: 21300000, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
   HalfHeart: {fileID: 21300002, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
   EmptyHeart: {fileID: 21300004, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
-  Oof: {fileID: 8300000, guid: 0042f396f48717248b97d0a9e2370127, type: 3}
+  Oof: {fileID: 8300000, guid: 1196faf8a9ac38349953509722815561, type: 3}
   tookDamage: 0
 --- !u!50 &50069297015440292
 Rigidbody2D:
@@ -305,7 +305,7 @@ MonoBehaviour:
   dashSpeed: 35
   startDashTime: 0.1
   TimeDelay: 1
-  dash: {fileID: 8300000, guid: 6678957363d76bb419e04d282af52b96, type: 3}
+  dash: {fileID: 8300000, guid: ee0e79201d8634d4e85a47aeb00351f1, type: 3}
   dashing: 0
   dashEffect: {fileID: 1940242813652360337, guid: e04d6d0d210f68b4f9078f73f0e42345,
     type: 3}
