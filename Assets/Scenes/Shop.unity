@@ -123,14 +123,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlimeAir
       objectReference: {fileID: 0}
-    - target: {fileID: 1605782707999342, guid: 7fc804eec9f7882439a6d48a0cac51ad, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4391777037423908, guid: 7fc804eec9f7882439a6d48a0cac51ad, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 22.73
-      objectReference: {fileID: 0}
     - target: {fileID: 4391777037423908, guid: 4bb5635b318e3f843bd57bffb38cd671, type: 3}
       propertyPath: m_LocalPosition.y
       value: -15.21
@@ -170,6 +162,14 @@ PrefabInstance:
     - target: {fileID: 4391777037423908, guid: 4bb5635b318e3f843bd57bffb38cd671, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1605782707999342, guid: 7fc804eec9f7882439a6d48a0cac51ad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391777037423908, guid: 7fc804eec9f7882439a6d48a0cac51ad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.73
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb5635b318e3f843bd57bffb38cd671, type: 3}
@@ -36175,9 +36175,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5f7c7139f9c14b549a2d13afb6eae719, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.323
+  m_Volume: 0.09
   m_Pitch: 1
   Loop: 1
   Mute: 0

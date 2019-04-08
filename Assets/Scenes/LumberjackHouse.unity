@@ -1431,38 +1431,6 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[22].m_ColliderPaths.Array.data[0].Array.data[5].Y
       value: -55478516
       objectReference: {fileID: 0}
-    - target: {fileID: 6000000, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000002, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000004, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000006, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000008, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000010, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000012, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000014, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6600002, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
       propertyPath: m_ColliderPaths.Array.size
       value: 3
@@ -1787,6 +1755,38 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[3].Y
       value: -10473633
       objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000002, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000004, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000006, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000008, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000010, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000012, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000014, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6000016, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
       propertyPath: m_UsedByComposite
       value: 0
@@ -2064,9 +2064,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 93ff4af685af7304c8156fbce048c7a7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.323
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
