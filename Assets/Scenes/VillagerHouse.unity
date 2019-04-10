@@ -1913,7 +1913,7 @@ PrefabInstance:
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
       propertyPath: sentences.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
@@ -1923,7 +1923,8 @@ PrefabInstance:
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
       propertyPath: sentences.Array.data[0].texte
-      value: Hi ! sfjsa
+      value: Hi you! You are finally awake! I thought you would never wake up...!
+        I found you unconscious on the south of the village.
       objectReference: {fileID: 0}
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
@@ -1938,41 +1939,53 @@ PrefabInstance:
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
       propertyPath: sentences.Array.data[0].step
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
       propertyPath: sentences.Array.data[1].step
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
       propertyPath: sentences.Array.data[2].step
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
       propertyPath: sentences.Array.data[3].step
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
       propertyPath: sentences.Array.data[1].texte
-      value: asdsadas
+      value: It seems like you do not remember anything. The dean of our village can
+        probably help you !
       objectReference: {fileID: 0}
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
       propertyPath: sentences.Array.data[2].texte
-      value: Second setps
+      value: On the north you'll find a shop, take some gold and buy yourself some
+        good things, that's on me !
       objectReference: {fileID: 0}
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
       propertyPath: sentences.Array.data[3].texte
-      value: Second steps 2
+      value: I heard that you were helping Houx ! It's a good thing, thank you !
       objectReference: {fileID: 0}
     - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
         type: 3}
       propertyPath: currentStep
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[4].texte
+      value: 'Don''t forget to buy some potions for your tasks, it could help ! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 89b690934108d1b45802880f72d25c82,
+        type: 3}
+      propertyPath: sentences.Array.data[4].step
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

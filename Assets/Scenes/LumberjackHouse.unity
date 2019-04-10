@@ -320,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4827261665443398, guid: f47b3bccc3ee33a4487e9c8046fd4e34, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4666067005179168, guid: f47b3bccc3ee33a4487e9c8046fd4e34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -377,7 +377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 076ed7198bd860a439a9702ced62c25b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2037,6 +2037,105 @@ PolygonCollider2D:
     type: 3}
   m_PrefabInstance: {fileID: 1757884926}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1924547986
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1318650629886592, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_Name
+      value: Lumberjack
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0146608
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0168948
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278160190648394, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 5d34bd780afeb424d972eeaed48baa7f,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 5d34bd780afeb424d972eeaed48baa7f,
+        type: 3}
+      propertyPath: sentences.Array.data[0].texte
+      value: "Oh hi you! I heard that you have been rescued early this morning! If
+        you need help you can go see the elder of this village, his name is Houx!\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 5d34bd780afeb424d972eeaed48baa7f,
+        type: 3}
+      propertyPath: sentences.Array.data[1].step
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 5d34bd780afeb424d972eeaed48baa7f,
+        type: 3}
+      propertyPath: sentences.Array.data[1].texte
+      value: ' You will probably find him in the southeast of the village.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 5d34bd780afeb424d972eeaed48baa7f,
+        type: 3}
+      propertyPath: sentences.Array.data[2].texte
+      value: 'Apparently there are less and less disappearance since you are here
+        at Grievy Town ! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 5d34bd780afeb424d972eeaed48baa7f,
+        type: 3}
+      propertyPath: sentences.Array.data[3].texte
+      value: Thank you for helping us here !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 5d34bd780afeb424d972eeaed48baa7f,
+        type: 3}
+      propertyPath: sentences.Array.data[2].step
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117761537131624, guid: 5d34bd780afeb424d972eeaed48baa7f,
+        type: 3}
+      propertyPath: sentences.Array.data[3].step
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d34bd780afeb424d972eeaed48baa7f, type: 3}
 --- !u!1 &2032555408
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,5 +2261,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
