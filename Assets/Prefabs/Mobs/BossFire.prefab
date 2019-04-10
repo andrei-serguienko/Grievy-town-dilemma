@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 114163945669568736}
   - component: {fileID: 4042422621358406899}
   - component: {fileID: 1233759393466311737}
+  - component: {fileID: 6592250004722277706}
   - component: {fileID: 1425109155311336999}
   m_Layer: 11
   m_Name: BossFire
@@ -233,7 +234,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LifePoints: 500
+  maxHealth: 0
   GivenGold: 100
+--- !u!114 &6592250004722277706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713982243950894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2df888995532504a947fba5a5f58c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveUltimate: 0
+  Delay: 1
+  HorizontalWave: {fileID: 6240933957313436419, guid: 2e77c4f08acb33441a0bed924973ffa2,
+    type: 3}
+  VerticalWave: {fileID: 6123314352362180482, guid: 230929d99af09f64f900103a0af4593d,
+    type: 3}
+  DiagWave: {fileID: 7543080813327243877, guid: e5e053aa629710842873c8c6717ee07c,
+    type: 3}
+  OtherDiagWave: {fileID: 2612795444102258910, guid: 659beca03c141574387782ba35e78279,
+    type: 3}
 --- !u!82 &1425109155311336999
 AudioSource:
   m_ObjectHideFlags: 0
