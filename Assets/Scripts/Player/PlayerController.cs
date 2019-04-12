@@ -373,19 +373,16 @@ public class PlayerController : MonoBehaviour
         } else if(name == "BossAir"){
             hasDefeatAirBoss = true;
             gameObject.GetComponent<PlayerHealth>().gainHearts();
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = AirActive;
             GameObject.Find("Canvas/Air").GetComponent<Image>().sprite = AirActive;
             Spell = 4;
         } else if(name == "BossWater"){
             hasDefeatWaterBoss = true;
             gameObject.GetComponent<PlayerHealth>().gainHearts();
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = WaterActive;
             GameObject.Find("Canvas/Water").GetComponent<Image>().sprite = WaterActive;
             Spell = 2;
         } else if(name == "BossSwamp"){
             hasDefeatSwampBoss = true;
             gameObject.GetComponent<PlayerHealth>().gainHearts();
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = RockActive;
             GameObject.Find("Canvas/Rock").GetComponent<Image>().sprite = RockActive;
             Spell = 1;
         }
