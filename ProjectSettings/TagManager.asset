@@ -21,6 +21,7 @@ TagManager:
   - Sea
   - EarthRing
   - FireWave
+  - BoxTp
   layers:
   - Default
   - TransparentFX

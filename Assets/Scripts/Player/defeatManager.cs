@@ -10,15 +10,46 @@ public class defeatManager : MonoBehaviour
     {
       switch (element) {
         case "Fire":
-          if(GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatFireBoss){
-            foreach(GameObject i in GameObject.FindGameObjectsWithTag("enemy"))
+            if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatFireBoss)
             {
-              Destroy(i);
+                foreach (GameObject i in GameObject.FindGameObjectsWithTag("enemy"))
+                {
+                    Destroy(i);
+                }
+                Destroy(GameObject.Find("BossFight"));
+                }
+            break;
+        case "Swamp":
+            if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatSwampBoss)
+            {
+                foreach (GameObject i in GameObject.FindGameObjectsWithTag("enemy"))
+                {
+                    Destroy(i);
+                }
+                Destroy(GameObject.Find("BossFight"));
             }
-            Destroy(GameObject.Find("BossFight"));
-          }
-        break;
-      }
+            break;
+        case "Air":
+            if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatAirBoss)
+            {
+                foreach (GameObject i in GameObject.FindGameObjectsWithTag("enemy"))
+                {
+                    Destroy(i);
+                }
+                Destroy(GameObject.Find("BossFight"));
+            }
+            break;
+        case "Water":
+            if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatWaterBoss)
+            {
+                foreach (GameObject i in GameObject.FindGameObjectsWithTag("enemy"))
+                {
+                    Destroy(i);
+                }
+                Destroy(GameObject.Find("BossFight"));
+            }
+            break;
+        }
     }
 
     // Update is called once per frame

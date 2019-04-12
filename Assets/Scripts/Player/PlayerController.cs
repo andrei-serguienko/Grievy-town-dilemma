@@ -59,6 +59,10 @@ public class PlayerController : MonoBehaviour
     public Sprite FireDisable;
     public Sprite FireActive;
 
+    public int houxStep;
+
+    public bool hasNormalSpell = false;
+    
     // Use this for initialization
     void Start()
     {
@@ -88,7 +92,7 @@ public class PlayerController : MonoBehaviour
 
         transform.eulerAngles = new Vector3(0, 0, 0);
 
-        if (Input.GetMouseButtonDown(1) && !EventSystem.current.IsPointerOverGameObject())
+        if (hasNormalSpell && Input.GetMouseButtonDown(1) && !EventSystem.current.IsPointerOverGameObject())
         {
             CastBasicSpell();
         }
@@ -271,50 +275,55 @@ public class PlayerController : MonoBehaviour
 
     void CastFireBall()
     {
-        if (mana > 0)
+        if (mana >= 7)
         {
             // repositioning fireball with player sprite
             var position = transform.position;
             position[0] += 0.4f;
             position[1] -= 0.6f;
             Instantiate(fireBall, position, transform.rotation);
-            mana -= 5;
+            mana -= 7;
         }
     }
 
     void CastWaterWall()
     {
-        if (mana > 0)
+        if (mana >= 15)
         {
             var position = transform.position;
             Instantiate(waterWall, position, transform.rotation);
-            mana -= 10;
+            mana -= 15;
         }
     }
 
     void CastRockPillar()
     {
-        if (mana > 0)
+        if (mana >= 25)
         {
             var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             position.z = 10;
             Instantiate(rockPillar, position, Quaternion.identity);
-            mana -= 10;
+            mana -= 25;
         }
     }
 
     void castTornado()
     {
-        var position = transform.position;
+        if (mana >= 10)
+        {
+            var position = transform.position;
 
-        tornado.GetComponent<castSpell>().angleVariation = tornadoSpread;
-        Instantiate(tornado, position, Quaternion.identity);
+            tornado.GetComponent<castSpell>().angleVariation = tornadoSpread;
+            Instantiate(tornado, position, Quaternion.identity);
 
-        tornado.GetComponent<castSpell>().angleVariation = 0;
-        Instantiate(tornado, position, Quaternion.identity);
+            tornado.GetComponent<castSpell>().angleVariation = 0;
+            Instantiate(tornado, position, Quaternion.identity);
 
-        tornado.GetComponent<castSpell>().angleVariation = -tornadoSpread;
-        Instantiate(tornado, position, Quaternion.identity);
+            tornado.GetComponent<castSpell>().angleVariation = -tornadoSpread;
+            Instantiate(tornado, position, Quaternion.identity);
+
+            mana -= 10;
+        }
     }
 
     void regenMana()
@@ -358,16 +367,24 @@ public class PlayerController : MonoBehaviour
         if (name == "BossFire"){
             print("Defeat Fire");
             hasDefeatFireBoss = true;
+            gameObject.GetComponent<PlayerHealth>().gainHearts();
             GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = FireActive;
+            Spell = 3;
         } else if(name == "BossAir"){
             hasDefeatAirBoss = true;
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = AirActive;
+            gameObject.GetComponent<PlayerHealth>().gainHearts();
+            GameObject.Find("Canvas/Air").GetComponent<Image>().sprite = AirActive;
+            Spell = 4;
         } else if(name == "BossWater"){
             hasDefeatWaterBoss = true;
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = WaterActive;
+            gameObject.GetComponent<PlayerHealth>().gainHearts();
+            GameObject.Find("Canvas/Water").GetComponent<Image>().sprite = WaterActive;
+            Spell = 2;
         } else if(name == "BossSwamp"){
             hasDefeatSwampBoss = true;
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = RockActive;
+            gameObject.GetComponent<PlayerHealth>().gainHearts();
+            GameObject.Find("Canvas/Rock").GetComponent<Image>().sprite = RockActive;
+            Spell = 1;
         }
     }
 

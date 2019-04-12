@@ -18,6 +18,9 @@ public class DashMove : MonoBehaviour
     public GameObject dashEffect;
     AudioSource audio;
 
+    public bool hasDash = false;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +32,7 @@ public class DashMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(direction == 0){
+        if(direction == 0 && hasDash){
             // if(gameObject.GetComponent<PlayerController>().getHorizontalInput() < 0)
             if(Input.GetKey(KeyCode.A) && Input.GetKeyDown(KeyCode.Space) && delay <= 0)
             {

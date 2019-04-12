@@ -27,12 +27,7 @@ public class BossFireballs : MonoBehaviour {
 
     }
     
-    private void FixedUpdate()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 3 * Time.deltaTime);
-        
-        InvokeRepeating("spawnFireTrail", 0, 0.1f);
-    }
+   
 
     void OnCollisionEnter2D(Collision2D col)
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShopMerchant : MonoBehaviour
 {
     public string product;
-
+    public int price;
 
     // Update is called once per frame
     void Update()
@@ -15,7 +15,7 @@ public class ShopMerchant : MonoBehaviour
 
     void buy(){
       PlayerController player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-      if(player.money < 20){
+      if(player.money < price){
         return;
       }
 
@@ -27,6 +27,6 @@ public class ShopMerchant : MonoBehaviour
         player.buyPotionMana();
         GameObject.FindWithTag("AnimPotionMana").GetComponent<Animator>().SetTrigger("Buying");
       }
-      player.money -= 20;
+      player.money -= price;
     }
 }
