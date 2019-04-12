@@ -8,7 +8,7 @@ using UnityEngine.AI;
 public class Boss : MonoBehaviour
 {
 
-
+    public GameObject boxTP;
 	public int speed;
 	public float FireRate;
 	public Rigidbody2D projectile;
@@ -27,6 +27,8 @@ public class Boss : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
+        boxTP = GameObject.FindWithTag("BoxTp");
+        boxTP.SetActive(false);
 //		InvokeRepeating("throwProjectile", FireRate, 0.4f);
 	}
 
@@ -34,10 +36,6 @@ public class Boss : MonoBehaviour
 	{
 //        Debug.Log("pos1" + pos1);
 //        Debug.Log("pos2" + pos2);
-
-
-
-		checkDeath();
 
 		if (spawnTest)
 		{
@@ -47,12 +45,11 @@ public class Boss : MonoBehaviour
 
 	}
 
-	void checkDeath()
+	public void death()
 	{
-		if (gameObject.GetComponent<Health>().LifePoints <= 0)
-		{
-			GameObject.FindWithTag("Player").GetComponent<PlayerController>().defeatBoss(gameObject.name);
-		}
+		GameObject.FindWithTag("Player").GetComponent<PlayerController>().defeatBoss(gameObject.name);
+        GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().numOfHeart += 1;
+        boxTP.SetActive(true);
 	}
 
 	void InvokeMinion()
