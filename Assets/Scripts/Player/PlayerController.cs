@@ -214,8 +214,6 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         manaUI.value = mana;
-//        Debug.Log(manaUI);
-//        Debug.Log(mana);
         if(canMove)
         {
             if (Mathf.Abs(HorizontalInput) > 0.5f && Mathf.Abs(VerticalInput) > 0.5f)

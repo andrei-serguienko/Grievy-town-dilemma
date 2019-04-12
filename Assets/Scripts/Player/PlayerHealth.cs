@@ -39,7 +39,9 @@ public class PlayerHealth : MonoBehaviour
     void Update () {
 //        Debug.Log(Heart.Length);
 
-	  
+
+	    if (Input.GetKeyDown("x"))
+		    numOfHeart++;
 	    
 		for (int i = 0; i < Heart.Length; i++)
 		{

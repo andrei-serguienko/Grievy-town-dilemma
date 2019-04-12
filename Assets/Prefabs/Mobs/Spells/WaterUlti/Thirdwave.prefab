@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2966633930267758183}
   - component: {fileID: 5352756625429994923}
   - component: {fileID: 1780335116586755714}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Thirdwave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 100
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -71,7 +71,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1001 &2657523126985814998
 PrefabInstance:
   m_ObjectHideFlags: 0

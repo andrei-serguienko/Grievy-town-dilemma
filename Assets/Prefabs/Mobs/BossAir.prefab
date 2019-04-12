@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1561361204331733874}
   - component: {fileID: 8746512041611178743}
   - component: {fileID: 2595724936609611279}
+  - component: {fileID: 7090155451628104477}
   m_Layer: 11
   m_Name: BossAir
   m_TagString: Untagged
@@ -250,6 +251,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7090155451628104477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56614677550562184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777c0ad32b6aa2848a09644778ff698e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveUltimate: 0
+  Delay: 0.5
+  Tornado: {fileID: 3888409683446867473, guid: 46fcab90f074b0148b3ec167e55326c8, type: 3}
 --- !u!1 &56614677705584022
 GameObject:
   m_ObjectHideFlags: 0

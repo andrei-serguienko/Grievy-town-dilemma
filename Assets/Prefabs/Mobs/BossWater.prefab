@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 552869701}
   - component: {fileID: 552869700}
   - component: {fileID: 552869699}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BossWaterBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1563289970}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TruKiTourne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 1538785621940266295}
   - component: {fileID: 6997826737852839457}
   - component: {fileID: 5656937833203281350}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BossWaterBall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 8572160219169609740}
   - component: {fileID: 4255535694377793139}
   - component: {fileID: 1523252641475756580}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BossWaterBall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -689,7 +689,7 @@ GameObject:
   - component: {fileID: 2969684724631106071}
   - component: {fileID: 8276732859053350429}
   - component: {fileID: 8540348085512877912}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BossWaterBall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

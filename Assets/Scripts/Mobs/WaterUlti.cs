@@ -25,7 +25,6 @@ public class WaterUlti : MonoBehaviour
 
     private IEnumerator Ultimate()
     {
-        print("Ultimate");
         Transform pos = transform;
         
         Instantiate(FirstWave, pos);
