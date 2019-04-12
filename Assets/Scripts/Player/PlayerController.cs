@@ -275,50 +275,55 @@ public class PlayerController : MonoBehaviour
 
     void CastFireBall()
     {
-        if (mana > 0)
+        if (mana >= 7)
         {
             // repositioning fireball with player sprite
             var position = transform.position;
             position[0] += 0.4f;
             position[1] -= 0.6f;
             Instantiate(fireBall, position, transform.rotation);
-            mana -= 5;
+            mana -= 7;
         }
     }
 
     void CastWaterWall()
     {
-        if (mana > 0)
+        if (mana >= 15)
         {
             var position = transform.position;
             Instantiate(waterWall, position, transform.rotation);
-            mana -= 10;
+            mana -= 15;
         }
     }
 
     void CastRockPillar()
     {
-        if (mana > 0)
+        if (mana >= 25)
         {
             var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             position.z = 10;
             Instantiate(rockPillar, position, Quaternion.identity);
-            mana -= 10;
+            mana -= 25;
         }
     }
 
     void castTornado()
     {
-        var position = transform.position;
+        if (mana >= 10)
+        {
+            var position = transform.position;
 
-        tornado.GetComponent<castSpell>().angleVariation = tornadoSpread;
-        Instantiate(tornado, position, Quaternion.identity);
+            tornado.GetComponent<castSpell>().angleVariation = tornadoSpread;
+            Instantiate(tornado, position, Quaternion.identity);
 
-        tornado.GetComponent<castSpell>().angleVariation = 0;
-        Instantiate(tornado, position, Quaternion.identity);
+            tornado.GetComponent<castSpell>().angleVariation = 0;
+            Instantiate(tornado, position, Quaternion.identity);
 
-        tornado.GetComponent<castSpell>().angleVariation = -tornadoSpread;
-        Instantiate(tornado, position, Quaternion.identity);
+            tornado.GetComponent<castSpell>().angleVariation = -tornadoSpread;
+            Instantiate(tornado, position, Quaternion.identity);
+
+            mana -= 10;
+        }
     }
 
     void regenMana()
@@ -362,15 +367,19 @@ public class PlayerController : MonoBehaviour
         if (name == "BossFire"){
             print("Defeat Fire");
             hasDefeatFireBoss = true;
+            gameObject.GetComponent<PlayerHealth>().gainHearts();
             GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = FireActive;
         } else if(name == "BossAir"){
             hasDefeatAirBoss = true;
+            gameObject.GetComponent<PlayerHealth>().gainHearts();
             GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = AirActive;
         } else if(name == "BossWater"){
             hasDefeatWaterBoss = true;
+            gameObject.GetComponent<PlayerHealth>().gainHearts();
             GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = WaterActive;
         } else if(name == "BossSwamp"){
             hasDefeatSwampBoss = true;
+            gameObject.GetComponent<PlayerHealth>().gainHearts();
             GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = RockActive;
         }
     }
