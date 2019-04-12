@@ -11,6 +11,23 @@ public class Dialogue : MonoBehaviour
 
 	public DialogText [] sentences;
 
+	private void Start()
+	{
+		if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatAirBoss)
+		{
+			currentStep = 6;
+		}if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatFireBoss)
+		{
+			currentStep = 4;
+		}if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatWaterBoss)
+		{
+			currentStep = 3;
+		}if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatSwampBoss)
+		{
+			currentStep = 5;
+		}
+	}
+
 	private void Update()
 	{
 		if (name == "Houx")
