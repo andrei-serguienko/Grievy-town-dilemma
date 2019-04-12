@@ -302,6 +302,11 @@ PrefabInstance:
       propertyPath: sentences.Array.data[0].texte
       value: 'Hello! I am the mana potion seller! You can buy some for 20 Gold each! '
       objectReference: {fileID: 0}
+    - target: {fileID: 1654785889799862647, guid: b0b0aa41499dc914b8a809ced7445462,
+        type: 3}
+      propertyPath: name
+      value: Merchant
+      objectReference: {fileID: 0}
     - target: {fileID: 1686379044167364480, guid: b0b0aa41499dc914b8a809ced7445462,
         type: 3}
       propertyPath: product
@@ -36459,6 +36464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: sentences.Array.data[0].texte
       value: 'Hello! I am the health potion seller! You can buy some for 20 Gold each! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654785889799862647, guid: b0b0aa41499dc914b8a809ced7445462,
+        type: 3}
+      propertyPath: name
+      value: Merchant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0b0aa41499dc914b8a809ced7445462, type: 3}
