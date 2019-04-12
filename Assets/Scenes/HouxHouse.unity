@@ -176,79 +176,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 603264295}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &658194187
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1580634425}
-    m_Modifications:
-    - target: {fileID: 1520604684755766, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_Name
-      value: BoxTPHouxBoss
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 14.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -42.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 26.855066
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 18.7425
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.087359995
-      objectReference: {fileID: 0}
-    - target: {fileID: 114094582469879826, guid: 575a93d9659edbc4ca37c7d5486f7509,
-        type: 3}
-      propertyPath: previousScene
-      value: HouxHouse
-      objectReference: {fileID: 0}
-    - target: {fileID: 114094582469879826, guid: 575a93d9659edbc4ca37c7d5486f7509,
-        type: 3}
-      propertyPath: scene
-      value: HouxBoss
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
---- !u!4 &658194188 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509,
-    type: 3}
-  m_PrefabInstance: {fileID: 658194187}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &809394450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -436,6 +363,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1069609104}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1069609106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1520604684755766, guid: 575a93d9659edbc4ca37c7d5486f7509,
+    type: 3}
+  m_PrefabInstance: {fileID: 1069609104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1069609107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069609106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5ffc7d1902f674199c5e0bc27f4a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  stepActivation: 5
 --- !u!1001 &1109340436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -700,7 +647,6 @@ Transform:
   m_Children:
   - {fileID: 603264296}
   - {fileID: 1069609105}
-  - {fileID: 658194188}
   m_Father: {fileID: 2101521908}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 68953482}
   - component: {fileID: 68953484}
   - component: {fileID: 68953483}
+  - component: {fileID: 68953485}
   m_Layer: 0
   m_Name: BoxTPVolcano
   m_TagString: Untagged
@@ -327,6 +328,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0731378}
   m_EdgeRadius: 0
+--- !u!114 &68953485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68953481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5ffc7d1902f674199c5e0bc27f4a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  stepActivation: 3
 --- !u!1 &98380941
 GameObject:
   m_ObjectHideFlags: 0
@@ -72763,6 +72778,7 @@ GameObject:
   - component: {fileID: 1136803258}
   - component: {fileID: 1136803260}
   - component: {fileID: 1136803259}
+  - component: {fileID: 1136803261}
   m_Layer: 0
   m_Name: BoxTPSwamp
   m_TagString: Untagged
@@ -72823,6 +72839,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0731378}
   m_EdgeRadius: 0
+--- !u!114 &1136803261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136803257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5ffc7d1902f674199c5e0bc27f4a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  stepActivation: 4
 --- !u!1 &1177272302
 GameObject:
   m_ObjectHideFlags: 0
@@ -72920,6 +72950,7 @@ GameObject:
   - component: {fileID: 1336651265}
   - component: {fileID: 1336651267}
   - component: {fileID: 1336651266}
+  - component: {fileID: 1336651268}
   m_Layer: 0
   m_Name: BoxTPSea
   m_TagString: Untagged
@@ -72980,6 +73011,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0731378}
   m_EdgeRadius: 0
+--- !u!114 &1336651268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336651264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5ffc7d1902f674199c5e0bc27f4a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  stepActivation: 2
 --- !u!1 &1421645617
 GameObject:
   m_ObjectHideFlags: 0
