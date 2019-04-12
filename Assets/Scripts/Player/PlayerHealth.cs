@@ -8,8 +8,8 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-
-	public float LifePoints;
+    public static PlayerHealth instance;
+    public float LifePoints;
 	public int numOfHeart;
 
 	private Image[] Heart;
@@ -26,21 +26,18 @@ public class PlayerHealth : MonoBehaviour
 
 	void Start()
 	{
+        instance = this;
         //Debug.Log( GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>());
         Heart = GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().Hearts;
 		audio = GetComponent<AudioSource>();
 		anim = GetComponent<Animator>();
-//        Debug.Log(Heart);
-
+        //        Debug.Log(Heart);
 	}
 
 
     // Update is called once per frame
     void Update () {
-//        Debug.Log(Heart.Length);
-
-	  
-	    
+//        Debug.Log(Heart.Length);  
 		for (int i = 0; i < Heart.Length; i++)
 		{
 			if (LifePoints - i == 0.5)
@@ -97,6 +94,11 @@ public class PlayerHealth : MonoBehaviour
 	{
 		LifePoints += heal;
 	}
+
+    public void gainHearts()
+    {
+        numOfHeart ++;
+    }
 
 	public void Die()
 	{

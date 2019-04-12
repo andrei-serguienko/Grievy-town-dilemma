@@ -195,6 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b851e4c1a365b74da2a2ad84fb35535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxTP: {fileID: 0}
   speed: 3
   FireRate: 2
   projectile: {fileID: 50917727042582014, guid: 6bc6b46fe45c8264aae30af06f021f67,
@@ -233,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f0abad15c804b4b9b90695eda1f9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LifePoints: 500
+  LifePoints: 600
   maxHealth: 0
   GivenGold: 100
 --- !u!114 &6592250004722277706

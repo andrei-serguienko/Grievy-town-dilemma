@@ -256,6 +256,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1318650629886592, guid: 21795ee8071ce69439a82e1f12e29d88, type: 3}
+      propertyPath: m_Name
+      value: Houx
+      objectReference: {fileID: 0}
     - target: {fileID: 4278160190648394, guid: 21795ee8071ce69439a82e1f12e29d88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.49
@@ -288,234 +292,17 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.size
-      value: 22
+    - target: {fileID: 4278160190648394, guid: 21795ee8071ce69439a82e1f12e29d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[0].texte
-      value: Hi adventurer, you seem to have forgotten where you come from huh? Let
-        me sum up the situation here. This world is led by Elementals Gods.
+    - target: {fileID: 4278160190648394, guid: 21795ee8071ce69439a82e1f12e29d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[1].texte
-      value: 'But recently they started to wreak havoc and daily terror on the people
-        of Grievy Town. And then you showed up! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[2].texte
-      value: Maybe I can help you out. It's dangerous to go alone! I've seen through
-        you and it seems that you possess a huge power.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[3].texte
-      value: I've heard a long time ago that the right mouse button can be helpful
-        to release your true power.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[4].texte
-      value: SHOW ME WHAT YOU GOT!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[5].texte
-      value: Wow that's impressive ! You seem to remember well how to use it !! Now
-        let's see...
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[6].texte
-      value: I think your physical abilites can help you to dash. You should try to
-        press the Spacebar button!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[7].texte
-      value: 'Now that you remember how to defend yourself: you should go South and
-        defeat the Water Elemental and bring his essence to me!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[8].texte
-      value: With this I can assure you this world is going to be a more peaceful
-        place...!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[9].texte
-      value: What are you waiting for you should be fighting the Water Eleme... Holy
-        moly, you already defeated him!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[5].step
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[6].step
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[7].step
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[10].texte
-      value: Thank you for bringing his essence here, I will keep it warm eheheh...
-        I mean erm... What are you still doing here?!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[11].texte
-      value: Don't you have a Lava Elemental to defeat on the West of Grievy Town?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[12].texte
-      value: 'One more thing before you go : try to press the numeric buttons from
-        1 to 4 when you have defeated a God, new spells just appear sometimes'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[13].texte
-      value: Oh! *hiding magic flasks* You are back !? What do you have to tell me
-        ? Oh the Lava Elemental's essence!!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[14].texte
-      value: 'Thank you very much! Hmmm let me see what''s next... You should go in
-        the swamps to get the Earth Elemental''s essence! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[15].texte
-      value: '*talking to himself* What if I use the two essences he brought me...
-        What? What am I doing? Nothing... Nothing at all!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[16].texte
-      value: 'Did you get the essence I asked you for? Right right right, well it
-        seems like you only have one Elemental left to defeat: the Air one !'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[17].texte
-      value: I can teleport you right there! Get back to me when you want to go up
-        there!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[18].texte
-      value: Hello again adventurer ! Do you have something to give me ? AH ...! I
-        must be dreaming ...! Here is the Air Elemental's essence ...!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[19].texte
-      value: This means I own the 4 elemental powers that previously dominated this
-        world ... You were helping me all along...
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[20].texte
-      value: 'Doing what ? Taking down every single divinity of this world ... Which
-        leads us to this conclusion : I am going to be the one and only God!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[21].texte
-      value: And to achieve that I am going to kill you, right now ...!!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[22].texte
-      value: SHOW ME WHAT YOU GOT!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[23].texte
-      value: SHOW ME WHAT YOU GOT!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[8].step
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[9].step
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[10].step
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[11].step
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[12].step
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[13].step
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[14].step
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[15].step
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[16].step
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[17].step
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[18].step
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[19].step
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[20].step
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117761537131624, guid: 21795ee8071ce69439a82e1f12e29d88,
-        type: 3}
-      propertyPath: sentences.Array.data[21].step
-      value: 6
+    - target: {fileID: 4278160190648394, guid: 21795ee8071ce69439a82e1f12e29d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21795ee8071ce69439a82e1f12e29d88, type: 3}
