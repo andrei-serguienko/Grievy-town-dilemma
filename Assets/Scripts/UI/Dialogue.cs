@@ -15,16 +15,16 @@ public class Dialogue : MonoBehaviour
 	{
 		if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatAirBoss)
 		{
-			currentStep =;
+			currentStep = 6;
 		}if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatFireBoss)
 		{
-			currentStep =;
+			currentStep = 4;
 		}if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatWaterBoss)
 		{
-			currentStep =;
+			currentStep = 3;
 		}if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatSwampBoss)
 		{
-			currentStep =;
+			currentStep = 5;
 		}
 	}
 
