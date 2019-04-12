@@ -138,7 +138,7 @@ MonoBehaviour:
   name: Lumberjack
   currentStep: 0
   sentences:
-  - texte: You can buy potion for health for 20 Gold
+  - texte: You can buy potion for health for 50 Gold
     step: 0
 --- !u!114 &1686379044167364480
 MonoBehaviour:

@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fca50e75846db846a5056b8ef2ad715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LifePoints: 100
+  LifePoints: 120
   MoveSpeed: 5
   MinAttackRange: 4.9
   MaxAttackRange: 5.1
@@ -173,9 +173,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f0abad15c804b4b9b90695eda1f9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LifePoints: 150
+  LifePoints: 120
   maxHealth: 0
-  GivenGold: 30
+  GivenGold: 35
 --- !u!82 &8908904472417152482
 AudioSource:
   m_ObjectHideFlags: 0

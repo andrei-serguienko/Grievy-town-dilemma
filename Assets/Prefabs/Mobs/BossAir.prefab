@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifePoints: 800
   maxHealth: 0
-  GivenGold: 100
+  GivenGold: 200
 --- !u!82 &2595724936609611279
 AudioSource:
   m_ObjectHideFlags: 0

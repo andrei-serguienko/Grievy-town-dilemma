@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifePoints: 700
   maxHealth: 0
-  GivenGold: 100
+  GivenGold: 150
 --- !u!114 &4829034299880070920
 MonoBehaviour:
   m_ObjectHideFlags: 0

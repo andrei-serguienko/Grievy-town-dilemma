@@ -173,9 +173,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f0abad15c804b4b9b90695eda1f9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LifePoints: 150
+  LifePoints: 60
   maxHealth: 0
-  GivenGold: 30
+  GivenGold: 20
 --- !u!82 &546920984506088526
 AudioSource:
   m_ObjectHideFlags: 0
