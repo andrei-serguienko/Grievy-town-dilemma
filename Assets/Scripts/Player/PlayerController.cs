@@ -363,15 +363,19 @@ public class PlayerController : MonoBehaviour
             print("Defeat Fire");
             hasDefeatFireBoss = true;
             GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = FireActive;
+            Spell = 3;
         } else if(name == "BossAir"){
             hasDefeatAirBoss = true;
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = AirActive;
+            GameObject.Find("Canvas/Air").GetComponent<Image>().sprite = AirActive;
+            Spell = 4;
         } else if(name == "BossWater"){
             hasDefeatWaterBoss = true;
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = WaterActive;
+            GameObject.Find("Canvas/Water").GetComponent<Image>().sprite = WaterActive;
+            Spell = 2;
         } else if(name == "BossSwamp"){
             hasDefeatSwampBoss = true;
-            GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = RockActive;
+            GameObject.Find("Canvas/Rock").GetComponent<Image>().sprite = RockActive;
+            Spell = 1;
         }
     }
 
