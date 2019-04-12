@@ -59,6 +59,8 @@ public class PlayerController : MonoBehaviour
     public Sprite FireDisable;
     public Sprite FireActive;
 
+    public int houxStep;
+
     // Use this for initialization
     void Start()
     {

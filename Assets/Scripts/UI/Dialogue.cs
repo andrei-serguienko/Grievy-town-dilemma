@@ -10,4 +10,12 @@ public class Dialogue : MonoBehaviour
 	public int currentStep;
 
 	public DialogText [] sentences;
+
+	private void Update()
+	{
+		if (name == "Houx")
+		{
+			GameObject.FindWithTag("Player").GetComponent<PlayerController>().houxStep = currentStep;
+		}
+	}
 }
