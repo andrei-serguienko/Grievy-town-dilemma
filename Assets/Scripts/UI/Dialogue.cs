@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +10,8 @@ public class Dialogue : MonoBehaviour
 	public int currentStep;
 
 	public DialogText [] sentences;
+
+	public bool tuto = false;
 
 	private void Start()
 	{

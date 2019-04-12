@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 6592250004722277706}
   - component: {fileID: 7623716026496112658}
   - component: {fileID: 1425109155311336999}
+  - component: {fileID: 6789199577318143095}
   m_Layer: 11
   m_Name: BossFire
   m_TagString: Boss
@@ -369,6 +370,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &6789199577318143095
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713982243950894}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 20
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: d5cec05df3dd05049928de831439d82d, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1001 &709409878749370504
 PrefabInstance:
   m_ObjectHideFlags: 0
