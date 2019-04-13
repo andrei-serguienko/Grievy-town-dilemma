@@ -135,10 +135,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624934a8404944542afbb5476df99b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Lumberjack
+  name: Mana Potion Merchant
   currentStep: 0
   sentences:
-  - texte: You can buy potion for health for 50 Gold
+  - texte: 'Hello! I am the mana potion seller! You can buy some for 50 Gold each! '
     step: 0
 --- !u!114 &1686379044167364480
 MonoBehaviour:
@@ -152,6 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431026125e3d4d34fa2bf5b004e3059a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  product: Health
+  product: Mana
   buyButton: {fileID: 0}
   dialogue: {fileID: 1654785889799862647}

@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LifePoints: 100
-  MoveSpeed: 5
+  MoveSpeed: 3
   MinAttackRange: 4.9
   MaxAttackRange: 5.1
   FireRate: 0.5

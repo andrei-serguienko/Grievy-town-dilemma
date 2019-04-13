@@ -156,7 +156,7 @@ MonoBehaviour:
       let's see...
     step: 1
   - texte: I think your physical abilites can help you to dash. You should try to
-      press the Spacebar button!
+      press the Spacebar button while looking in a direction!
     step: 1
   - texte: 'Now that you remember how to defend yourself: you should go South and
       defeat the Water Elemental and bring his essence to me!'
