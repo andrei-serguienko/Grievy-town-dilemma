@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DashMove : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class DashMove : MonoBehaviour
     AudioSource audio;
 
     public bool hasDash = false;
+    public bool hasLunchDash = false;
 
     
     // Start is called before the first frame update
@@ -32,6 +34,7 @@ public class DashMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        tutoriel();
         if(direction == 0 && hasDash){
             // if(gameObject.GetComponent<PlayerController>().getHorizontalInput() < 0)
             if(Input.GetKey(KeyCode.A) && Input.GetKeyDown(KeyCode.Space) && delay <= 0)
@@ -40,6 +43,7 @@ public class DashMove : MonoBehaviour
                 Instantiate(dashEffect, transform.position + new Vector3(0,0, -10), Quaternion.identity);
                 audio.PlayOneShot(dash);
                 dashing = true;
+                hasLunchDash = true;
                 // } else if(gameObject.GetComponent<PlayerController>().getHorizontalInput() > 0)
             } else if(Input.GetKey(KeyCode.D) && Input.GetKeyDown(KeyCode.Space) && delay <= 0)
             {
@@ -47,6 +51,7 @@ public class DashMove : MonoBehaviour
                 Instantiate(dashEffect, transform.position + new Vector3(0,0, -10), Quaternion.identity);
                 audio.PlayOneShot(dash);
                 dashing = true;
+                hasLunchDash = true;
             }
             // else if(gameObject.GetComponent<PlayerController>().getVerticalInput() > 0)
             else if(Input.GetKey(KeyCode.W) && Input.GetKeyDown(KeyCode.Space) && delay <= 0)
@@ -55,6 +60,7 @@ public class DashMove : MonoBehaviour
                 Instantiate(dashEffect, transform.position + new Vector3(0,0, -10), Quaternion.identity);
                 audio.PlayOneShot(dash);
                 dashing = true;
+                hasLunchDash = true;
             }
             // else if(gameObject.GetComponent<PlayerController>().getVerticalInput() < 0)
             else if(Input.GetKey(KeyCode.S) && Input.GetKeyDown(KeyCode.Space) && delay <= 0)
@@ -63,6 +69,7 @@ public class DashMove : MonoBehaviour
                 Instantiate(dashEffect, transform.position + new Vector3(0,0, -10), Quaternion.identity);
                 audio.PlayOneShot(dash);
                 dashing = true;
+                hasLunchDash = true;
             }
         } else {
             if(dashTime <= 0)
@@ -95,5 +102,16 @@ public class DashMove : MonoBehaviour
     }
     void resetVelocity(){
       rb.velocity = Vector2.zero;
+    }
+
+    void tutoriel()
+    {
+        if (SceneManager.GetActiveScene().name == "HouxHouse" && GetComponent<PlayerController>().houxStep == 1 && hasDash)
+        {
+            if (hasLunchDash)
+            {
+                GetComponent<PlayerController>().houxStep = 2;
+            }
+        }
     }
 }
