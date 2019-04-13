@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AirUltimate : MonoBehaviour
+public class AirUltimate : MonoBehaviour, InterfaceSpell
 {
     public bool ActiveUltimate;
     public float Delay;
@@ -49,5 +49,9 @@ public class AirUltimate : MonoBehaviour
         yield return new WaitForSeconds(Delay);
         
     }
-   
+
+    public void ActivateUltimateF()
+    {
+        ActiveUltimate = true;
+    }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaterUlti : MonoBehaviour
+public class WaterUlti : MonoBehaviour, InterfaceSpell
 {
     public bool ActiveUltimate;
     public float Delay;
@@ -34,5 +34,10 @@ public class WaterUlti : MonoBehaviour
         Instantiate(ThirdWave, pos);
         yield return new WaitForSeconds(Delay);
         
+    }
+
+    public void ActivateUltimateF()
+    {
+        ActiveUltimate = true;
     }
 }
