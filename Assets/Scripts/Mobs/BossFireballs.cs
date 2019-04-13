@@ -7,15 +7,13 @@ public class BossFireballs : MonoBehaviour {
     public Vector3 direction;
     public float TimeTillDestroy;
     public float dammages;
-    public GameObject FireTrail;
-    
     private GameObject player;
-
-
 
 
     private void Start()
     {
+        player = GameObject.FindWithTag("Player");
+        
         var dir = this.direction;
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -26,9 +24,8 @@ public class BossFireballs : MonoBehaviour {
         Destroy(gameObject, TimeTillDestroy);
 
     }
-    
    
-
+    
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag.Equals("Player"))
@@ -36,7 +33,6 @@ public class BossFireballs : MonoBehaviour {
             player.GetComponent<PlayerHealth>().TakeAHit(dammages);
             Destroy(gameObject);
             player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-            player.GetComponent<Rigidbody2D>().AddForce(Vector3.zero);
 
         }
         else
@@ -45,8 +41,4 @@ public class BossFireballs : MonoBehaviour {
         }
     }
     
-    void spawnFireTrail()
-    {
-        Instantiate(FireTrail, transform.position, Quaternion.identity);
-    }
 }

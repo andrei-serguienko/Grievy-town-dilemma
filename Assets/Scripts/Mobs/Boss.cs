@@ -49,7 +49,9 @@ public class Boss : MonoBehaviour
 	{
 		GameObject.FindWithTag("Player").GetComponent<PlayerController>().defeatBoss(gameObject.name);
         GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().numOfHeart += 1;
+        GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().LifePoints += 10;
         boxTP.SetActive(true);
+		Destroy(gameObject);
 	}
 
 	void InvokeMinion()

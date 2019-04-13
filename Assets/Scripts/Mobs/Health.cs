@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
 
     private void Start()
     {
-      maxHealth = LifePoints;
+        maxHealth = LifePoints;
         audio = gameObject.GetComponent<AudioSource>();
     }
 
@@ -39,8 +39,12 @@ public class Health : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("playerProjectile"))
         {
-
-           LifePoints -= other.gameObject.GetComponent<castSpell>().damages;
+            LifePoints -= other.gameObject.GetComponent<castSpell>().damages;
+           
+        }
+        else if (other.gameObject.tag.Equals("RockPillar"))
+        {
+            LifePoints -= other.gameObject.GetComponent<castRockPillar>().damages;
         }
 
         Invoke("resetVelocity", 1.1f);
