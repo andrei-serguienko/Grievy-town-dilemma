@@ -11,22 +11,11 @@ public class Dialogue : MonoBehaviour
 
 	public DialogText [] sentences;
 
-	public bool tuto = false;
-
 	private void Start()
 	{
-		if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatAirBoss)
+		if (name == "Houx")
 		{
-			currentStep = 6;
-		}if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatFireBoss)
-		{
-			currentStep = 4;
-		}if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatWaterBoss)
-		{
-			currentStep = 3;
-		}if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasDefeatSwampBoss)
-		{
-			currentStep = 5;
+			
 		}
 	}
 
@@ -34,7 +23,7 @@ public class Dialogue : MonoBehaviour
 	{
 		if (name == "Houx")
 		{
-			GameObject.FindWithTag("Player").GetComponent<PlayerController>().houxStep = currentStep;
+			currentStep = GameObject.FindWithTag("Player").GetComponent<PlayerController>().houxStep;
 		}
 	}
 }

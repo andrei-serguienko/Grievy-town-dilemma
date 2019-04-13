@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
     public int houxStep;
 
     public bool hasNormalSpell = false;
+    public bool hasLunchBasicSpell = false;
     
     // Use this for initialization
     void Start()
@@ -211,6 +212,7 @@ public class PlayerController : MonoBehaviour
             if (mana > 100)
                 mana = 100;
         }
+        tutoriel();
 
     }
 
@@ -270,6 +272,7 @@ public class PlayerController : MonoBehaviour
             position[1] -= 0.6f;
             Instantiate(basicSpell, position, transform.rotation);
             mana -= 5;
+            hasLunchBasicSpell = true;
         }
     }
 
@@ -370,21 +373,25 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<PlayerHealth>().gainHearts();
             GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = FireActive;
             Spell = 3;
+            houxStep = 4;
         } else if(name == "BossAir"){
             hasDefeatAirBoss = true;
             gameObject.GetComponent<PlayerHealth>().gainHearts();
             GameObject.Find("Canvas/Air").GetComponent<Image>().sprite = AirActive;
             Spell = 4;
+            houxStep = 6;
         } else if(name == "BossWater"){
             hasDefeatWaterBoss = true;
             gameObject.GetComponent<PlayerHealth>().gainHearts();
             GameObject.Find("Canvas/Water").GetComponent<Image>().sprite = WaterActive;
             Spell = 2;
+            houxStep = 3;
         } else if(name == "BossSwamp"){
             hasDefeatSwampBoss = true;
             gameObject.GetComponent<PlayerHealth>().gainHearts();
             GameObject.Find("Canvas/Rock").GetComponent<Image>().sprite = RockActive;
             Spell = 1;
+            houxStep = 5;
         }
     }
 
@@ -409,5 +416,16 @@ public class PlayerController : MonoBehaviour
     {
         audio.clip = Coins;
         audio.Play();
+    }
+
+    public void tutoriel()
+    {
+        if (SceneManager.GetActiveScene().name == "HouxHouse" && houxStep == 0 && hasNormalSpell)
+        {
+            if (hasLunchBasicSpell)
+            {
+                houxStep = 1;
+            }
+        }
     }
 }
