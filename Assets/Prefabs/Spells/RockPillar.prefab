@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2359794535729615963}
   m_Layer: 8
   m_Name: RockPillar
-  m_TagString: playerProjectile
+  m_TagString: RockPillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -67,6 +67,10 @@ public class PlayerHealth : MonoBehaviour
 		{
 			Die();
 		}
+	    if (LifePoints >= numOfHeart )
+	    {
+		    LifePoints = numOfHeart;
+	    }
 	}
 
 	public void TakeAHit(float damage)
