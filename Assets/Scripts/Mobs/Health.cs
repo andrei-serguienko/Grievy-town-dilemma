@@ -20,7 +20,6 @@ public class Health : MonoBehaviour
     {
         if (LifePoints <= 0)
         {
-
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().money += GivenGold;
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().PlayGoldSound();
             gameObject.GetComponent<Boss>().death();
