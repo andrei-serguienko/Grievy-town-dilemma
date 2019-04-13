@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EarthUltimate : MonoBehaviour
+public class EarthUltimate : MonoBehaviour, InterfaceSpell
 {
 
     public bool ActiveUltimate;
@@ -60,5 +60,10 @@ public class EarthUltimate : MonoBehaviour
 
     public void lunchUlti(){
       ActiveUltimate = true;
+    }
+
+    public void ActivateUltimateF()
+    {
+        ActiveUltimate = true;
     }
 }

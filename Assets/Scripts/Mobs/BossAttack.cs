@@ -48,29 +48,32 @@ public class BossAttack : MonoBehaviour
         }
         else
         {
+           
             if (hp.LifePoints < (0.8 * (float) hp.maxHealth) && !ulti1)
             {
-                GetComponent<FireUltimate>().ActiveUltimate = true;
+                GetComponent<InterfaceSpell>().ActivateUltimateF();
                 ulti1 = true;
             }
 
             if (hp.LifePoints < (0.6 * (float) hp.maxHealth) && !ulti2)
             {
-                GetComponent<FireUltimate>().ActiveUltimate = true;
+                GetComponent<InterfaceSpell>().ActivateUltimateF();
                 ulti2 = true;
             }
 
             if (hp.LifePoints < (0.4 * (float) hp.maxHealth) && !ulti3)
             {
-                GetComponent<FireUltimate>().ActiveUltimate = true;
+                GetComponent<InterfaceSpell>().ActivateUltimateF();
                 ulti3 = true;
             }
 
             if (hp.LifePoints < (0.2 * (float) hp.maxHealth) && !ulti4)
             {
-                GetComponent<FireUltimate>().ActiveUltimate = true;
+                GetComponent<InterfaceSpell>().ActivateUltimateF();
                 ulti4 = true;
             }
+        
+     
         }
     }
 

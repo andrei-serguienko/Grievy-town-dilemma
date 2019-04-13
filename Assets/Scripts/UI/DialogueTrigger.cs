@@ -26,6 +26,17 @@ public class DialogueTrigger : MonoBehaviour
           }
             FindObjectOfType<DialogueManager>().EndDialogue();
         }
+
+      if (GetComponent<Dialogue>().name == "Houx")
+      {
+        if (GetComponent<Dialogue>().currentStep == 0)
+        {
+          GameObject.FindWithTag("Player").GetComponent<PlayerController>().hasNormalSpell = true;
+        } else if (GetComponent<Dialogue>().currentStep == 1)
+        {
+          GameObject.FindWithTag("Player").GetComponent<DashMove>().hasDash = true;
+        }
+      }
     }
 
 }

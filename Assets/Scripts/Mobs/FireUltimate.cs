@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireUltimate : MonoBehaviour
+public class FireUltimate : MonoBehaviour, InterfaceSpell
 {
     public bool ActiveUltimate;
     public float Delay;
@@ -23,6 +23,8 @@ public class FireUltimate : MonoBehaviour
             ActiveUltimate = false;
         }
     }
+    
+    
 
     private IEnumerator Ultimate()
     {
@@ -43,5 +45,10 @@ public class FireUltimate : MonoBehaviour
             Destroy(i);
         }
         
+    }
+
+    public void ActivateUltimateF()
+    {
+        ActiveUltimate = true;
     }
 }
