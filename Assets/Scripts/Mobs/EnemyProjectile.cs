@@ -37,14 +37,10 @@ public class EnemyProjectile : MonoBehaviour {
         if (col.gameObject.tag.Equals("Player"))
         {
             player.GetComponent<PlayerHealth>().TakeAHit(dammages);
-            
-            Destroy(gameObject);
-
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+        
+        Destroy(gameObject);
+        
         
          
     }

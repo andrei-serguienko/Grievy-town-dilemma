@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4777291225302874973}
   - component: {fileID: 1546786420045949097}
   - component: {fileID: 8908904472417152482}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: InvocSwamp
   m_TagString: enemy
   m_Icon: {fileID: 0}

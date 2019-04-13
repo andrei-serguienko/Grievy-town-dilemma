@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4367611970675575586}
   - component: {fileID: 8995402887783072016}
   - component: {fileID: 546920984506088526}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: InvocWater
   m_TagString: enemy
   m_Icon: {fileID: 0}

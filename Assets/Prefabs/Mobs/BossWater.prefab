@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 1835293964077543115}
   m_Layer: 11
   m_Name: BossWater
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -428,6 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b851e4c1a365b74da2a2ad84fb35535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxTP: {fileID: 0}
   speed: 4
   FireRate: 2
   projectile: {fileID: 50917727042582014, guid: 58cade6005675e748a0fab2f5235a3be,

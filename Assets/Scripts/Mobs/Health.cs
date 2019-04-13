@@ -23,8 +23,16 @@ public class Health : MonoBehaviour
 
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().money += GivenGold;
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().PlayGoldSound();
-            gameObject.GetComponent<Boss>().death();
-            Destroy(gameObject);
+
+            if (gameObject.tag == "Boss")
+            {
+                gameObject.GetComponent<Boss>().death();
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+            
         }
     }
 
