@@ -196,9 +196,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown("q") && HealingPotion > 0 && lifePoints < numberOfHeart)
         {
             HealingPotion -= 1;
-            this.GetComponent<PlayerHealth>().Heal(1);
-            audio.clip = HealingPotionClip;
-            audio.Play();
+            this.GetComponent<PlayerHealth>().Heal(2.5f);
+            audio.clip = HealingPotionClip;audio.Play();
             if (lifePoints > numberOfHeart)
                 lifePoints = numberOfHeart;
         }
