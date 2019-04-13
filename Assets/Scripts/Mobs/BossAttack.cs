@@ -10,8 +10,6 @@ public class BossAttack : MonoBehaviour
     bool ulti3 = false;
     bool ulti4 = false;
 
-    public string name;
-
     public bool deplacement;
     // Start is called before the first frame update
     void Start()
