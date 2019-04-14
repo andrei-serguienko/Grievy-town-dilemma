@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8268925705697180120}
   - component: {fileID: 7986136990713365384}
   - component: {fileID: 4776196717095950610}
-  - component: {fileID: 8374036531617755575}
   - component: {fileID: 4664762028813931316}
   - component: {fileID: 853140900426544325}
+  - component: {fileID: 9019138726717795842}
   m_Layer: 10
   m_Name: RockPillarBoss (13)
   m_TagString: enemy
@@ -119,20 +119,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &8374036531617755575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359910742125163436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &4664762028813931316
 Rigidbody2D:
   serializedVersion: 4
@@ -250,6 +236,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9019138726717795842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359910742125163436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &477448335736864445
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,9 +262,9 @@ GameObject:
   - component: {fileID: 2276835283159377341}
   - component: {fileID: 733128577461279769}
   - component: {fileID: 1863718423268556230}
-  - component: {fileID: 2960860707288507466}
   - component: {fileID: 2287200385879340955}
   - component: {fileID: 4616795360490367442}
+  - component: {fileID: 7845017028092248644}
   m_Layer: 10
   m_Name: RockPillarBoss (9)
   m_TagString: enemy
@@ -369,20 +369,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &2960860707288507466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477448335736864445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &2287200385879340955
 Rigidbody2D:
   serializedVersion: 4
@@ -500,6 +486,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7845017028092248644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477448335736864445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &1115627159331512360
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,9 +512,9 @@ GameObject:
   - component: {fileID: 2464203352772627825}
   - component: {fileID: 605023505816256758}
   - component: {fileID: 6714404944608964659}
-  - component: {fileID: 109500058590300756}
   - component: {fileID: 1436979874504217963}
   - component: {fileID: 1383017641245175156}
+  - component: {fileID: 5592842221533949138}
   m_Layer: 10
   m_Name: RockPillarBoss (2)
   m_TagString: enemy
@@ -619,20 +619,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &109500058590300756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115627159331512360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &1436979874504217963
 Rigidbody2D:
   serializedVersion: 4
@@ -750,6 +736,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5592842221533949138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115627159331512360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &2415867267070537207
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,9 +762,9 @@ GameObject:
   - component: {fileID: 2443891205544816606}
   - component: {fileID: 5017283036928201203}
   - component: {fileID: 3512686157808078206}
-  - component: {fileID: 8228253664459674619}
   - component: {fileID: 4076162774038904056}
   - component: {fileID: 362693168625150921}
+  - component: {fileID: 2452477755892846789}
   m_Layer: 10
   m_Name: RockPillarBoss (3)
   m_TagString: enemy
@@ -869,20 +869,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &8228253664459674619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2415867267070537207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &4076162774038904056
 Rigidbody2D:
   serializedVersion: 4
@@ -1000,6 +986,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2452477755892846789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2415867267070537207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &2505204161075081152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,9 +1012,9 @@ GameObject:
   - component: {fileID: 4440348918784525485}
   - component: {fileID: 4373808255518350385}
   - component: {fileID: 8944205680914921993}
-  - component: {fileID: 6995604646479929786}
   - component: {fileID: 658485569644302941}
   - component: {fileID: 3200564773299598739}
+  - component: {fileID: 282387297277315073}
   m_Layer: 10
   m_Name: RockPillarBoss (15)
   m_TagString: enemy
@@ -1119,20 +1119,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &6995604646479929786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2505204161075081152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &658485569644302941
 Rigidbody2D:
   serializedVersion: 4
@@ -1250,6 +1236,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &282387297277315073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2505204161075081152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &2854152709024662846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,9 +1262,9 @@ GameObject:
   - component: {fileID: 5726844381103815136}
   - component: {fileID: 4843714130978567405}
   - component: {fileID: 7551703155797265305}
-  - component: {fileID: 5791909953329218188}
   - component: {fileID: 5234534056469871784}
   - component: {fileID: 7844038486694297823}
+  - component: {fileID: 5597782662841511076}
   m_Layer: 10
   m_Name: RockPillarBoss (5)
   m_TagString: enemy
@@ -1369,20 +1369,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5791909953329218188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2854152709024662846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &5234534056469871784
 Rigidbody2D:
   serializedVersion: 4
@@ -1500,6 +1486,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5597782662841511076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2854152709024662846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &3365295261962821367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,9 +1512,9 @@ GameObject:
   - component: {fileID: 2578978519377188321}
   - component: {fileID: 1829537033466042805}
   - component: {fileID: 3836992300564154805}
-  - component: {fileID: 6712659893983048639}
   - component: {fileID: 2674072355718631889}
   - component: {fileID: 966442115833262631}
+  - component: {fileID: 8294500355431762785}
   m_Layer: 10
   m_Name: RockPillarBoss (8)
   m_TagString: enemy
@@ -1619,20 +1619,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &6712659893983048639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3365295261962821367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &2674072355718631889
 Rigidbody2D:
   serializedVersion: 4
@@ -1750,6 +1736,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8294500355431762785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3365295261962821367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &3592133328428097978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,9 +1762,9 @@ GameObject:
   - component: {fileID: 3994187259685776245}
   - component: {fileID: 3420384305635755858}
   - component: {fileID: 6780005043636020779}
-  - component: {fileID: 3397338877297047969}
   - component: {fileID: 1400190817231378092}
   - component: {fileID: 4899176301883107769}
+  - component: {fileID: 1664546169124428728}
   m_Layer: 10
   m_Name: RockPillarBoss (19)
   m_TagString: enemy
@@ -1869,20 +1869,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &3397338877297047969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3592133328428097978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &1400190817231378092
 Rigidbody2D:
   serializedVersion: 4
@@ -2000,6 +1986,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1664546169124428728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592133328428097978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &3638915721076012026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,9 +2012,9 @@ GameObject:
   - component: {fileID: 2887124872557370147}
   - component: {fileID: 5517758337169070789}
   - component: {fileID: 5005506555891075585}
-  - component: {fileID: 2573301291624098267}
   - component: {fileID: 4098419033246270084}
   - component: {fileID: 2615340790344808650}
+  - component: {fileID: 2189079903556132690}
   m_Layer: 10
   m_Name: RockPillarBoss (22)
   m_TagString: enemy
@@ -2119,20 +2119,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &2573301291624098267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3638915721076012026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &4098419033246270084
 Rigidbody2D:
   serializedVersion: 4
@@ -2250,6 +2236,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2189079903556132690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3638915721076012026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &3912680146136172896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,9 +2262,9 @@ GameObject:
   - component: {fileID: 1387387223328059232}
   - component: {fileID: 8463875749138768932}
   - component: {fileID: 1902901884442541017}
-  - component: {fileID: 4341870448876372662}
   - component: {fileID: 7719511793815171240}
   - component: {fileID: 7385511152538194941}
+  - component: {fileID: 7784936613391510323}
   m_Layer: 10
   m_Name: RockPillarBoss (16)
   m_TagString: enemy
@@ -2369,20 +2369,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &4341870448876372662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3912680146136172896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &7719511793815171240
 Rigidbody2D:
   serializedVersion: 4
@@ -2500,6 +2486,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7784936613391510323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3912680146136172896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &4540234209230968944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,9 +2512,9 @@ GameObject:
   - component: {fileID: 6503890635858556776}
   - component: {fileID: 5324410722854625622}
   - component: {fileID: 4952108446913099382}
-  - component: {fileID: 7612609364262597322}
   - component: {fileID: 468143123641743316}
   - component: {fileID: 3280920523113262551}
+  - component: {fileID: 7300447904631263666}
   m_Layer: 10
   m_Name: RockPillarBoss (7)
   m_TagString: enemy
@@ -2619,20 +2619,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &7612609364262597322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4540234209230968944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &468143123641743316
 Rigidbody2D:
   serializedVersion: 4
@@ -2750,6 +2736,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7300447904631263666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4540234209230968944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &4556571159807466898
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,9 +2762,9 @@ GameObject:
   - component: {fileID: 5207792882293327870}
   - component: {fileID: 8592887925108207894}
   - component: {fileID: 8571311575662916737}
-  - component: {fileID: 851982581685956328}
   - component: {fileID: 8005989413661655947}
   - component: {fileID: 4302083283595839458}
+  - component: {fileID: 2678750485283352575}
   m_Layer: 10
   m_Name: RockPillarBoss (14)
   m_TagString: enemy
@@ -2869,20 +2869,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &851982581685956328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4556571159807466898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &8005989413661655947
 Rigidbody2D:
   serializedVersion: 4
@@ -3000,6 +2986,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2678750485283352575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4556571159807466898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &4903999408113595658
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,9 +3012,9 @@ GameObject:
   - component: {fileID: 1387573066488474008}
   - component: {fileID: 7048440080586122006}
   - component: {fileID: 8813501370700568049}
-  - component: {fileID: 5070299774014579020}
   - component: {fileID: 3582654103354687730}
   - component: {fileID: 2359343762987592377}
+  - component: {fileID: 865325078025033200}
   m_Layer: 10
   m_Name: RockPillarBoss (10)
   m_TagString: enemy
@@ -3119,20 +3119,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5070299774014579020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4903999408113595658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &3582654103354687730
 Rigidbody2D:
   serializedVersion: 4
@@ -3250,6 +3236,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &865325078025033200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4903999408113595658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5221231032285292198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,9 +3262,9 @@ GameObject:
   - component: {fileID: 7383811536407208313}
   - component: {fileID: 6508787292257640722}
   - component: {fileID: 4967171076833459573}
-  - component: {fileID: 9089176881718762670}
   - component: {fileID: 6557802400625367223}
   - component: {fileID: 5541513619971223590}
+  - component: {fileID: 6056492805587200799}
   m_Layer: 10
   m_Name: RockPillarBoss (20)
   m_TagString: enemy
@@ -3369,20 +3369,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &9089176881718762670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5221231032285292198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &6557802400625367223
 Rigidbody2D:
   serializedVersion: 4
@@ -3500,6 +3486,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6056492805587200799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5221231032285292198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5273187038641359702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3512,9 +3512,9 @@ GameObject:
   - component: {fileID: 692902362648585817}
   - component: {fileID: 8814101860647495988}
   - component: {fileID: 1585713350665398547}
-  - component: {fileID: 7165965125567808323}
   - component: {fileID: 899183749104546742}
   - component: {fileID: 7408886328045561310}
+  - component: {fileID: 4104021791661180774}
   m_Layer: 10
   m_Name: RockPillarBoss (32)
   m_TagString: enemy
@@ -3619,20 +3619,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &7165965125567808323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5273187038641359702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &899183749104546742
 Rigidbody2D:
   serializedVersion: 4
@@ -3750,6 +3736,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4104021791661180774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5273187038641359702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5499885686334427529
 GameObject:
   m_ObjectHideFlags: 0
@@ -3762,9 +3762,9 @@ GameObject:
   - component: {fileID: 6027183256013367901}
   - component: {fileID: 6495382565679556593}
   - component: {fileID: 3261970131276562623}
-  - component: {fileID: 1605444625357353842}
   - component: {fileID: 2351974500717098830}
   - component: {fileID: 2650261730687289740}
+  - component: {fileID: 8568983090644328003}
   m_Layer: 10
   m_Name: RockPillarBoss (11)
   m_TagString: enemy
@@ -3869,20 +3869,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &1605444625357353842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5499885686334427529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &2351974500717098830
 Rigidbody2D:
   serializedVersion: 4
@@ -4000,6 +3986,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8568983090644328003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5499885686334427529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5611913374286105130
 GameObject:
   m_ObjectHideFlags: 0
@@ -4012,9 +4012,9 @@ GameObject:
   - component: {fileID: 8778320114517766173}
   - component: {fileID: 7932562730480385337}
   - component: {fileID: 5155171888316604229}
-  - component: {fileID: 5594929823305206474}
   - component: {fileID: 1165306755170649683}
   - component: {fileID: 5500509809262332072}
+  - component: {fileID: 6520372004124497028}
   m_Layer: 10
   m_Name: RockPillarBoss (17)
   m_TagString: enemy
@@ -4119,20 +4119,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5594929823305206474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5611913374286105130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &1165306755170649683
 Rigidbody2D:
   serializedVersion: 4
@@ -4250,6 +4236,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6520372004124497028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5611913374286105130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5632993992660796248
 GameObject:
   m_ObjectHideFlags: 0
@@ -4262,9 +4262,9 @@ GameObject:
   - component: {fileID: 8532327429700753665}
   - component: {fileID: 5503937893303901315}
   - component: {fileID: 7331218905946480615}
-  - component: {fileID: 6980934518289419950}
   - component: {fileID: 4221152175907374424}
   - component: {fileID: 8777404889112586388}
+  - component: {fileID: 3848112215773747729}
   m_Layer: 10
   m_Name: RockPillarBoss (34)
   m_TagString: enemy
@@ -4369,20 +4369,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &6980934518289419950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5632993992660796248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &4221152175907374424
 Rigidbody2D:
   serializedVersion: 4
@@ -4500,6 +4486,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3848112215773747729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5632993992660796248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5695982116963824107
 GameObject:
   m_ObjectHideFlags: 0
@@ -4512,9 +4512,9 @@ GameObject:
   - component: {fileID: 5695982116963824096}
   - component: {fileID: 5695982116963824097}
   - component: {fileID: 5695982116963824102}
-  - component: {fileID: 5695982116963824103}
   - component: {fileID: 5695982116963824100}
   - component: {fileID: 5695982116963824101}
+  - component: {fileID: 6849304600486118638}
   m_Layer: 10
   m_Name: RockPillarBoss (27)
   m_TagString: enemy
@@ -4619,20 +4619,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5695982116963824103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5695982116963824107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &5695982116963824100
 Rigidbody2D:
   serializedVersion: 4
@@ -4750,6 +4736,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6849304600486118638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695982116963824107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5695982117150245025
 GameObject:
   m_ObjectHideFlags: 0
@@ -4762,9 +4762,9 @@ GameObject:
   - component: {fileID: 5695982117150245086}
   - component: {fileID: 5695982117150245087}
   - component: {fileID: 5695982117150245084}
-  - component: {fileID: 5695982117150245085}
   - component: {fileID: 5695982117150245026}
   - component: {fileID: 5695982117150245027}
+  - component: {fileID: 8185813996331223474}
   m_Layer: 10
   m_Name: RockPillarBoss (30)
   m_TagString: enemy
@@ -4869,20 +4869,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5695982117150245085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5695982117150245025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &5695982117150245026
 Rigidbody2D:
   serializedVersion: 4
@@ -5000,6 +4986,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8185813996331223474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695982117150245025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5695982117499815240
 GameObject:
   m_ObjectHideFlags: 0
@@ -5012,9 +5012,9 @@ GameObject:
   - component: {fileID: 5695982117499815233}
   - component: {fileID: 5695982117499815238}
   - component: {fileID: 5695982117499815239}
-  - component: {fileID: 5695982117499815236}
   - component: {fileID: 5695982117499815237}
   - component: {fileID: 5695982117499815242}
+  - component: {fileID: 2288459154111805473}
   m_Layer: 10
   m_Name: RockPillarBoss (26)
   m_TagString: enemy
@@ -5119,20 +5119,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5695982117499815236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5695982117499815240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &5695982117499815237
 Rigidbody2D:
   serializedVersion: 4
@@ -5250,6 +5236,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2288459154111805473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695982117499815240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5695982117560786067
 GameObject:
   m_ObjectHideFlags: 0
@@ -5262,9 +5262,9 @@ GameObject:
   - component: {fileID: 5695982117560786056}
   - component: {fileID: 5695982117560786057}
   - component: {fileID: 5695982117560786062}
-  - component: {fileID: 5695982117560786063}
   - component: {fileID: 5695982117560786060}
   - component: {fileID: 5695982117560786061}
+  - component: {fileID: 2117314197422459192}
   m_Layer: 10
   m_Name: RockPillarBoss (25)
   m_TagString: enemy
@@ -5369,20 +5369,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5695982117560786063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5695982117560786067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &5695982117560786060
 Rigidbody2D:
   serializedVersion: 4
@@ -5500,6 +5486,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2117314197422459192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695982117560786067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5695982117614524344
 GameObject:
   m_ObjectHideFlags: 0
@@ -5512,9 +5512,9 @@ GameObject:
   - component: {fileID: 5695982117614524337}
   - component: {fileID: 5695982117614524342}
   - component: {fileID: 5695982117614524343}
-  - component: {fileID: 5695982117614524340}
   - component: {fileID: 5695982117614524341}
   - component: {fileID: 5695982117614524346}
+  - component: {fileID: 4537909748246332148}
   m_Layer: 10
   m_Name: RockPillarBoss (31)
   m_TagString: enemy
@@ -5619,20 +5619,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5695982117614524340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5695982117614524344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &5695982117614524341
 Rigidbody2D:
   serializedVersion: 4
@@ -5750,6 +5736,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4537909748246332148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695982117614524344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5695982117863404188
 GameObject:
   m_ObjectHideFlags: 0
@@ -5762,9 +5762,9 @@ GameObject:
   - component: {fileID: 5695982117863404181}
   - component: {fileID: 5695982117863404186}
   - component: {fileID: 5695982117863404187}
-  - component: {fileID: 5695982117863404184}
   - component: {fileID: 5695982117863404185}
   - component: {fileID: 5695982117863404190}
+  - component: {fileID: 7990180867806991339}
   m_Layer: 10
   m_Name: RockPillarBoss (24)
   m_TagString: enemy
@@ -5869,20 +5869,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5695982117863404184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5695982117863404188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &5695982117863404185
 Rigidbody2D:
   serializedVersion: 4
@@ -6000,6 +5986,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7990180867806991339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695982117863404188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5695982117920916449
 GameObject:
   m_ObjectHideFlags: 0
@@ -6012,9 +6012,9 @@ GameObject:
   - component: {fileID: 5695982117920915998}
   - component: {fileID: 5695982117920915999}
   - component: {fileID: 5695982117920915996}
-  - component: {fileID: 5695982117920915997}
   - component: {fileID: 5695982117920916450}
   - component: {fileID: 5695982117920916451}
+  - component: {fileID: 4092451201844734887}
   m_Layer: 10
   m_Name: RockPillarBoss (28)
   m_TagString: enemy
@@ -6119,20 +6119,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5695982117920915997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5695982117920916449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &5695982117920916450
 Rigidbody2D:
   serializedVersion: 4
@@ -6250,6 +6236,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4092451201844734887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695982117920916449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &5695982118052513930
 GameObject:
   m_ObjectHideFlags: 0
@@ -6262,9 +6262,9 @@ GameObject:
   - component: {fileID: 5695982118052513923}
   - component: {fileID: 5695982118052513920}
   - component: {fileID: 5695982118052513921}
-  - component: {fileID: 5695982118052513926}
   - component: {fileID: 5695982118052513927}
   - component: {fileID: 5695982118052513924}
+  - component: {fileID: 4745940395706634372}
   m_Layer: 10
   m_Name: RockPillarBoss (29)
   m_TagString: enemy
@@ -6369,20 +6369,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5695982118052513926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5695982118052513930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &5695982118052513927
 Rigidbody2D:
   serializedVersion: 4
@@ -6500,6 +6486,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4745940395706634372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695982118052513930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &6079735425533763483
 GameObject:
   m_ObjectHideFlags: 0
@@ -6512,9 +6512,9 @@ GameObject:
   - component: {fileID: 8898342582425748136}
   - component: {fileID: 3406392664572530818}
   - component: {fileID: 4901036490958431335}
-  - component: {fileID: 3939315103168298581}
   - component: {fileID: 2991438327146149745}
   - component: {fileID: 3602204397494829017}
+  - component: {fileID: 3792679390425940955}
   m_Layer: 10
   m_Name: RockPillarBoss (18)
   m_TagString: enemy
@@ -6619,20 +6619,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &3939315103168298581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6079735425533763483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &2991438327146149745
 Rigidbody2D:
   serializedVersion: 4
@@ -6750,6 +6736,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3792679390425940955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6079735425533763483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &6670688509302419580
 GameObject:
   m_ObjectHideFlags: 0
@@ -6762,9 +6762,9 @@ GameObject:
   - component: {fileID: 3220992734454957545}
   - component: {fileID: 2450325745969874676}
   - component: {fileID: 3322570123046640075}
-  - component: {fileID: 9069737542853359508}
   - component: {fileID: 1188999517382669336}
   - component: {fileID: 7176204625179814692}
+  - component: {fileID: 2577060541794647686}
   m_Layer: 10
   m_Name: RockPillarBoss (33)
   m_TagString: enemy
@@ -6869,20 +6869,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &9069737542853359508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6670688509302419580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &1188999517382669336
 Rigidbody2D:
   serializedVersion: 4
@@ -7000,6 +6986,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2577060541794647686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670688509302419580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &7237436505900526398
 GameObject:
   m_ObjectHideFlags: 0
@@ -7012,9 +7012,9 @@ GameObject:
   - component: {fileID: 7637803214843741290}
   - component: {fileID: 2540617033082814755}
   - component: {fileID: 5049086146531705051}
-  - component: {fileID: 2317894660913849000}
   - component: {fileID: 6076276268910075109}
   - component: {fileID: 934152686599780545}
+  - component: {fileID: 2475985527202936122}
   m_Layer: 10
   m_Name: RockPillarBoss (23)
   m_TagString: enemy
@@ -7119,20 +7119,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &2317894660913849000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7237436505900526398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &6076276268910075109
 Rigidbody2D:
   serializedVersion: 4
@@ -7250,6 +7236,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2475985527202936122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7237436505900526398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &7469692278677195792
 GameObject:
   m_ObjectHideFlags: 0
@@ -7274,7 +7274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7469692278677195792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 9, y: -12, z: -0.0069372132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1299007408566661898}
@@ -7328,9 +7328,9 @@ GameObject:
   - component: {fileID: 4154943275846439158}
   - component: {fileID: 5130555317199571226}
   - component: {fileID: 2190104353346602319}
-  - component: {fileID: 4435827436840782820}
   - component: {fileID: 6523535798483195782}
   - component: {fileID: 4296463528193630960}
+  - component: {fileID: 3745686058146251894}
   m_Layer: 10
   m_Name: RockPillarBoss (1)
   m_TagString: enemy
@@ -7435,20 +7435,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &4435827436840782820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7727654085913807439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &6523535798483195782
 Rigidbody2D:
   serializedVersion: 4
@@ -7566,6 +7552,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3745686058146251894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727654085913807439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &7897147806054329360
 GameObject:
   m_ObjectHideFlags: 0
@@ -7578,9 +7578,9 @@ GameObject:
   - component: {fileID: 1706318640327864555}
   - component: {fileID: 7962721677406920287}
   - component: {fileID: 7382008166266206844}
-  - component: {fileID: 5294361971685743902}
   - component: {fileID: 1118127516879098362}
   - component: {fileID: 1180252459381004805}
+  - component: {fileID: 7689833160377060087}
   m_Layer: 10
   m_Name: RockPillarBoss (12)
   m_TagString: enemy
@@ -7685,20 +7685,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5294361971685743902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7897147806054329360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &1118127516879098362
 Rigidbody2D:
   serializedVersion: 4
@@ -7816,6 +7802,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7689833160377060087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7897147806054329360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &7999279075333346322
 GameObject:
   m_ObjectHideFlags: 0
@@ -7828,9 +7828,9 @@ GameObject:
   - component: {fileID: 5473297367693055645}
   - component: {fileID: 6175041328382782963}
   - component: {fileID: 8141817442147267439}
-  - component: {fileID: 6127207524099553952}
   - component: {fileID: 4589834328864693651}
   - component: {fileID: 1834421771682516373}
+  - component: {fileID: 3639578747340031246}
   m_Layer: 10
   m_Name: RockPillarBoss (35)
   m_TagString: enemy
@@ -7935,20 +7935,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &6127207524099553952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7999279075333346322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &4589834328864693651
 Rigidbody2D:
   serializedVersion: 4
@@ -8066,6 +8052,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3639578747340031246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999279075333346322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &8022692547048047902
 GameObject:
   m_ObjectHideFlags: 0
@@ -8078,9 +8078,9 @@ GameObject:
   - component: {fileID: 8970377408852313827}
   - component: {fileID: 6256605256970754283}
   - component: {fileID: 5413341360519309870}
-  - component: {fileID: 5725947337994354431}
   - component: {fileID: 4545978427487239715}
   - component: {fileID: 8891592689327217179}
+  - component: {fileID: 8054464443540494631}
   m_Layer: 10
   m_Name: RockPillarBoss (21)
   m_TagString: enemy
@@ -8185,20 +8185,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &5725947337994354431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8022692547048047902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &4545978427487239715
 Rigidbody2D:
   serializedVersion: 4
@@ -8316,6 +8302,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8054464443540494631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8022692547048047902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &8348636428493972005
 GameObject:
   m_ObjectHideFlags: 0
@@ -8328,9 +8328,9 @@ GameObject:
   - component: {fileID: 4538280988129142440}
   - component: {fileID: 392638550253529650}
   - component: {fileID: 2653046302469985345}
-  - component: {fileID: 1041191967130337422}
   - component: {fileID: 6101217528067600087}
   - component: {fileID: 1463458666422454987}
+  - component: {fileID: 7736679739425813587}
   m_Layer: 10
   m_Name: RockPillarBoss
   m_TagString: enemy
@@ -8435,20 +8435,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &1041191967130337422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8348636428493972005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &6101217528067600087
 Rigidbody2D:
   serializedVersion: 4
@@ -8566,6 +8552,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7736679739425813587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8348636428493972005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &8536715613144981006
 GameObject:
   m_ObjectHideFlags: 0
@@ -8578,9 +8578,9 @@ GameObject:
   - component: {fileID: 5102564304243844113}
   - component: {fileID: 6292154605182490340}
   - component: {fileID: 3123028110275142281}
-  - component: {fileID: 8491948147153096490}
   - component: {fileID: 5410194188074971945}
   - component: {fileID: 530076790904901709}
+  - component: {fileID: 5807063919677539298}
   m_Layer: 10
   m_Name: RockPillarBoss (4)
   m_TagString: enemy
@@ -8685,20 +8685,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &8491948147153096490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8536715613144981006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &5410194188074971945
 Rigidbody2D:
   serializedVersion: 4
@@ -8816,6 +8802,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5807063919677539298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8536715613144981006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1
 --- !u!1 &9097400395439307122
 GameObject:
   m_ObjectHideFlags: 0
@@ -8828,9 +8828,9 @@ GameObject:
   - component: {fileID: 5306777499734568368}
   - component: {fileID: 478252379969450732}
   - component: {fileID: 3774785124418523992}
-  - component: {fileID: 1233390138017082893}
   - component: {fileID: 3991435591530663929}
   - component: {fileID: 4386925655508119080}
+  - component: {fileID: 782567298539286373}
   m_Layer: 10
   m_Name: RockPillarBoss (6)
   m_TagString: enemy
@@ -8935,20 +8935,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000010326241, y: -0.0866228}
   m_Size: {x: 0.53303, y: 0.4656466}
   m_Direction: 1
---- !u!114 &1233390138017082893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9097400395439307122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020ed766b3b19df49b3537371b18f086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damages: 10
-  destroyTime: 1
 --- !u!50 &3991435591530663929
 Rigidbody2D:
   serializedVersion: 4
@@ -9066,3 +9052,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &782567298539286373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9097400395439307122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76339530ca344af4c847ff89fb6ee76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 0.5
+  destroyTime: 1

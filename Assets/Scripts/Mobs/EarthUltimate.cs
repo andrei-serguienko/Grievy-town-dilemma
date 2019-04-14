@@ -30,26 +30,21 @@ public class EarthUltimate : MonoBehaviour, InterfaceSpell
     {
         print("Ultimate");
         Transform pos = transform;
-        GameObject circle1 = Instantiate(FirstRing, pos)as GameObject;
-        circle1.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
+        
+        
+        GameObject circle1 = Instantiate(FirstRing)as GameObject;
         yield return new WaitForSeconds(Delay);
-        GameObject circle2 = Instantiate(SecondRing, pos)as GameObject;
-        circle2.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
+        GameObject circle2 = Instantiate(SecondRing)as GameObject;
         yield return new WaitForSeconds(Delay);
-        GameObject circle3 = Instantiate(ThirdRing, pos)as GameObject;
-        circle3.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
+        GameObject circle3 = Instantiate(ThirdRing)as GameObject;
         yield return new WaitForSeconds(Delay);
-        GameObject circle4 = Instantiate(FourthRing, pos)as GameObject;
-        circle4.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
+        GameObject circle4 = Instantiate(FourthRing)as GameObject;
         yield return new WaitForSeconds(Delay);
-        GameObject circle5 = Instantiate(FifthRing, pos)as GameObject;
-        circle5.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
+        GameObject circle5 = Instantiate(FifthRing)as GameObject;
         yield return new WaitForSeconds(Delay);
-        GameObject circle6 = Instantiate(SixthRing, pos)as GameObject;
-        circle6.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
+        GameObject circle6 = Instantiate(SixthRing)as GameObject;
         yield return new WaitForSeconds(Delay);
-        GameObject circle7 = Instantiate(SeventhRing, pos)as GameObject;
-        circle7.GetComponent<Transform>().localScale = new Vector3(0.4f,0.4f,0.4f);
+        GameObject circle7 = Instantiate(SeventhRing)as GameObject;
 
         yield return new WaitForSeconds(3);
         foreach(GameObject i in GameObject.FindGameObjectsWithTag("EarthRing"))
