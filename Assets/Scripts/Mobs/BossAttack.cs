@@ -9,6 +9,8 @@ public class BossAttack : MonoBehaviour
     bool ulti2 = false;
     bool ulti3 = false;
     bool ulti4 = false;
+    bool spawnMinion1 = false;
+    bool spawnMinion2 = false;
 
     public bool deplacement;
     // Start is called before the first frame update
@@ -45,6 +47,17 @@ public class BossAttack : MonoBehaviour
                 GetComponent<Animator>().SetTrigger("Ulti");
                 ulti4 = true;
             }
+
+            if (hp.LifePoints < (0.5 * (float) hp.maxHealth) && !spawnMinion1)
+            {
+                gameObject.GetComponent<Boss>().InvokeMinion();
+                spawnMinion1 = true;
+            }
+            if (hp.LifePoints < (0.1 * (float) hp.maxHealth) && !spawnMinion2)
+            {
+                gameObject.GetComponent<Boss>().InvokeMinion();
+                spawnMinion2 = true;
+            }
         }
         else
         {
@@ -73,6 +86,16 @@ public class BossAttack : MonoBehaviour
                 ulti4 = true;
             }
         
+            if (hp.LifePoints < (0.5 * (float) hp.maxHealth) && !spawnMinion1)
+            {
+                gameObject.GetComponent<Boss>().InvokeMinion();
+                spawnMinion1 = true;
+            }
+            if (hp.LifePoints < (0.1 * (float) hp.maxHealth) && !spawnMinion2)
+            {
+                gameObject.GetComponent<Boss>().InvokeMinion();
+                spawnMinion2 = true;
+            }
      
         }
     }

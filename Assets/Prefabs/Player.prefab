@@ -234,6 +234,9 @@ MonoBehaviour:
   WaterActive: {fileID: 21300000, guid: 916a74bd9d3a150498a321fea6913a96, type: 3}
   FireDisable: {fileID: 21300000, guid: c7b50c838f674e945b6b68e2d880d4ae, type: 3}
   FireActive: {fileID: 21300000, guid: b53e1a3c6449e88499c0187101cef004, type: 3}
+  houxStep: 0
+  hasNormalSpell: 0
+  hasLunchBasicSpell: 0
 --- !u!114 &114858702381409504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,6 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifePoints: 6
   numOfHeart: 6
+  GameOver: {fileID: 0}
   FullHeart: {fileID: 21300000, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
   HalfHeart: {fileID: 21300002, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
   EmptyHeart: {fileID: 21300004, guid: dafa377e37e78b34995a8753ac6ceee5, type: 3}
@@ -309,6 +313,8 @@ MonoBehaviour:
   dashing: 0
   dashEffect: {fileID: 1940242813652360337, guid: e04d6d0d210f68b4f9078f73f0e42345,
     type: 3}
+  hasDash: 0
+  hasLunchDash: 0
 --- !u!95 &8356884444111071720
 Animator:
   serializedVersion: 3

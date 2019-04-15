@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public static PlayerHealth instance;
     public float LifePoints;
 	public int numOfHeart;
+	public GameObject GameOver;
 
 	private Image[] Heart;
 	public Sprite FullHeart;
@@ -32,6 +33,10 @@ public class PlayerHealth : MonoBehaviour
 		audio = GetComponent<AudioSource>();
 		anim = GetComponent<Animator>();
         //        Debug.Log(Heart);
+
+		GameOver = GameObject.Find("CanvasGameOver");
+		GameOver.SetActive(false);
+		
 	}
 
 
@@ -88,7 +93,6 @@ public class PlayerHealth : MonoBehaviour
 			audio.Play();
 			LifePoints -= damage;
 			tookDamage = true;
-			print("took damage :" + tookDamage);
 			StartCoroutine(InvincibilityFrame());
 		}
 		
@@ -106,16 +110,11 @@ public class PlayerHealth : MonoBehaviour
 
 	public void Die()
 	{
-		Destroy(gameObject);
-		Destroy(GameObject.FindGameObjectWithTag("UI"));
-		Destroy(GameObject.FindGameObjectWithTag("PlayerManager"));
-		Destroy(GameObject.FindGameObjectWithTag("DialogManager"));
-		SceneManager.LoadScene("GameOver");
+		GameOver.SetActive(true);
 	}
 	
 	IEnumerator InvincibilityFrame() {
 		yield return new WaitForSeconds(0.5f);
 		tookDamage = false;
-		print("took damage false");
 	}
 }

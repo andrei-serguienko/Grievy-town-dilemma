@@ -14,8 +14,6 @@ public class Boss : MonoBehaviour
 	public Rigidbody2D projectile;
 	public Transform[] points;
 	public Rigidbody2D Minion;
-	public bool spawnTest;
-
 	private Vector3 velocity = Vector3.zero;
 
 	bool started = false;
@@ -29,7 +27,7 @@ public class Boss : MonoBehaviour
 	void Start () {
         boxTP = GameObject.FindWithTag("BoxTp");
         boxTP.SetActive(false);
-//		InvokeRepeating("throwProjectile", FireRate, 0.4f);
+		InvokeRepeating("throwProjectile", 0, FireRate);
 	}
 
 	private void FixedUpdate()
@@ -37,12 +35,7 @@ public class Boss : MonoBehaviour
 //        Debug.Log("pos1" + pos1);
 //        Debug.Log("pos2" + pos2);
 
-		if (spawnTest)
-		{
-			InvokeMinion();
-			spawnTest = false;
-		}
-
+		
 	}
 
 	public void death()
@@ -54,22 +47,15 @@ public class Boss : MonoBehaviour
 		Destroy(gameObject);
 	}
 
-	void InvokeMinion()
+	public void InvokeMinion()
 	{
-		var minion1Pos = transform.position;
-		var minion2Pos = transform.position;
-		var minion3Pos = transform.position;
 
-		minion1Pos.x -= 2;
-		minion1Pos.y -= 3;
+		var minion2Pos = transform.position;
+
 		minion2Pos.y -= 3;
-		minion3Pos.x += 2;
-		minion3Pos.y -= 3;
 
 		// print("Minion Spawn");
-		Instantiate(Minion, minion1Pos, Quaternion.identity);
 		Instantiate(Minion, minion2Pos, Quaternion.identity);
-		Instantiate(Minion, minion3Pos, Quaternion.identity);
 	}
 
 	void throwProjectile()

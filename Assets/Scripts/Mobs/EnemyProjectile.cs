@@ -17,15 +17,14 @@ public class EnemyProjectile : MonoBehaviour {
         objectName = objectName.Substring(0, objectName.Length - 7);
         
         player = GameObject.FindWithTag("Player");
-//        Debug.Log(player);
         var pos = this.gameObject.transform.position;
         var dir = player.transform.position - pos;
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
        
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         
         Vector2 direction = dir;
         direction.Normalize();
-        //GameObject projectile = (GameObject)Instantiate(, pos, Quaternion.identity);
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * speed;
 
         Destroy(gameObject, TimeTillDestroy);
@@ -37,12 +36,11 @@ public class EnemyProjectile : MonoBehaviour {
         if (col.gameObject.tag.Equals("Player"))
         {
             player.GetComponent<PlayerHealth>().TakeAHit(dammages);
+            col.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         }
         
         Destroy(gameObject);
         
-        
-         
     }
 
     

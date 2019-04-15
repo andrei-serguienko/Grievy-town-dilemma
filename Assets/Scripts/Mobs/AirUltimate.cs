@@ -8,25 +8,26 @@ public class AirUltimate : MonoBehaviour, InterfaceSpell
     public float Delay;
 
     public GameObject Tornado;
+    private Vector3 pos;
     
   
     // Update is called once per frame
     void Update()
     {
-        Transform pos = transform;
         
         if (ActiveUltimate)
         {
             StartCoroutine(Ultimate());
             ActiveUltimate = false;
         }
-    }
+        
+        pos = transform.position;
+        pos.y -= 1;
+    } 
     
     
     private IEnumerator Ultimate()
     {
-        var pos = transform.position;
-        
         Instantiate(Tornado, pos, Quaternion.identity);
         yield return new WaitForSeconds(Delay);
         Instantiate(Tornado, pos, Quaternion.identity);

@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-//        print(gameObject.GetComponent<Rigidbody2D>().velocity);
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");

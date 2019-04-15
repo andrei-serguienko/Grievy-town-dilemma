@@ -10,6 +10,7 @@ public class WaterUlti : MonoBehaviour, InterfaceSpell
     public GameObject FirstWave;
     public GameObject SecondWave;
     public GameObject ThirdWave;
+    private Vector3 pos;
     
    
 
@@ -21,17 +22,18 @@ public class WaterUlti : MonoBehaviour, InterfaceSpell
             StartCoroutine(Ultimate());
             ActiveUltimate = false;
         }
+        
+        pos = transform.position;
     }
 
     private IEnumerator Ultimate()
     {
-        Transform pos = transform;
         
-        Instantiate(FirstWave, pos);
+        Instantiate(FirstWave, pos, transform.rotation);
         yield return new WaitForSeconds(Delay);
-        Instantiate(SecondWave, pos);
+        Instantiate(SecondWave, pos, transform.rotation);
         yield return new WaitForSeconds(Delay);
-        Instantiate(ThirdWave, pos);
+        Instantiate(ThirdWave, pos, transform.rotation);
         yield return new WaitForSeconds(Delay);
         
     }
