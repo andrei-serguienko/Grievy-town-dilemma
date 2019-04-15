@@ -400,7 +400,6 @@ public class PlayerController : MonoBehaviour
     {
         audio.clip = ChangeSpell;
         audio.Play();
-        print("boop");
     }
 
     public void PlayStep1()
