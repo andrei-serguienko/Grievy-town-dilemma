@@ -277,14 +277,14 @@ public class PlayerController : MonoBehaviour
 
     void CastFireBall()
     {
-        if (mana >= 7)
+        if (mana >= 12)
         {
             // repositioning fireball with player sprite
             var position = transform.position;
             position[0] += 0.4f;
             position[1] -= 0.6f;
             Instantiate(fireBall, position, transform.rotation);
-            mana -= 7;
+            mana -= 12;
         }
     }
 
@@ -332,7 +332,7 @@ public class PlayerController : MonoBehaviour
     {
         if (mana < 100)
         {
-            mana += 1;
+            mana += 2;
         }
 
     }
@@ -398,6 +398,7 @@ public class PlayerController : MonoBehaviour
     {
         audio.clip = ChangeSpell;
         audio.Play();
+        print("boop");
     }
 
     public void PlayStep1()

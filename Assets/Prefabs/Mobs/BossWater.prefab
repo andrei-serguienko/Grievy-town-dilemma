@@ -430,12 +430,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxTP: {fileID: 0}
   speed: 4
-  FireRate: 2
+  FireRate: 5
   projectile: {fileID: 50917727042582014, guid: 58cade6005675e748a0fab2f5235a3be,
     type: 3}
   points: []
   Minion: {fileID: 4367611970675575586, guid: 72036233c80aa434bb3a01887fd051e5, type: 3}
-  spawnTest: 0
 --- !u!114 &1220387887007588155
 MonoBehaviour:
   m_ObjectHideFlags: 0

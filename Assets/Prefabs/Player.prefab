@@ -199,7 +199,7 @@ MonoBehaviour:
   money: 100
   mana: 100
   origin: 
-  moveSpeed: 10
+  moveSpeed: 7
   canMove: 0
   basicSpell: {fileID: 6627208812015737013, guid: 972af988845a86a4494f5cca7cdea973,
     type: 3}
