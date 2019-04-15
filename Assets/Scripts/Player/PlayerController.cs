@@ -63,6 +63,8 @@ public class PlayerController : MonoBehaviour
 
     public bool hasNormalSpell = false;
     public bool hasLunchBasicSpell = false;
+
+    public bool isDialoguing = false;
     
     // Use this for initialization
     void Start()
@@ -93,11 +95,11 @@ public class PlayerController : MonoBehaviour
 
         transform.eulerAngles = new Vector3(0, 0, 0);
 
-        if (hasNormalSpell && Input.GetMouseButtonDown(1) && !EventSystem.current.IsPointerOverGameObject())
+        if (hasNormalSpell && Input.GetMouseButtonDown(1) && !isDialoguing)
         {
             CastBasicSpell();
         }
-        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
+        if (Input.GetMouseButtonDown(0) && !isDialoguing)
         {
             if(Spell == 1)
             {
