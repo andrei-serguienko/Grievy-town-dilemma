@@ -22,6 +22,8 @@ TagManager:
   - EarthRing
   - FireWave
   - BoxTp
+  - RockPillar
+  - GameOver
   layers:
   - Default
   - TransparentFX

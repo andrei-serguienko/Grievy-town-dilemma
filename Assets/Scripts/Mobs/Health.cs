@@ -37,10 +37,15 @@ public class Health : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+     
+        print("biip");
+
+        
         if (other.gameObject.tag.Equals("playerProjectile"))
         {
             LifePoints -= other.gameObject.GetComponent<castSpell>().damages;
-           
+            print("boop");
+
         }
         else if (other.gameObject.tag.Equals("RockPillar"))
         {

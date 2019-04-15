@@ -8,6 +8,7 @@ public class PlayerCreation : MonoBehaviour
     private Vector3 spawnPoint;
     public GameObject prefabPlayer;
     private GameObject player;
+    public  GameObject GameOver;
 
     // Use this for initialization
     void Awake()
@@ -19,13 +20,13 @@ public class PlayerCreation : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
             DontDestroyOnLoad(GameObject.Find("dialogueManager"));
             DontDestroyOnLoad(GameObject.Find("Canvas"));
+            DontDestroyOnLoad(GameObject.Find("CanvasGameOver"));
             DontDestroyOnLoad(GameObject.Find("PlayerManager"));
+            DontDestroyOnLoad(GameObject.Find("LevelManager"));
         }
-        if (SceneManager.GetActiveScene().name == "Menu")
-        {
-            spawnPoint = GameObject.Find("FirstSpawn").transform.position;
-            player.transform.position = spawnPoint;
-        }
+       
+
+       
     }
     void Start()
     {
