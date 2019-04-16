@@ -11,6 +11,8 @@ public class FireUltimate : MonoBehaviour, InterfaceSpell
     public GameObject VerticalWave;
     public GameObject DiagWave;
     public GameObject OtherDiagWave;
+
+    public GameObject Minion;
    
     private void Update()
     {
@@ -50,5 +52,16 @@ public class FireUltimate : MonoBehaviour, InterfaceSpell
     public void ActivateUltimateF()
     {
         ActiveUltimate = true;
+    }
+    
+    public void InvokeMinion()
+    {
+
+        var minion2Pos = transform.position;
+
+        minion2Pos.y -= 3;
+
+        // print("Minion Spawn");
+        Instantiate(Minion, minion2Pos, Quaternion.identity);
     }
 }

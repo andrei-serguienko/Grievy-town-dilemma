@@ -72,6 +72,30 @@ public class DialogueManager : MonoBehaviour
     {
         GameObject.FindWithTag("Player").GetComponent<PlayerController>().isDialoguing = false;
         animator.SetBool("isOpen", false);
+        if (nameText.text == "Houx")
+        {
+            if (GameObject.FindWithTag("Houx").GetComponent<Dialogue>().currentStep == 6)
+            {
+//                print(GameObject.Find("Canvas/Panel"));
+//                print("LUNCH");
+                GameObject pannel = GameObject.FindWithTag("HouxPannel").transform.GetChild(0).gameObject;
+                pannel.SetActive(true);
+                pannel.GetComponent<Animator>().SetTrigger("Teleport");
+            }
+        }
+
+        if(nameText.text == ""){
+          GameObject.Find("END").GetComponent<END>().hasSpeakWithSea = true;
+        }
+        if(nameText.text == ""){
+          GameObject.Find("END").GetComponent<END>().hasSpeakWithFire = true;
+        }
+        if(nameText.text == ""){
+          GameObject.Find("END").GetComponent<END>().hasSpeakWithSwamp = true;
+        }
+        if(nameText.text == ""){
+          GameObject.Find("END").GetComponent<END>().hasSpeakWithAir = true;
+        }
     }
 
     public void buy(){

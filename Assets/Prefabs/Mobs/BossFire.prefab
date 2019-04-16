@@ -260,6 +260,7 @@ MonoBehaviour:
     type: 3}
   OtherDiagWave: {fileID: 2612795444102258910, guid: 659beca03c141574387782ba35e78279,
     type: 3}
+  Minion: {fileID: 5814870196852153048, guid: 4d670906c9e7e754cae149d31e76f413, type: 3}
 --- !u!114 &7623716026496112658
 MonoBehaviour:
   m_ObjectHideFlags: 0

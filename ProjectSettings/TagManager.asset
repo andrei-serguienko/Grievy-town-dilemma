@@ -24,6 +24,8 @@ TagManager:
   - BoxTp
   - RockPillar
   - GameOver
+  - Houx
+  - HouxPannel
   layers:
   - Default
   - TransparentFX

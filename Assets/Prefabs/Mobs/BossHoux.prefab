@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 3481197759536348241}
   - component: {fileID: 3481197759536348240}
   - component: {fileID: 3481197759536348255}
-  - component: {fileID: 4408927368333107282}
   - component: {fileID: 1868067017453332250}
+  - component: {fileID: 4873480817910792583}
+  - component: {fileID: 1429143764}
   m_Layer: 11
   m_Name: BossHoux
   m_TagString: Boss
@@ -101,21 +102,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4408927368333107282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3481197759536348254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5f0abad15c804b4b9b90695eda1f9b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LifePoints: 1200
-  maxHealth: 0
-  GivenGold: 100
 --- !u!82 &1868067017453332250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -212,3 +198,44 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4873480817910792583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3481197759536348254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2df888995532504a947fba5a5f58c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveUltimate: 0
+  Delay: 1
+  HorizontalWave: {fileID: 6240933957313436419, guid: 2e77c4f08acb33441a0bed924973ffa2,
+    type: 3}
+  VerticalWave: {fileID: 6123314352362180482, guid: 230929d99af09f64f900103a0af4593d,
+    type: 3}
+  DiagWave: {fileID: 7543080813327243877, guid: e5e053aa629710842873c8c6717ee07c,
+    type: 3}
+  OtherDiagWave: {fileID: 2612795444102258910, guid: 659beca03c141574387782ba35e78279,
+    type: 3}
+  Minion: {fileID: 5814870196852153048, guid: 4d670906c9e7e754cae149d31e76f413, type: 3}
+--- !u!114 &1429143764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3481197759536348254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7cc2672a0eaeb4296ce06f03c01e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 300
+  swampHealth: 0
+  seaHealth: 0
+  volcanoHealth: 0
+  airHealth: 0
+  mode: 
