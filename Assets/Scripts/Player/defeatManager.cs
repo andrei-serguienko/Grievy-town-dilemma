@@ -16,7 +16,7 @@ public class defeatManager : MonoBehaviour
                 {
                     Destroy(i);
                 }
-                Destroy(GameObject.Find("BossFight"));
+                Destroy(GameObject.FindWithTag("Boss"));
                 }
             break;
         case "Swamp":
@@ -26,7 +26,7 @@ public class defeatManager : MonoBehaviour
                 {
                     Destroy(i);
                 }
-                Destroy(GameObject.Find("BossFight"));
+                Destroy(GameObject.FindWithTag("Boss"));
             }
             break;
         case "Air":
@@ -36,7 +36,7 @@ public class defeatManager : MonoBehaviour
                 {
                     Destroy(i);
                 }
-                Destroy(GameObject.Find("BossFight"));
+                Destroy(GameObject.FindWithTag("Boss"));
             }
             break;
         case "Water":
@@ -46,7 +46,7 @@ public class defeatManager : MonoBehaviour
                 {
                     Destroy(i);
                 }
-                Destroy(GameObject.Find("BossFight"));
+                Destroy(GameObject.FindWithTag("Boss"));
             }
             break;
         }
