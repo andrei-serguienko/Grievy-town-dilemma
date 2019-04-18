@@ -13,8 +13,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue(bool startStop)
     {
-        _tag = gameObject.tag;
-        
         if (startStop == true)
         {
             if(product != ""){
@@ -41,12 +39,7 @@ public class DialogueTrigger : MonoBehaviour
             }
         }
         
-        if(_tag == "Boss" && !hasSpoken)
-        {
-            GameObject.FindWithTag("Player").GetComponent<PlayerController>().BossStep++;
-            gameObject.GetComponent<Dialogue>().currentStep = GameObject.FindWithTag("Player").GetComponent<PlayerController>().BossStep;
-            hasSpoken = true;
-        }
+       
     }
 
 }

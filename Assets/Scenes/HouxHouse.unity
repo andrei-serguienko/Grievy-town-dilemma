@@ -411,6 +411,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxTPAir
       objectReference: {fileID: 0}
+    - target: {fileID: 61565813520955462, guid: 575a93d9659edbc4ca37c7d5486f7509,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0162974
+      objectReference: {fileID: 0}
+    - target: {fileID: 61565813520955462, guid: 575a93d9659edbc4ca37c7d5486f7509,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5289041
+      objectReference: {fileID: 0}
+    - target: {fileID: 61565813520955462, guid: 575a93d9659edbc4ca37c7d5486f7509,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.7557926
+      objectReference: {fileID: 0}
+    - target: {fileID: 61565813520955462, guid: 575a93d9659edbc4ca37c7d5486f7509,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.35740948
+      objectReference: {fileID: 0}
     - target: {fileID: 4039270561059464, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
       propertyPath: m_LocalPosition.x
       value: 75.5
@@ -464,16 +484,6 @@ PrefabInstance:
         type: 3}
       propertyPath: scene
       value: Air
-      objectReference: {fileID: 0}
-    - target: {fileID: 61565813520955462, guid: 575a93d9659edbc4ca37c7d5486f7509,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.01629746
-      objectReference: {fileID: 0}
-    - target: {fileID: 61565813520955462, guid: 575a93d9659edbc4ca37c7d5486f7509,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.2770605
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 575a93d9659edbc4ca37c7d5486f7509, type: 3}
