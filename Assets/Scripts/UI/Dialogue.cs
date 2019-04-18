@@ -6,18 +6,10 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour
 {
 	public string name;
-
 	public int currentStep;
 
 	public DialogText [] sentences;
-
-	private void Start()
-	{
-		if (name == "Houx")
-		{
-			
-		}
-	}
+	
 
 	private void Update()
 	{
@@ -25,5 +17,7 @@ public class Dialogue : MonoBehaviour
 		{
 			currentStep = GameObject.FindWithTag("Player").GetComponent<PlayerController>().houxStep;
 		}
+		
+		
 	}
 }

@@ -25,6 +25,19 @@ public class PlayerController : MonoBehaviour
     public float tornadoSpread;
     public int HealingPotion;
     public int ManaPotion;
+    private float HorizontalInput = 0f;
+    private float VerticalInput = 0f;
+    public int houxStep;
+    public int BossStep;
+
+    public bool hasNormalSpell = false;
+    public bool hasLunchBasicSpell = false;
+    public bool isDialoguing = false;
+    public bool hasDefeatFireBoss;
+    public bool hasDefeatAirBoss;
+    public bool hasDefeatWaterBoss;
+    public bool hasDefeatSwampBoss;
+
     public AudioClip ChangeSpell;
     public AudioClip HealingPotionClip;
     public AudioClip ManaPotionClip;
@@ -32,19 +45,11 @@ public class PlayerController : MonoBehaviour
     public AudioClip Step1;
     public AudioClip Step2;
     public AudioClip Coins;
-    
-
-
-    private float HorizontalInput = 0f;
-    private float VerticalInput = 0f;
+   
     private Animator anim;
     private AudioSource audio;
 
-    public bool hasDefeatFireBoss;
-    public bool hasDefeatAirBoss;
-    public bool hasDefeatWaterBoss;
-    public bool hasDefeatSwampBoss;
-
+    
     public Transform seaCheckPoint;
     public bool isTriggCheckPoint = false;
 
@@ -59,12 +64,7 @@ public class PlayerController : MonoBehaviour
     public Sprite FireDisable;
     public Sprite FireActive;
 
-    public int houxStep;
-
-    public bool hasNormalSpell = false;
-    public bool hasLunchBasicSpell = false;
-
-    public bool isDialoguing = false;
+    
     
     // Use this for initialization
     void Start()
@@ -179,17 +179,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        //  if(hasDefeatAirBoss){
-        //    GameObject.Find("Canvas/Air").GetComponent<Image>().sprite = new Color(77,77,77,255);
-        //  } if (hasDefeatFireBoss){
-        //    GameObject.Find("Canvas/Fire").GetComponent<Image>().sprite = new Color(77,77,77,255);
-        //  }
-        // if (hasDefeatSwampBoss){
-        //    GameObject.Find("Canvas/Rock").GetComponent<Image>().sprite = RockDisable;
-        //  }
-        // if (hasDefeatWaterBoss){
-        //    GameObject.Find("Canvas/Water").GetComponent<Image>().sprite = new Color(77,77,77,255);
-        //  }
+        
 
 
         // use Heal Potion

@@ -1833,7 +1833,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &564215596
 MonoBehaviour:
@@ -2183,86 +2183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f82d1c76bca60449297b5f43fef13c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &689512828
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1021832191366716, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_Name
-      value: BoxTPHouxHouse
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 19.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -22.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.14274749
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.0625
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278382238004354, guid: bf21b0168150284448d606651307bf22, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1263672
-      objectReference: {fileID: 0}
-    - target: {fileID: 61694070776013484, guid: bf21b0168150284448d606651307bf22,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.29510593
-      objectReference: {fileID: 0}
-    - target: {fileID: 61694070776013484, guid: bf21b0168150284448d606651307bf22,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.7363873
-      objectReference: {fileID: 0}
-    - target: {fileID: 114324937091926364, guid: bf21b0168150284448d606651307bf22,
-        type: 3}
-      propertyPath: scene
-      value: HouxHouse
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bf21b0168150284448d606651307bf22, type: 3}
 --- !u!114 &694749745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53947,7 +53867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4827261665443398, guid: f47b3bccc3ee33a4487e9c8046fd4e34, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4827261665443398, guid: f47b3bccc3ee33a4487e9c8046fd4e34, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -55558,7 +55478,7 @@ PrefabInstance:
     - target: {fileID: 3481197759536348241, guid: 9fed0475bf9c12842b986c362c1ae4d3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3481197759536348241, guid: 9fed0475bf9c12842b986c362c1ae4d3,
         type: 3}
@@ -56171,63 +56091,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f82d1c76bca60449297b5f43fef13c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &2007893070
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1042582706506850, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_Name
-      value: SpawnHouxHouse
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 19.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -19.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.14274749
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317983534702922, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bc971a69d17f18249bfbb70c5b515b8f, type: 3}
 --- !u!114 &2009645885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56835,8 +56698,167 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: name
+      value: Earth Elemental
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: currentStep
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[0].texte
+      value: "Oh miserable Houx, he tried to use our almighty powers for his thirst
+        for power!\r\nHowever, this was too much and has consumed him. The fool !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[1].texte
+      value: "We forgive you for your attacks, you have been manipulated by an evil
+        man and you meant no harm.\r\nDeep inside you lie the knowledge of the elements.
+        You have to remember !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[1].step
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[2].texte
+      value: "You must question yourself... Why have you survived the absorption of
+        these powers while he\r did not?\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[2].step
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[3].texte
+      value: "The truth is that you were the omniscient master of the elements. You
+        wanted to understand why the\r humans feared us and were trying to destroy
+        us. \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[3].step
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[4].texte
+      value: "For this you decided to turn yourself into a Human. \r\nBy living among
+        them you wanted to reason with them. \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[4].step
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[5].texte
+      value: "Unfortunately, it seems that you have lost your memory during\r the
+        process ...\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[5].step
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[6].texte
+      value: "Now you know everything. Houx has been defeated and the villagers won't
+        have to suffer the monsters\r attacks. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[6].step
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[7].texte
+      value: "We will watch in the shadows for the elements to be balanced again.
+        Will not interfer\r\nwith the humans anymore."
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[7].step
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[8].texte
+      value: "Now we offer you two options : You can choose to stay with the humans,
+        with all your memories. \nYou will live a \rnormal life and will be able to
+        guide them with your wise advices."
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[8].step
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[9].texte
+      value: "Or you can take back your place among us as the higher being, silent
+        watcher of the world, and keeper \rof the balance !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[9].step
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[10].texte
+      value: "Or you can take back your place among us as the higher being, silent
+        watcher of the world, and keeper \rof the balance !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[10].step
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 935259076194195332, guid: fa6da4d1cb483914db8237a951cc0ef0,
+        type: 3}
+      propertyPath: sentences.Array.data[0].step
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6da4d1cb483914db8237a951cc0ef0, type: 3}
+--- !u!1 &2263916693981046019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6989838266301820870, guid: fa6da4d1cb483914db8237a951cc0ef0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2263916693981046018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2263916693981046020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2263916693981046019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fadd5cb305f9954e9f1a38dc50cbb57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 3
+  hasSpoken: 0
 --- !u!1 &2559301113544375415 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4789905190183720567, guid: 8dc1ae2ff6a3cf440a2f91bc8db04c07,
@@ -56857,6 +56879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   product: 
   buyButton: {fileID: 0}
+  hasSpoken: 0
   dialogue: {fileID: 2559301113544375417}
 --- !u!114 &2559301113544375417
 MonoBehaviour:
@@ -56870,9 +56893,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624934a8404944542afbb5476df99b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Fire Elemental
   currentStep: 0
-  sentences: []
+  sentences:
+  - texte: "Oh miserable Houx, he tried to use our almighty powers for his thirst
+      for power!\r\nHowever, this was too much and has consumed him. The fool !"
+    step: 1
+  - texte: "We forgive you for your attacks, you have been manipulated by an evil
+      man and you meant no harm.\r\nDeep inside you lie the knowledge of the elements.
+      You have to remember !"
+    step: 2
+  - texte: "You must question yourself... Why have you survived the absorption of
+      these powers while he\r did not?\r\n"
+    step: 3
+  - texte: "The truth is that you were the omniscient master of the elements. You
+      wanted to understand why the\r humans feared us and were trying to destroy us.
+      \r"
+    step: 3
+  - texte: "For this you decided to turn yourself into a Human. \r\nBy living among
+      them you wanted to reason with them. \r"
+    step: 3
+  - texte: "Unfortunately, it seems that you have lost your memory during\r the process
+      ...\r"
+    step: 3
+  - texte: "Now you know everything. Houx has been defeated and the villagers won't
+      have to suffer the monsters\r attacks. "
+    step: 4
+  - texte: "We will watch in the shadows for the elements to be balanced again. Will
+      not interfer\r\nwith the humans anymore."
+    step: 4
+  - texte: "Now we offer you two options : You can choose to stay with the humans,
+      with all your memories. \nYou will live a \rnormal life and will be able to
+      guide them with your wise advices."
+    step: 4
+  - texte: "Or you can take back your place among us as the higher being, silent watcher
+      of the world, and keeper \rof the balance !"
+    step: 4
+--- !u!114 &2559301113544375418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2559301113544375415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fadd5cb305f9954e9f1a38dc50cbb57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 3
+  hasSpoken: 0
 --- !u!156049354 &2569400265642370879
 Grid:
   m_ObjectHideFlags: 0
@@ -56905,6 +56975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   product: 
   buyButton: {fileID: 0}
+  hasSpoken: 0
   dialogue: {fileID: 3374534731965719435}
 --- !u!114 &3374534731965719435
 MonoBehaviour:
@@ -56918,9 +56989,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624934a8404944542afbb5476df99b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Air Elemental
   currentStep: 0
-  sentences: []
+  sentences:
+  - texte: "Oh miserable Houx, he tried to use our almighty powers for his thirst
+      for power!\r\nHowever, this was too much and has consumed him. The fool !"
+    step: 1
+  - texte: "We forgive you for your attacks, you have been manipulated by an evil
+      man and you meant no harm.\r\nDeep inside you lie the knowledge of the elements.
+      You have to remember !"
+    step: 2
+  - texte: "You must question yourself... Why have you survived the absorption of
+      these powers while he\r did not?\r\n"
+    step: 3
+  - texte: "The truth is that you were the omniscient master of the elements. You
+      wanted to understand why the\r humans feared us and were trying to destroy us.
+      \r"
+    step: 3
+  - texte: "For this you decided to turn yourself into a Human. \r\nBy living among
+      them you wanted to reason with them. \r"
+    step: 3
+  - texte: "Unfortunately, it seems that you have lost your memory during\r the process
+      ...\r"
+    step: 3
+  - texte: "Now you know everything. Houx has been defeated and the villagers won't
+      have to suffer the monsters\r attacks. "
+    step: 4
+  - texte: "We will watch in the shadows for the elements to be balanced again. Will
+      not interfer\r\nwith the humans anymore."
+    step: 4
+  - texte: "Now we offer you two options : You can choose to stay with the humans,
+      with all your memories. \nYou will live a \rnormal life and will be able to
+      guide them with your wise advices."
+    step: 4
+  - texte: "Or you can take back your place among us as the higher being, silent watcher
+      of the world, and keeper \rof the balance !"
+    step: 4
+--- !u!114 &3374534731965719436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3374534731965719433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fadd5cb305f9954e9f1a38dc50cbb57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 3
+  hasSpoken: 0
 --- !u!483693784 &3664157342876017873
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -57258,11 +57376,150 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8818596814065073349, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: m_Mass
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 5132467112695105425, guid: fb853a9b588674446a75a190ff793532,
         type: 3}
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 4182268581684707864}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: name
+      value: Water Elemental
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[0].texte
+      value: "Oh miserable Houx, he tried to use our almighty powers for his thirst
+        for power!\r\nHowever, this was too much and has consumed him. The fool !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[1].texte
+      value: "We forgive you for your attacks, you have been manipulated by an evil
+        man and you meant no harm.\r\nDeep inside you lie the knowledge of the elements.
+        You have to remember !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[1].step
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[2].texte
+      value: "You must question yourself... Why have you survived the absorption of
+        these powers while he\r did not?\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[2].step
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[3].texte
+      value: "The truth is that you were the omniscient master of the elements. You
+        wanted to understand why the\r humans feared us and were trying to destroy
+        us. \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[3].step
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[4].texte
+      value: "For this you decided to turn yourself into a Human. \r\nBy living among
+        them you wanted to reason with them. \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[4].step
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[5].texte
+      value: "Unfortunately, it seems that you have lost your memory during\r the
+        process ...\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[5].step
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[6].texte
+      value: "Now you know everything. Houx has been defeated and the villagers won't
+        have to suffer the monsters\r attacks. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[6].step
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[7].texte
+      value: "We will watch in the shadows for the elements to be balanced again.
+        Will not interfer\r\nwith the humans anymore."
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[7].step
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[8].texte
+      value: "Now we offer you two options : You can choose to stay with the humans,
+        with all your memories. \nYou will live a \rnormal life and will be able to
+        guide them with your wise advices."
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[8].step
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[9].texte
+      value: "Or you can take back your place among us as the higher being, silent
+        watcher of the world, and keeper \rof the balance !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[9].step
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[10].texte
+      value: "Or you can take back your place among us as the higher being, silent
+        watcher of the world, and keeper \rof the balance !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[10].step
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 331970229618144984, guid: fb853a9b588674446a75a190ff793532,
+        type: 3}
+      propertyPath: sentences.Array.data[0].step
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb853a9b588674446a75a190ff793532, type: 3}
 --- !u!114 &4182268581684707864 stripped
@@ -57271,12 +57528,32 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 4182268581684707863}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4182268581684707865}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 624934a8404944542afbb5476df99b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4182268581684707865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6578879662371850323, guid: fb853a9b588674446a75a190ff793532,
+    type: 3}
+  m_PrefabInstance: {fileID: 4182268581684707863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4182268581684707866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4182268581684707865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fadd5cb305f9954e9f1a38dc50cbb57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 3
+  hasSpoken: 0
 --- !u!1001 &5899433629330294202
 PrefabInstance:
   m_ObjectHideFlags: 0

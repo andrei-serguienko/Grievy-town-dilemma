@@ -4,43 +4,42 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour {
 	
-	public float detectionRange = 1f;
-    //public GameObject player;
-  public string Name;
+    public float detectionRange = 1f;public bool hasSpoken;
 
-	private bool DialogueOn = false;
-  private Transform target;
+    private bool DialogueOn = false;
+    private Transform target;
+   
 
 
     // Use this for initialization
     void Start () {
         target = GameObject.FindGameObjectWithTag("Player").transform;
+        
 
     }
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 
-		// if the Player is near enough, the enemy will move towards him
-		float distToPlayer = Vector3.Distance(target.position, transform.position);
-		if (distToPlayer < detectionRange && Input.GetKeyDown("e"))
-		{
-//            Debug.Log("blop");
-			DialogueOn = true;
-			gameObject.GetComponent<DialogueTrigger>().TriggerDialogue(true);
-
-			// call to trading function here
-
-		}
-		if (distToPlayer > detectionRange && DialogueOn) // && DialogueOn == true
+        // if the Player is near enough, the enemy will move towards him
+        float distToPlayer = Vector3.Distance(target.position, transform.position);
+        if (distToPlayer < detectionRange && Input.GetKeyDown("e"))
         {
-			gameObject.GetComponent<DialogueTrigger>().TriggerDialogue(false);
-//            Debug.Log("out of zone");
-			DialogueOn = false;
+			
+            DialogueOn = true;
+            gameObject.GetComponent<DialogueTrigger>().TriggerDialogue(true);
+            
+            
 
-		}
+
+        }
+        if (distToPlayer > detectionRange && DialogueOn)
+        {
+            gameObject.GetComponent<DialogueTrigger>().TriggerDialogue(false);
+            DialogueOn = false;
+        }
 
 
 
-	}
+    }
 }

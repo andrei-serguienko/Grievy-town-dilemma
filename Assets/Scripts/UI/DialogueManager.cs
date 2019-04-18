@@ -19,25 +19,24 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    private void Update()
-    {
-    }
+   
 
     public void StartDialogue(Dialogue dialogue, string product)
     {
-       GameObject.FindWithTag("Player").GetComponent<PlayerController>().isDialoguing = true;
-       this.product = product;
-       animator.SetBool("isOpen", true);
+        GameObject.FindWithTag("Player").GetComponent<PlayerController>().isDialoguing = true;
+        this.product = product;
+        animator.SetBool("isOpen", true);
 
-      nameText.text = dialogue.name;
-      sentences.Clear();
+        print(sentences);
+        print("dialogue : " + dialogue);
+        nameText.text = dialogue.name;      
+        sentences.Clear();
 
         foreach (DialogText sentence in dialogue.sentences)
         {
-            Debug.Log(sentence.texte);
             if(sentence.step == dialogue.currentStep)
             {
-              sentences.Enqueue(sentence.texte);
+                sentences.Enqueue(sentence.texte);
             }
         }
         DisplayNextSentence();
@@ -85,35 +84,35 @@ public class DialogueManager : MonoBehaviour
         }
 
         if(nameText.text == ""){
-          GameObject.Find("END").GetComponent<END>().hasSpeakWithSea = true;
+            GameObject.Find("END").GetComponent<END>().hasSpeakWithSea = true;
         }
         if(nameText.text == ""){
-          GameObject.Find("END").GetComponent<END>().hasSpeakWithFire = true;
+            GameObject.Find("END").GetComponent<END>().hasSpeakWithFire = true;
         }
         if(nameText.text == ""){
-          GameObject.Find("END").GetComponent<END>().hasSpeakWithSwamp = true;
+            GameObject.Find("END").GetComponent<END>().hasSpeakWithSwamp = true;
         }
         if(nameText.text == ""){
-          GameObject.Find("END").GetComponent<END>().hasSpeakWithAir = true;
+            GameObject.Find("END").GetComponent<END>().hasSpeakWithAir = true;
         }
     }
 
     public void buy(){
-      print(product);
-      PlayerController player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-      if(player.money < 50){
-        return;
-      }
+        print(product);
+        PlayerController player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        if(player.money < 50){
+            return;
+        }
 
-      if(product == "Health")
-      {
-        player.buyPotionHealth();
-        GameObject.FindWithTag("AnimPotionHealth").GetComponent<Animator>().SetTrigger("Buying");
-      } else if (product == "Mana"){
-        player.buyPotionMana();
-        GameObject.FindWithTag("AnimPotionMana").GetComponent<Animator>().SetTrigger("Buying");
-      }
-      player.money -= 50;
+        if(product == "Health")
+        {
+            player.buyPotionHealth();
+            GameObject.FindWithTag("AnimPotionHealth").GetComponent<Animator>().SetTrigger("Buying");
+        } else if (product == "Mana"){
+            player.buyPotionMana();
+            GameObject.FindWithTag("AnimPotionMana").GetComponent<Animator>().SetTrigger("Buying");
+        }
+        player.money -= 50;
     }
 
 }
