@@ -14,6 +14,18 @@ TagManager:
   - Mana
   - UI
   - DialogManager
+  - TimeLineManager
+  - AnimPotionHealth
+  - AnimPotionMana
+  - buyButton
+  - Sea
+  - EarthRing
+  - FireWave
+  - BoxTp
+  - RockPillar
+  - GameOver
+  - Houx
+  - HouxPannel
   layers:
   - Default
   - TransparentFX
@@ -23,10 +35,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Projectiles
+  - Player
+  - enemyProjectiles
+  - enemy
   - 
   - 
   - 
@@ -56,4 +68,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3989578797
+    locked: 0
+  - name: Projectiles
+    uniqueID: 2475534003
     locked: 0
